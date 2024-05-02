@@ -1,11 +1,11 @@
 <?php
 
-use Illuminate\Database\Seeder;
-//importiamo il faker generator
-use Faker\Generator as Faker;
-//importiamo i Model
-// use App\Property;
+namespace Database\Seeders;
+
 use App\Models\View;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Faker\Generator as Faker;
 class ViewSeeder extends Seeder
 {
     /**
@@ -23,8 +23,6 @@ class ViewSeeder extends Seeder
           $newView = new View();
           // $newView->property_id = $property->id;
           $date = $faker->dateTimeBetween("-1 year", "now");
-          $newView->created_at = $date;
-          $newView->updated_at = $date;
 
           //salvo
           $newView->save();

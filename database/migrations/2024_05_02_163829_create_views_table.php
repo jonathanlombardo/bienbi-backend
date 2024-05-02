@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('views_resource', function (Blueprint $table) {
+        Schema::create('views', function (Blueprint $table) {
             $table->id();
-            $table->dateTime('date');
-            $table->ipAddress('ip_address');
+            $table->dateTime('date')->nullable();
+            $table->ipAddress('ip_address')->nullable();
             // $table->foreign('')->constrained()->on('properties')->onDelete('cascade');
             $table->timestamps();
         });
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('views_resource');
+        Schema::dropIfExists('views');
     }
 };
