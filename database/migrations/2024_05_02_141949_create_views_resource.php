@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('views_resource', function (Blueprint $table) {
             $table->id();
-            $table->foreign('property_id')->constrained()->on('properties')->onDelete('cascade');
+            $table->foreign('')->constrained()->on('properties')->onDelete('cascade');
             $table->timestamps();
         });
     }
