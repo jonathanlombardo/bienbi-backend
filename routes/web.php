@@ -23,10 +23,10 @@ Route::controller(GuestController::class)
     Route::get('/', 'index')->name('index');
   });
 
-Route::middleware(['auth', 'verified'])->name('admin.')->group(function () {
-  Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
+  Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
-  Route::resource('services', ServiceController::class);
+  Route::resource('/services', ServiceController::class)->only('index');
 });
 
 
