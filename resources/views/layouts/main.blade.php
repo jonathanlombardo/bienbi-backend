@@ -18,23 +18,6 @@
         @include('layouts.partials.header')
         <main>
             @yield('maincontent')
-
-            {{-- TEMPORARY CODE  --}}
-
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col d-flex justify-content-center align-items-center">
-
-                        <button class="btn btn-primary">
-                            <a href="{{route('admin.services.index')}}">services</a>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-
-            {{-- TEMPORARY CODE --}}
-
         </main>
         @include('layouts.partials.footer')
     </div>
@@ -42,15 +25,3 @@
 </body>
 
 </html>
-
-{{-- TEMPORARY CODE --}}
-
-<style lang="scss" scoped>
-
-    .col{
-        height: 500px
-    }
-
-</style>
-
-{{-- TEMPORARY CODE --}}
