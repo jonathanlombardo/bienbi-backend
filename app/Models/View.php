@@ -1,24 +1,14 @@
 <?php
 
-namespace Database\Seeders;
+namespace App\Models;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-use App\Models\View;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-class ViewSeeder extends Seeder
+class View extends Model
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
-    {
-        View::create([
-            'ip' => '',
-            'data' => 'tampo',
-            // 'appartment_id' => 1
-        ]);
-    }
+    //  public function property()
+    //     {
+    //       return $this->belongsTo("App\Property");
+    //     }
 }
