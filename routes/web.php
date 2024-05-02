@@ -23,8 +23,8 @@ Route::controller(GuestController::class)
     Route::get('/', 'index')->name('index');
   });
 
-Route::middleware(['auth', 'verified'])->group(function () {
-  Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+Route::middleware(['auth', 'verified'])->name('admin.')->group(function () {
+  Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
   Route::resource('services', ServiceController::class);
 });
