@@ -12,7 +12,7 @@
                             <div class="col d-flex justify-content-center align-items-center">
 
                                 <button class="btn btn-primary">
-                                    <a href="{{route('admin.services.index')}}">apartments services</a>
+                                    <a href="{{route('admin.services.index')}}">services</a>
                                 </button>
 
                             </div>
