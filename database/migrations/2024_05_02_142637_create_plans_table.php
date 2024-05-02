@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
+            $table->char("name" , 60);
+            $table->time("time");
+            $table->decimal("price" , total: 5 , places: 2);
             $table->timestamps();
         });
     }
