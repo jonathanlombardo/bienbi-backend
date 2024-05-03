@@ -5,6 +5,8 @@ use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PlanController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +36,10 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
 
   //rotta dei servizi
   Route::resource('/services', ServiceController::class)->only('index');
+
+
+  Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
+  Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
 });
 
 
