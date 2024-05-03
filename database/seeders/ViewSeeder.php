@@ -18,16 +18,18 @@ class ViewSeeder extends Seeder
   public function run(Faker $faker)
   {
     $appartments = Appartment::all()->pluck('id')->toArray();
-    for ($i = 0; $i < 500; $i++) {
 
+    for ($i = 0; $i < 500; $i++) {
       //creo nuovo oggetto
       $newView = new View();
       $newView->date = $faker->dateTimeBetween("-1 year", "now");
       $newView->ip_address = $faker->ipv4();
-      $newView->appartment_id = array_rand($appartments);
+      $newView->appartment_id = $appartments[array_rand($appartments)];
+
 
       //salvo
       $newView->save();
+
     }
   }
 }

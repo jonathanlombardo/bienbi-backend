@@ -18,15 +18,15 @@ class MessageSeeder extends Seeder
   {
     $appartments = Appartment::all()->pluck('id')->toArray();
     foreach ($appartments as $appartment) {
-    }
-    for ($i = 0; $i < 4; $i++) {
-      Message::create([
-        'body' => 'Contenuto per appartamento ' . $appartment,
-        'mail' => 'cicciopasticcio@example.com',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'appartment_id' => $appartment
-      ]);
+      for ($i = 0; $i < 4; $i++) {
+        Message::create([
+          'body' => 'Contenuto per appartamento ' . $appartment,
+          'mail' => 'cicciopasticcio@example.com',
+          'first_name' => 'Nome',
+          'last_name' => 'Cognome',
+          'appartment_id' => $appartment
+        ]);
+      }
     }
   }
 }
