@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
       MessageSeeder::class,
       ServiceSeeder::class,
       MessageSeeder::class,
+      AppartmentSeriveceSeeder::class,
 
     ]);
   }

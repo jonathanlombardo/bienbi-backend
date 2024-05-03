@@ -11,4 +11,11 @@ class Service extends Model
 
     protected $fillable = ['label', 'icon'];
 
+    //relation services - appartments
+
+    public function appartments()
+    {
+        return $this->belongsToMany(Appartment::class);
+    }
+
 }

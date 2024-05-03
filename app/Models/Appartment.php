@@ -27,4 +27,11 @@ class Appartment extends Model
     $this->slug = $baseSlug;
 
   }
+
+  //relation appartments - services
+
+  public function services()
+  {
+    return $this->belongsToMany(Service::class);
+  }
 }
