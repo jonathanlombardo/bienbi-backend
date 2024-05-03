@@ -5,7 +5,7 @@
         <nav>
             <ul class="d-flex align-items-center gap-3">
                 {{-- start temporary code --}}
-                
+
 
                     <div class="container">
                         <div class="row justify-content-center align-items-center">
@@ -16,6 +16,9 @@
                                 </button>
                                 <button class="btn btn-primary">
                                     <a href="{{route('admin.messages.index')}}">messages</a>
+                                </button>
+                                <button class="btn btn-primary">
+                                    <a href="{{route('admin.plans.index')}}">plans</a>
                                 </button>
 
                             </div>
