@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Message;
 
 class MessageController extends Controller
 {
@@ -13,7 +14,8 @@ class MessageController extends Controller
      */
     public function index()
     {
-        //
+        $messages = Message::all();
+        return response()->json($messages);
     }
 
     /**
@@ -45,7 +47,13 @@ class MessageController extends Controller
      */
     public function show($id)
     {
-        //
+        $message = Message::find($id);
+
+        if (!$message) {
+            return response()->json(['error' => 'Messaggio non trovato'], 404);
+        }
+
+        return response()->json($message);
     }
 
     /**
@@ -79,6 +87,13 @@ class MessageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $message = Message::find($id);
+
+        if (!$message) {
+            return response()->json(['error' => 'Messaggio non trovato'], 404);
+        }
+
+        $message->delete();
+        return response()->json(['message' => 'Messaggio eliminato con successo']);
     }
 }
