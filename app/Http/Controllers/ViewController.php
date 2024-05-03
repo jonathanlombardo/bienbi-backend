@@ -14,8 +14,7 @@ class ViewController extends Controller
      */
     public function index()
     {
-        
-        $services = View::paginate(10);
+        $services = View::all();
         
         return view('admin.view.index', compact('views'));
     }
