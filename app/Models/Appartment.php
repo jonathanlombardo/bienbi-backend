@@ -51,14 +51,5 @@ class Appartment extends Model
     return $this->belongsToMany(Service::class);
   }
 
-  //relation appartments - services
 
-  public function services()
-  {
-    return $this->belongsToMany(Service::class);
-  }
-  public function plans()
-  {
-    return $this->belongsToMany(Plan::class);
-  }
 }
