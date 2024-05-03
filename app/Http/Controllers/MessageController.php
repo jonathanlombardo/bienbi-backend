@@ -17,7 +17,7 @@ class MessageController extends Controller
   public function index()
   {
     // Recupero appartamenti dell'utente autenticato
-    $appartments = Appartment::whereBelongsTo(Auth::user())->get();
+    $appartments = Appartment::whereBelongsTo(Auth::user())->paginate(1);
 
     // Recupero tutti i messaggi che appartengono almeno ad un appartamento
     $messages = Message::select();
@@ -26,8 +26,8 @@ class MessageController extends Controller
     }
     $messages = $messages->orderBy('created_at')->get();
 
-    // return json
-    return response()->json($messages);
+    // Passiamo i dati alla vista
+    return view('admin.messages.index', compact('messages', 'appartments'));
   }
 
   /**

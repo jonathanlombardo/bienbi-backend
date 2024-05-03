@@ -14,6 +14,9 @@
                                 <button class="btn btn-primary">
                                     <a href="{{route('admin.services.index')}}">services</a>
                                 </button>
+                                <button class="btn btn-primary">
+                                    <a href="{{route('admin.messages.index')}}">messages</a>
+                                </button>
 
                             </div>
                         </div>

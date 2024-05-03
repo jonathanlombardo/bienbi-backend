@@ -24,7 +24,7 @@ Route::controller(GuestController::class)
     Route::get('/', 'index')->name('index');
   });
 
-Route::middleware('auth')->name('admin.')->group(function () {
+Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
   Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
   Route::get('/messages/{id}', [MessageController::class, 'show'])->name('messages.show');
