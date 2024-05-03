@@ -5,6 +5,9 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Database\Seeders\UserSeeder;
+use Database\Seeders\ViewSeeder;
+
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -29,7 +32,7 @@ class DatabaseSeeder extends Seeder
       MessageSeeder::class,
       ServiceSeeder::class,
       MessageSeeder::class,
-
+      ViewSeeder::class,
     ]);
   }
 }
