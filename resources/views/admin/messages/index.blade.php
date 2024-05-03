@@ -9,24 +9,24 @@
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Cognome</th>
-                            <th scope="col">Mail</th>
-                            <th scope="col">Data di invio</th>
-                            <th scope="col">Appartamento</th>
-                            <th scope="col"></th>
+                            <th class="text-center" scope="col">Nome</th>
+                            <th class="text-center" scope="col">Cognome</th>
+                            <th class="text-center" scope="col">Mail</th>
+                            <th class="text-center" scope="col">Data di invio</th>
+                            <th class="text-center" scope="col">Appartamento</th>
+                            <th class="text-center" scope="col"></th>
                           </tr>
                         </thead>
                         <tbody>
                             @forelse($messages as $message)
 
                               
-                            <tr>
-                              <td>{{$message->first_name}}</td>
-                              <td>{{$message->last_name}}</td>
-                              <td>{{$message->mail}}</td>
-                              <td>{{$message->created_at}}</td>
-                              <td>{{$message->appartment_id}}</td>
+                            <tr class="align-middle">
+                              <td class="text-center">{{$message->first_name}}</td>
+                              <td class="text-center">{{$message->last_name}}</td>
+                              <td class="text-center">{{$message->mail}}</td>
+                              <td class="text-center">{{$message->created_at}}</td>
+                              <td class="text-center">{{$message->appartment_id}}</td>
                               <td class="text-end">
                                 <div class="btn"><a class="btn" href="{{route('admin.messages.show', $message)}}"> <i class="fa-solid fa-eye text-warning"></i> </a></div>
                                 <!-- Button trigger modal -->

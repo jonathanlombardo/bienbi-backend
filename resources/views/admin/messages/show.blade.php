@@ -8,23 +8,23 @@
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Cognome</th>
-                            <th scope="col">Mail</th>
-                            <th scope="col">Corpo</th>
-                            <th scope="col">Data di invio</th>
-                            <th scope="col"></th>
+                            <th class="text-center" scope="col">Nome</th>
+                            <th class="text-center" scope="col">Cognome</th>
+                            <th class="text-center" scope="col">Mail</th>
+                            <th class="text-center" scope="col">Corpo</th>
+                            <th class="text-center" scope="col">Data di invio</th>
+                            <th class="text-center" scope="col"></th>
                           </tr>
                         </thead>
                         <tbody>
 
                               
                             <tr class="align-middle">
-                              <td>{{$message->first_name}}</td>
-                              <td>{{$message->last_name}}</td>
-                              <td>{{$message->mail}}</td>
-                              <td>{{$message->body}}</td>
-                              <td>{{$message->created_at}}</td>
+                              <td class="text-center">{{$message->first_name}}</td>
+                              <td class="text-center">{{$message->last_name}}</td>
+                              <td class="text-center">{{$message->mail}}</td>
+                              <td class="text-center">{{$message->body}}</td>
+                              <td class="text-center">{{$message->created_at}}</td>
                               <td>
                                 <!-- Button trigger modal -->
                                   <button type="button" class="btn align-middle" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
