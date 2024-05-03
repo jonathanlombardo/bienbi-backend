@@ -91,16 +91,12 @@ img {
     color: #ffffff;
 }
 
-.title-{
-    color: #e8620c;
-}
-
-.title_b {
-    color: #c6240e;
-}
-
-.title_i {
-    color: #ffb30e;
+h1{
+    background: linear-gradient(90deg, rgb(233, 214, 171) 10%, rgba(255,179,14,1) 48%, rgba(243,78,57,1) 97%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .main_footer {
