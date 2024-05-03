@@ -11,4 +11,8 @@ class Plan extends Model
 
     // Aggiunta proprietà fillable con i parametri necessari al fill
     public $fillable=["name" , "time" , "price"];
+    public function appartments()
+    {
+      return $this->belongsToMany(Appartment::class);
+    }
 }

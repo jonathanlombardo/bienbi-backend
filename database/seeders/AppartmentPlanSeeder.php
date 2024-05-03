@@ -3,12 +3,12 @@
 namespace Database\Seeders;
 
 use App\Models\Appartment;
-use App\Models\Service;
+use App\Models\Plan;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 
-class AppartmentSeriveceSeeder extends Seeder
+class AppartmentPlanSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,11 +18,11 @@ class AppartmentSeriveceSeeder extends Seeder
     public function run(Faker $faker)
     {
         $appartments = Appartment::all();
-        $services = Service::all()->pluck('id');
+        $plans_id = Plan::all()->pluck('id');
 
         foreach( $appartments as $appartment){
-            $random_services = $faker->randomElements($services, rand(3,10));
-            $appartment->services()->sync($random_services);
+            $random_plan = $faker->randomElements($plans_id, rand(0,1));
+            $appartment->plans()->sync($random_plan);
         };
     }
 }
