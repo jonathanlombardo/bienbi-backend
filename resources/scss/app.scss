@@ -20,11 +20,15 @@ img {
     max-height: 100%;
 }
 
+.logo_img {
+    width: 200px;
+}
+
 a {
-    color: inherit;
+    color: #000000;
     text-decoration: none;
     &:hover {
-        filter: brightness(0.8);
+        color: #ffffff;
     }
 }
 
@@ -35,4 +39,21 @@ a {
     > main {
         flex-grow: 1;
     }
+}
+
+.main_header {
+    background-color: #ffb30e;
+}
+
+.drop-item {
+    padding: 0.5rem;
+}
+
+.drop-item:hover {
+    background-color: #f34e39;
+    color: #ffffff;
+}
+
+.main_footer {
+    background-color: #333333;
 }
