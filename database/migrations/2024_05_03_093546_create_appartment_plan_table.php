@@ -17,7 +17,10 @@ return new class extends Migration
             $table->id();
             $table->foreignId("appartment_id")->constrained()->cascadeOnDelete();
             $table->foreignId("plan_id")->constrained()->cascadeOnDelete();
-            $table->timestamps();
+            $table->dateTime('expired_at')->nullable();
+            $table->dateTime('date_of_issue')->nullable();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 
