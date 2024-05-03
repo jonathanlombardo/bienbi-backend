@@ -7,12 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Message extends Model
 {
-    use HasFactory; 
+    use HasFactory;
     protected $fillable = [
         'body',
-        'mail', 
+        'mail',
         'first_name',
         'last_name',
         // 'appartment_id'
     ];
+    public function appartment()
+    {
+        return $this->belongsTo(Appartment::class);
+    }
 }

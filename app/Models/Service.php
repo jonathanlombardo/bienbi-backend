@@ -11,4 +11,8 @@ class Service extends Model
 
     protected $fillable = ['label', 'icon'];
 
+    public function appartments()
+    {
+        return $this->belongsToMany(Appartment::class);
+    }
 }
