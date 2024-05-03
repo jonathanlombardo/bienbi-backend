@@ -81,16 +81,16 @@
 
 <style lang="scss" scoped>
 
-    
-    .card_header_bg {
-        background: rgb(233,214,171);
-        background: linear-gradient(90deg, rgba(233,214,171,1) 10%, rgba(255,179,14,1) 48%, rgba(243,78,57,1) 97%);
-    }
-
     .my_btn {
         background-color: #ffb30e;
-        padding: 4px 8px;
-        border: 1px solid #000000;
+        padding: 6px 10px;
+        border: none;
         border-radius: 10px;
+    }
+
+    .my_btn:hover {
+        opacity: 0.9;
+        box-shadow: 2px 3px 12px  rgb(205, 45, 24);
+        background: linear-gradient(90deg, rgba(233,214,171,1) 10%, rgba(255,179,14,1) 48%, rgba(243,78,57,1) 97%);
     }
 </style>
