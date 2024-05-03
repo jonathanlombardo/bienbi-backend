@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AppartmentController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
@@ -27,6 +28,7 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
   Route::resource('/services', ServiceController::class)->only('index');
+  Route::resource('/appartments', AppartmentController::class);
 });
 
 
