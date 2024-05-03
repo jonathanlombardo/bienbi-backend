@@ -19,7 +19,7 @@
                         <tbody>
 
                               
-                            <tr>
+                            <tr class="align-middle">
                               <td>{{$message->first_name}}</td>
                               <td>{{$message->last_name}}</td>
                               <td>{{$message->mail}}</td>
@@ -27,9 +27,9 @@
                               <td>{{$message->created_at}}</td>
                               <td>
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
-                                    Elimina
-                                    </button>
+                                  <button type="button" class="btn align-middle" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
+                                    <i class="fa-solid fa-trash text-danger"></i>
+                                  </button>
     
                                     {{-- modal --}}
                                     
@@ -68,3 +68,6 @@
         </div>
 @endsection
 
+<style lang="scss" scoped>
+
+</style>

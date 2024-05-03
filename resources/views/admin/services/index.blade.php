@@ -17,7 +17,19 @@
                         <tr>
                             <td>{{$service->id}}</td>
     
-                            <td>{{$service->label}}</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="icon_container pe-2 text-center">
+                                        <i class="{{config('service_icon_class')[$service->label]}}"></i>
+                                    </div>  
+                                    <div>
+                                        {{$service->label}}
+                                    </div>
+                                </div>
+                            </td>
+                                    
+
+
                         </tr>
                         @empty 
                         @endforelse
@@ -31,3 +43,11 @@
         </div>
     </div>
 @endsection
+
+<style lang="scss" scoped>
+
+    .icon_container {
+        width: 40px;
+    }
+
+</style>

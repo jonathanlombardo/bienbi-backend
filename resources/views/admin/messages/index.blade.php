@@ -13,6 +13,7 @@
                             <th scope="col">Cognome</th>
                             <th scope="col">Mail</th>
                             <th scope="col">Data di invio</th>
+                            <th scope="col">Appartamento</th>
                             <th scope="col"></th>
                           </tr>
                         </thead>
@@ -25,11 +26,12 @@
                               <td>{{$message->last_name}}</td>
                               <td>{{$message->mail}}</td>
                               <td>{{$message->created_at}}</td>
+                              <td>{{$message->appartment_id}}</td>
                               <td class="text-end">
-                                <div class="btn btn-primary"><a href="{{route('admin.messages.show', $message)}}"> vedi messaggio </a></div>
+                                <div class="btn"><a class="btn" href="{{route('admin.messages.show', $message)}}"> <i class="fa-solid fa-eye text-warning"></i> </a></div>
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
-                                Elimina
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
+                                  <i class="fa-solid fa-trash text-danger"></i>
                                 </button>
 
                                 {{-- modal --}}
@@ -77,7 +79,5 @@
 @endsection
 
 <style lang="scss" scoped>
-
-    
 
 </style>

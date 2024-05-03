@@ -20,15 +20,36 @@ img {
     max-height: 100%;
 }
 
+.page-link.active, .active > .page-link {
+    background-color: #ffb30e;
+    border: 1px solid #333333;
+}
+
+.page-link {
+    color: #000000;
+}
+
+.page-link:hover {
+    color: #000000;
+}
+
 .logo_img {
     width: 200px;
 }
 
-a {
+.nav_link {
     color: #000000;
     text-decoration: none;
     &:hover {
         color: #ffffff;
+    }
+}
+
+.footer_link {
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+        color: #ffb30e;
     }
 }
 
@@ -42,7 +63,8 @@ a {
 }
 
 .main_header {
-    background-color: #ffb30e;
+    background: rgb(233,214,171);
+    background: linear-gradient(90deg, rgba(233,214,171,1) 10%, rgba(255,179,14,1) 48%, rgba(243,78,57,1) 97%);
 }
 
 .drop-item {
@@ -52,6 +74,14 @@ a {
 .drop-item:hover {
     background-color: #f34e39;
     color: #ffffff;
+}
+
+.title_color {
+    color: #f34e39;
+}
+
+.title {
+    color: #ffb30e;
 }
 
 .main_footer {
