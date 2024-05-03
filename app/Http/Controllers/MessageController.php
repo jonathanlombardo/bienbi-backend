@@ -61,11 +61,11 @@ class MessageController extends Controller
   {
     $message = Message::find($id);
 
-    if (!$message) {
-      return response()->json(['error' => 'Messaggio non trovato'], 404);
-    }
+    // if (!$message) {
+    //   return response()->json(['error' => 'Messaggio non trovato'], 404);
+    // }
 
-    return response()->json($message);
+    return view('admin.messages.show', compact('message'));
   }
 
   /**
@@ -101,11 +101,15 @@ class MessageController extends Controller
   {
     $message = Message::find($id);
 
-    if (!$message) {
-      return response()->json(['error' => 'Messaggio non trovato'], 404);
-    }
+    // if (!$message) {
+    //   return response()->json(['error' => 'Messaggio non trovato'], 404);
+    // }
 
+    // $message->delete();
+    // return response()->json(['message' => 'Messaggio eliminato con successo']);
+
+    
     $message->delete();
-    return response()->json(['message' => 'Messaggio eliminato con successo']);
+    return redirect()->route('admin.messages.index');
   }
 }
