@@ -4,6 +4,22 @@
         <span>{{ env('APP_NAME', 'NewProject') }} Header</span>
         <nav>
             <ul class="d-flex align-items-center gap-3">
+                {{-- start temporary code --}}
+                
+
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col d-flex justify-content-center align-items-center">
+
+                                <button class="btn btn-primary">
+                                    <a href="{{route('admin.services.index')}}">services</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                {{-- end temporary code --}}
                 <li><a href="{{ route('guest.index') }}">Home</a></li>
                 @guest
                     <li class="nav-item">

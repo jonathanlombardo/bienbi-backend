@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,10 +25,14 @@ Route::controller(GuestController::class)
   });
 
 Route::middleware('auth')->name('admin.')->group(function () {
-  Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+  Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
   Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
   Route::get('/messages/{id}', [MessageController::class, 'show'])->name('messages.show');
   Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
+
+  Route::resource('/services', ServiceController::class)->only('index');
 });
+
+
 
 require __DIR__ . '/auth.php';
