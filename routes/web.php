@@ -26,10 +26,13 @@ Route::controller(GuestController::class)
 
 Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+
+  //Rotte dei messaggi
   Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
   Route::get('/messages/{id}', [MessageController::class, 'show'])->name('messages.show');
   Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 
+  //rotta dei servizi
   Route::resource('/services', ServiceController::class)->only('index');
 });
 
