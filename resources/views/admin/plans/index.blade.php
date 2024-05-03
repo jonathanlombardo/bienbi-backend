@@ -9,8 +9,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
-                            <th>Time</th>
-                            <th>Price</th>
+                            <th></th>
                         </tr>
 
                     </thead>
@@ -20,10 +19,7 @@
                             <td>{{$plan->id}}</td>
 
                             <td>{{$plan->name}}</td>
-
-                            <td>{{$plan->time}}</td>
-
-                            <td>{{$plan->price}}</td>
+                            <td class="text-end"><div class="btn btn-primary"><a href="{{route('admin.plans.show', $plan)}}">Vedi Piano</a></div></td>
                         </tr>
                         @empty
                         @endforelse

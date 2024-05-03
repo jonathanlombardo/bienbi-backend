@@ -37,7 +37,7 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   //rotta dei servizi
   Route::resource('/services', ServiceController::class)->only('index');
 
-
+  //rotte dei piani
   Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
   Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
 });

@@ -41,16 +41,18 @@ class PlanController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Plan  $plan
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Plan $plan)
-    {
-        //
-    }
+      /**
+   * Display the specified resource.
+   *
+  //  * @param  int  $id
+  //  * @return \Illuminate\Http\Response
+   */
+  public function show($id)
+  {
+    $plan = Plan::find($id);
+
+    return view('admin.plans.show', compact('plan'));
+  }
 
     /**
      * Show the form for editing the specified resource.
