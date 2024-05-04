@@ -5,11 +5,6 @@
   <div class="row mt-5">
 
             <div class="col">
-
-              <a href="{{route('admin.messages.show', $message)}}" class="my-card-link">
-
-
-
                 <div class="my-card">
 
                   <div class="my-card-header d-flex justify-content-between">
@@ -67,7 +62,6 @@
                   </div>
 
                 </div>
-              </a>
 
             </div>
 
@@ -80,11 +74,6 @@
 @endsection
 
 <style lang="scss" scoped>
-
-  .my-card-link{
-    color: black;
-    text-decoration: none;
-  }
 
   .my-card{
     padding: 10px 20px;
@@ -99,7 +88,6 @@
     }
 
     .option-btn{
-      background-color: rgba(255, 235, 205, 0);
     }
 
     .delete-btn{

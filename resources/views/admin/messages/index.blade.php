@@ -12,7 +12,7 @@
 
                       @forelse($messages as $message)
 
-                      <div class="col-6">
+                      <div class="col-6 position-relative">
 
                         <a href="{{route('admin.messages.show', $message)}}" class="my-card-link">
 
@@ -26,47 +26,7 @@
                                 <div class="mail">{{$message->mail}}</div>
   
                               </div>
-                              <div class="dropdown">
-                                <button class="btn option-btn align-middle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="fa-solid fa-ellipsis"></i>
-                                </button>
-                                <ul class="dropdown-menu p-1 ">
-                                  <li class="text-center ">
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn delete-btn" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
-                                      Elimina Messaggio
-                                    </button>
-  
-                                    
-                                  </li>
-                                </ul>
-                              </div>
-                              {{-- modal --}}
-                                  
-                              <div class="modal fade" id="delete-{{$message->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminare da {{ $message->first_name }} {{ $message->last_name}}?</h1>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      Se elimini questo messaggio non potrai più recuperarlo.
-                                    </div>
-                                    <div class="modal-footer">
-                                          
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-  
-                                      <form action="{{ route('admin.messages.destroy', $message)}}" method='POST'>
-                                      @csrf
-                                      @method('DELETE')
-                                        <button class='btn btn-danger'>Elimina</button>
-                                      </form>
-                                          
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                              
                             </div>
   
                             <div class="my-card-body d-flex justify-content-between">
@@ -76,6 +36,48 @@
   
                           </div>
                         </a>
+
+                        <div class="dropdown my-dropdown position-absolute">
+                          <button class="btn option-btn align-middle position-absolute top-100 start-100 translate-middle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </button>
+                          <ul class="dropdown-menu p-1 ">
+                            <li class="text-center ">
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn delete-btn" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
+                                Elimina Messaggio
+                              </button>
+
+                              
+                            </li>
+                          </ul>
+                        </div>
+                        {{-- modal --}}
+                            
+                        <div class="modal fade" id="delete-{{$message->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminare da {{ $message->first_name }} {{ $message->last_name}}?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                Se elimini questo messaggio non potrai più recuperarlo.
+                              </div>
+                              <div class="modal-footer">
+                                    
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+
+                                <form action="{{ route('admin.messages.destroy', $message)}}" method='POST'>
+                                @csrf
+                                @method('DELETE')
+                                  <button class='btn btn-danger'>Elimina</button>
+                                </form>
+                                    
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
                       </div>
 
@@ -169,7 +171,9 @@
 
   .my-card{
     padding: 10px 20px;
-    border: 0.1px solid rgb(205, 205, 205);
+    border: 0.1px solid rgb(255, 255, 255);
+    position: relative;
+
 
     .name{
       font-size: 1rem;
@@ -181,6 +185,8 @@
 
     .option-btn{
       background-color: rgba(255, 235, 205, 0);
+      border: none;
+      position: absolute;
     }
 
     .delete-btn{
@@ -197,5 +203,13 @@
       font-size: 0.7rem;
     }
   }
+
+  .my-card:hover{border: 0.1px solid rgb(205, 205, 205);}
+
+  .my-dropdown{
+    right: 5%;
+    top: 20%;
+  }
+
 
 </style>

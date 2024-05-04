@@ -107,6 +107,7 @@ class MessageController extends Controller
   public function destroy($id)
   {
     $message = Message::find($id);
+    $appartment_slug = $message->appartment->slug;
 
     // if (!$message) {
     //   return response()->json(['error' => 'Messaggio non trovato'], 404);
@@ -117,6 +118,7 @@ class MessageController extends Controller
 
 
     $message->delete();
-    return redirect()->route('admin.messages.index');
+    return redirect()->route('admin.messages.index', ['appartment_slug' => $appartment_slug])
+    ->with('success', 'Messaggio eliminato con successo');
   }
 }
