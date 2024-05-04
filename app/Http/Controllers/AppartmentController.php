@@ -49,7 +49,7 @@ class AppartmentController extends Controller
      */
     public function show(Appartment $appartment)
     {
-        //
+        return view('admin.appartments.show', compact('appartment'));
     }
 
     /**

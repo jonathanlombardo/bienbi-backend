@@ -3,34 +3,49 @@
 @section('maincontent')
 
         <div class="container">
-            <div class="row mt-5 g-3">
-                @forelse($appartments as $appartment)
+          <h1 class="my-3">I Tuoi Appartamenti</h1>
+            <div class="row g-3">
+              @forelse($appartments as $appartment)
 
-                <div class="col-4 mb-5">
+              {{-- link per la show degli appartamenti --}}
 
-                    <div class="my-card">
+              <div class="col-4 mb-5 my-col">
 
-                        <div class="image-container">
-                            <img src="{{asset($appartment->image)}}" alt="">
-                        </div>
+                <a href="{{route('admin.appartments.show', $appartment)}}" class="my-card-link">
 
-                        <div class="my-card-body">
 
-                          <div class="title mt-3">
-                            <span class="title">{{$appartment->title}}</span>
-                          </div>
-                          <div class="messages">
-                            <a class="nav-link nav_link" href="{{route('admin.messages.index',['appartment_slug' => $appartment->slug])}}">Vedi messaggi</a>
-                          </div>
+                  <div class="my-card">
 
-                        </div>
+                    <div class="my-card-header p-3">
+                      <div class="image-container ">
+                        <img src="{{asset($appartment->image)}}" alt="">
+                      </div>
 
                     </div>
 
-                </div>
+                    <div class="my-card-body p-3">
+
+                      <div class="title mt-3">
+                        <span class="title">{{$appartment->title}}</span>
+                      </div>
+                      <div class="messages">
+                        <a class="nav-link nav_link" href="{{route('admin.messages.index',['appartment_slug' => $appartment->slug])}}">Vedi messaggi</a>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </a>
+
+
+              </div>
                 
-                @empty
-                @endforelse
+
+
+                
+                
+              @empty
+              @endforelse
             </div>
             
         </div>
@@ -38,15 +53,31 @@
 
 <style lang="scss" scoped>
 
-  .my-card{
-    /* border: 0.1px solid rgb(205, 205, 205); */
+.my-col{
+  padding: 20px;
+  border-radius: 10px;
 
-  
+}
+
+.my-card-link{
+    color: black;
+    text-decoration: none;
+  }
+
+
+  .my-card{
+    transition: transform 0.5s;
+    cursor: pointer;
 
     .title{
       font-size: 1rem,
       font-weight: 500,
     }
+  }
+
+  .my-card:hover{
+    transform: scale(1.1);
+
   }
 
   .image-container{

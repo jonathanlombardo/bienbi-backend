@@ -24,10 +24,11 @@ class Appartment extends Model
       $newSlug = $baseSlug . "-" . $counter;
     }
 
-    $this->slug = $baseSlug;
+    $this->slug = $newSlug;
   }
 
-  
+
+
 
   //RELAZIONI
 
