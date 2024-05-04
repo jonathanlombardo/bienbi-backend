@@ -1,73 +1,120 @@
 @extends('layouts.main')
 
 @section('maincontent')
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col">
-                
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th class="text-center" scope="col">Nome</th>
-                            <th class="text-center" scope="col">Cognome</th>
-                            <th class="text-center" scope="col">Mail</th>
-                            <th class="text-center" scope="col">Corpo</th>
-                            <th class="text-center" scope="col">Data di invio</th>
-                            <th class="text-center" scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
+<div class="container">
+  <div class="row mt-5">
 
-                              
-                            <tr class="align-middle">
-                              <td class="text-center">{{$message->first_name}}</td>
-                              <td class="text-center">{{$message->last_name}}</td>
-                              <td class="text-center">{{$message->mail}}</td>
-                              <td class="text-center">{{$message->body}}</td>
-                              <td class="text-center">{{$message->created_at}}</td>
-                              <td>
-                                <!-- Button trigger modal -->
-                                  <button type="button" class="btn align-middle" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
-                                    <i class="fa-solid fa-trash text-danger"></i>
-                                  </button>
-    
-                                    {{-- modal --}}
-                                    
-                                    <div class="modal fade" id="delete-{{$message->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                      <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                          <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminare da {{ $message->first_name }} {{ $message->last_name}}?</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                          </div>
-                                          <div class="modal-body">
-                                            Se elimini questo messaggio non potrai più recuperarlo.
-                                          </div>
-                                          <div class="modal-footer">
-                                                  
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-          
-                                            <form action="{{ route('admin.messages.destroy', $message)}}" method='POST'>
-                                            @csrf
-                                            @method('DELETE')
-                                              <button class='btn btn-danger'>Elimina</button>
-                                            </form>
-                                                  
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                              </td>
-                            </tr>
-                            
-                        </tbody>
-                      </table>
-                      
+            <div class="col">
+
+              <a href="{{route('admin.messages.show', $message)}}" class="my-card-link">
+
+
+
+                <div class="my-card">
+
+                  <div class="my-card-header d-flex justify-content-between">
+                    <div>
+                      <div class="name">{{$message->first_name}} {{$message->last_name}}</div>
+                      <div class="mail">{{$message->mail}}</div>
+
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn option-btn align-middle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </button>
+                      <ul class="dropdown-menu p-1 ">
+                        <li class="text-center ">
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn delete-btn" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
+                            Elimina Messaggio
+                          </button>
+
+                          
+                        </li>
+                      </ul>
+                    </div>
+                    {{-- modal --}}
+                        
+                    <div class="modal fade" id="delete-{{$message->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminare da {{ $message->first_name }} {{ $message->last_name}}?</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Se elimini questo messaggio non potrai più recuperarlo.
+                          </div>
+                          <div class="modal-footer">
+                                
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+
+                            <form action="{{ route('admin.messages.destroy', $message)}}" method='POST'>
+                            @csrf
+                            @method('DELETE')
+                              <button class='btn btn-danger'>Elimina</button>
+                            </form>
+                                
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="my-card-body d-flex justify-content-between">
+                    <div class="message">{{$message->body}}</div>
+                    <div class="created">{{$message->created_at}}</div>
+                  </div>
+
                 </div>
+              </a>
+
             </div>
+
+          </div>
         </div>
+      </div>
+  </div>
+  
+</div>
 @endsection
 
 <style lang="scss" scoped>
+
+  .my-card-link{
+    color: black;
+    text-decoration: none;
+  }
+
+  .my-card{
+    padding: 10px 20px;
+    border: 0.1px solid rgb(205, 205, 205);
+
+    .name{
+      font-size: 1rem;
+    }
+
+    .mail{
+      font-size: 0.8rem;
+    }
+
+    .option-btn{
+      background-color: rgba(255, 235, 205, 0);
+    }
+
+    .delete-btn{
+      padding: 0;
+      border: none;
+
+    }
+
+    ul{
+      background-color: rgb(193, 193, 193)
+    }
+
+    .created{
+      font-size: 0.7rem;
+    }
+  }
 
 </style>

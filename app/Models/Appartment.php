@@ -27,10 +27,15 @@ class Appartment extends Model
     $this->slug = $baseSlug;
   }
 
+  
+
+  //RELAZIONI
+
   public function user()
   {
     return $this->belongsTo(User::class);
   }
+  
 
   public function messages()
   {

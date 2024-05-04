@@ -25,8 +25,11 @@
                                 <button class="btn">
                                     <a class="nav-link nav_link" href="{{route('admin.services.index')}}">Services</a>
                                 </button>
-                                <button class="btn p-0">
+                                {{-- <button class="btn p-0">
                                     <a class="nav-link nav_link" href="{{route('admin.messages.index')}}">Messages</a>
+                                </button> --}}
+                                <button class="btn p-0">
+                                    <a class="nav-link nav_link" href="{{route('admin.appartments.index')}}">I tuoi appartamenti</a>
                                 </button>
 
                             </div>
