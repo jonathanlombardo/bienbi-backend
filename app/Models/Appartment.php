@@ -10,6 +10,8 @@ class Appartment extends Model
 {
   use HasFactory;
 
+  protected $appends = ['imgUrl'];
+
   // setta uno slug unico
   public function setSlug()
   {
@@ -27,7 +29,10 @@ class Appartment extends Model
     $this->slug = $newSlug;
   }
 
-
+  public function getImgUrlAttribute()
+  {
+    return $this->image ? asset("storage/$this->image") : asset("storage/appartments/appartment_placeholder.jpg");
+  }
 
 
   //RELAZIONI
@@ -36,7 +41,7 @@ class Appartment extends Model
   {
     return $this->belongsTo(User::class);
   }
-  
+
 
   public function messages()
   {
