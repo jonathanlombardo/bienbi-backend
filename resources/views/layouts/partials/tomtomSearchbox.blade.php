@@ -7,14 +7,27 @@
   <div id="search-box-feedback" class="d-none text-danger pt-1" style="position: absolute">Seleziona un indirizzo tra quelli suggeriti</div>
 </div>
 
+@push('assets')
+  <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox.css" />
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
+@endpush
+
 @push('scripts')
   <script>
+    // verifica se l'indirizzo è popolato
+    function isAddressEmpty() {
+      return !addressInput.value || !latInput.value || !lngInput.value;
+    }
+
     // Svuota i campi relativi all'indirizzo
     function clearAddress() {
-      addressInput.value = null;
-      latInput.value = null;
-      lngInput.value = null;
-      console.log('address cleared');
+      if (!isAddressEmpty()) {
+        addressInput.value = null;
+        latInput.value = null;
+        lngInput.value = null;
+        console.log('address cleared');
+      }
     }
 
     // Popola i campi relativi all'indirizzo
@@ -33,7 +46,7 @@
 
     // Prevengo l'invio del form se indirizzo assente
     function handleSubmitClick(event) {
-      if (!addressInput.value || !latInput.value || !lngInput.value) {
+      if (isAddressEmpty()) {
         event.preventDefault();
         console.log(searchBoxInputContainer)
 
