@@ -7,12 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Service extends Model
 {
-    use HasFactory;
+  use HasFactory;
 
-    protected $fillable = ['label', 'icon'];
+  protected $fillable = ['label', 'icon'];
 
-    public function appartments()
-    {
-        return $this->belongsToMany(Appartment::class);
-    }
+  protected $appends = ['faIconClass'];
+
+  public function appartments()
+  {
+    return $this->belongsToMany(Appartment::class);
+  }
+
+  public function getFaIconClassAttribute()
+  {
+    return config('service_icon_class')[$this->label];
+  }
 }
