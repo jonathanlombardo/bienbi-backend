@@ -20,8 +20,8 @@ return new class extends Migration {
       $table->tinyInteger('beds')->unsigned();
       $table->tinyInteger('bathrooms')->unsigned();
       $table->integer('square_meters')->unsigned();
-      $table->string('image');
-      $table->boolean('published')->default(false);
+      $table->string('image'); /*to do*/
+      $table->boolean('published')->default(false); /*to do*/
       $table->string('address');
       $table->decimal('lat');
       $table->decimal('lng');

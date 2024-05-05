@@ -3,8 +3,9 @@
     <input type="text" name="address" id="tomtom-searchbox-address" class="d-none" value="{{ $appartment->id ? htmlspecialchars($appartment->address) : '' }}">
     <input type="number" name="lng" id="tomtom-searchbox-lng" class="d-none" step="any" value="{{ $appartment->id ? $appartment->lng : '' }}">
     <input type="number" name="lat" id="tomtom-searchbox-lat" class="d-none" step="any" value="{{ $appartment->id ? $appartment->lat : '' }}">
+    <label for="tt-search-box-input" class="form-label">Indirizzo</label>
   </div>
-  <div id="search-box-feedback" class="d-none text-danger pt-1" style="position: absolute">Seleziona un indirizzo tra quelli suggeriti</div>
+  <div id="search-box-feedback" class="input-feedback d-none text-danger pt-1">Seleziona un indirizzo tra quelli suggeriti</div>
 </div>
 
 @push('assets')
@@ -77,6 +78,9 @@
     const searchBoxInputContainer = document.querySelector('.tt-search-box-input-container');
     const searchBoxInput = document.querySelector('input.tt-search-box-input');
     const searchBoxFeedbackEl = document.querySelector('#search-box-feedback');
+
+    // setto un id per l'input della search box
+    searchBoxInput.setAttribute('id', 'tt-search-box-input')
 
     // stilizzo search box
     const searchBoxContainer = document.querySelector('.tt-search-box');

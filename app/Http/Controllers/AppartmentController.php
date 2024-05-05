@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Appartment;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class AppartmentController extends Controller
@@ -22,8 +23,11 @@ class AppartmentController extends Controller
    */
   public function create()
   {
-    $appartment = new Appartment;
-    return view('admin.appartments.form', compact('appartment'));
+    // $appartment = new Appartment;
+    $appartment = Appartment::find(1);
+    $services = Service::all();
+    $appartmentServices = $appartment->services->pluck('id')->toArray();
+    return view('admin.appartments.form', compact('appartment', 'services', 'appartmentServices'));
   }
 
   /**
