@@ -19,7 +19,7 @@
                   <span class="title">{{ $appartment->title }}</span>
                 </div>
                 <div class="messages">
-                  <a class="nav-link nav_link" href="{{ route('admin.messages.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+                  <a class="nav-link page-link" href="{{ route('admin.messages.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
                 </div>
               </div>
             </div>

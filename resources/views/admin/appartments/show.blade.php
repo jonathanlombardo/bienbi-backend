@@ -44,7 +44,7 @@
             @endforeach
           </li>
           <li class="mt-auto">
-            <a class="nav-link nav_link" href="{{ route('admin.messages.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+            <a class="nav-link page-link" href="{{ route('admin.messages.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
           </li>
         </ul>
       </div>
