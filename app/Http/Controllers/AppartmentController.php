@@ -22,8 +22,8 @@ class AppartmentController extends Controller
    */
   public function create()
   {
-
-    return view('admin.appartments.form');
+    $appartment = new Appartment;
+    return view('admin.appartments.form', compact('appartment'));
   }
 
   /**
@@ -33,7 +33,7 @@ class AppartmentController extends Controller
    */
   public function store(Request $request)
   {
-    //
+    dump($request->all());
   }
 
   /**
