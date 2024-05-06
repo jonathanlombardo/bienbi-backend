@@ -11,7 +11,8 @@
             <div class="my-card">
               <div class="my-card-header p-3">
                 <div class="image-container ">
-                  <img src="{{ $appartment->imgUrl }}" alt="">
+                  {{-- <img src="{{ $appartment->imgUrl }}" alt=""> --}}
+                  <img src="{{ asset($appartment->image) }}" alt="">
                 </div>
               </div>
               <div class="my-card-body p-3">

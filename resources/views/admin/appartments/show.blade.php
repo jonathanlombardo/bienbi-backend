@@ -6,7 +6,8 @@
     <div class="row g-5">
       <div class="col-12 col-lg-6">
         <div class="image-container ">
-          <img src="{{ $appartment->imgUrl }}" alt="">
+          {{-- <img src="{{ $appartment->imgUrl }}" alt=""> --}}
+          <img src="{{ asset($appartment->image) }}" alt="">
         </div>
       </div>
       <div class="col-12 col-lg-6">

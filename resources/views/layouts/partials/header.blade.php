@@ -9,14 +9,14 @@
                     <a class="nav_link" href="{{ route('guest.index') }}">Home</a>
                 </button> --}}
                 @guest
-                    <button class="btn p-0">
+                    {{-- <button class="btn p-0">
                         <a class="nav_link" href="{{ route('login') }}">Login</a>
                     </button>
                     @if (Route::has('register'))
                         <button class="btn p-0">
                             <a class="nav_link" href="{{ route('register') }}">Register</a>
                         </button>
-                    @endif
+                    @endif --}}
                 @else
                     <div>
                         <div class="row justify-content-center align-items-center">

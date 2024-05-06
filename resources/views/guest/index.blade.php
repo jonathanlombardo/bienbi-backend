@@ -3,45 +3,68 @@
 
 @section('maincontent')
 
-    <div id="container">
-        <div class="d-flex flex-column align-items-center justify-content-center mb-5">
-            <h1>Bien-Bì</h1>
-            <h2>Bed and Breakfast</h2>
-        </div>
+    <div class="container">
+      <div class="d-flex flex-column align-items-center mb-5">
+          <h1>Bien-Bì</h1>
+          <h2>Bed and Breakfast</h2>
+      </div>
+      <div class="row">
+        <div class="col d-flex flex-column justify-content-center">
+          <div class="buttons-wrapper d-flex justify-content-center">
 
-        <!--Element for spinner made with HTML + CSS-->
-        <div id="html-spinner"></div>
+            {{-- link per login --}}
+            <a class="nav_link" href="{{ route('login') }}">
+              <div class="button d-flex justify-content-center align-items-center">
+                <span>Login</span>
+              </div>
+            </a>
+            {{-- link per la registrazione --}}
+            <a class="nav_link" href="{{ route('register') }}">
+              <div class="button d-flex justify-content-center align-items-center">
+                <span>Registrati</span>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
   </div>
 @endsection
 
 <style lang="scss" scoped>
-#html-spinner{
-  width:40px;
-  height:40px;
-  border:4px solid #fcd779;
-  border-top:4px solid white;
-  border-radius:50%;
+
+/* main{
+  .container{
+    height: 500px;
+  }
+} */
+
+.button{
+  width: 200px;
+  aspect-ratio: 1;
+  background-color: #FABC20;
+  margin: 0 20px;
+  border-radius: 10px;
+
+  transition: transform 0.5s;
+
+  color: white;
+  span{
+    font-size: 1.5rem;
+  }
 }
 
-#html-spinner{
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1.2s;
-  -webkit-animation-name: rotate;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  
-  -moz-transition-property: -moz-transform;
-  -moz-animation-name: rotate; 
-  -moz-animation-duration: 1.2s; 
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  
-  transition-property: transform;
-  animation-name: rotate; 
-  animation-duration: 1.2s; 
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+.button:hover{
+    transform: scale(1.1);
+        opacity: 0.9;
+        box-shadow: 2px 3px 12px  rgb(205, 45, 24);
+        background: linear-gradient(90deg, rgba(233,214,171,1) 10%, rgba(255,179,14,1) 48%, rgba(243,78,57,1) 97%);
+
+  }
+
 
 @-webkit-keyframes rotate {
     from {-webkit-transform: rotate(0deg);}
@@ -67,13 +90,6 @@ body{
   color:#393D3D;
 }
 
-#container{
-  max-width:700px;
-  margin:6rem auto;
-  position:relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 </style>
