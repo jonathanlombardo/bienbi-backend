@@ -102,7 +102,7 @@
 
   .my_btn {
     font-size: 0.9rem;
-    background-color: rgb(233, 214, 171);
+    background-color: #ffb30e;
     padding: 6px 10px;
     border: none;
     border-radius: 10px;
@@ -110,8 +110,9 @@
   }
 
   .my_btn:hover {
-    box-shadow: 2px 3px 12px rgba(255, 179, 14, 1);
+    background-color: #f34e39;
     transform: scale(1.1);
+    box-shadow: 2px 3px 12px #f34e39;
   }
 </style>
 @endpush
