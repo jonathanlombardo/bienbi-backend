@@ -3,7 +3,7 @@
 @section('maincontent')
 <div class="container">
   <div>
-    <h1 class="my-3">MESSAGGI</h1>
+    <h2 class="title my-3">MESSAGGI</h2>
   </div>
   <div class="row mt-5">
     <div class="col">
@@ -69,14 +69,22 @@
 
 <style lang="scss" scoped>
 
+  .title{
+    color: #e8620c;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
   .my-card{
     padding: 10px 20px;
     border-radius: 10px;    
     border: 0.1px solid rgb(236, 236, 236);
     background: #f3c665;
+    opacity: 0.6;
     
     .name{
       font-size: 1rem;
+      font-weight: bold;
     }
 
     .mail{
@@ -98,6 +106,10 @@
     .created{
       font-size: 0.7rem;
     }
-  }
 
+    .my-card:hover{
+    border: 0.1px solid rgb(236, 236, 236);
+    opacity: 1;
+  }
+  }
 </style>
