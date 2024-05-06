@@ -6,10 +6,11 @@
     <div class="row g-3">
       @forelse($appartments as $appartment)
         <div class="col-4 mb-5 my-col">
-        {{-- link per la show degli appartamenti --}}
+          {{-- link per la show degli appartamenti --}}
 
-          <a href="{{ route('admin.appartments.show', $appartment) }}" class="my-card-link d-block h-100">
-            <div class="my-card h-100">
+          <div class="my-card h-100">
+            <a href="{{ route('admin.appartments.show', $appartment) }}" class="my-card-link d-block">
+
               <div class="my-card-header p-3">
                 <div class="image-container">
                   <img src="{{ $appartment->imgUrl }}" alt="">
@@ -18,20 +19,34 @@
               <div class="my-card-body p-3">
                 <div class="title">{{ $appartment->title }}</div>
                 <div class="address mt-1">{{ $appartment->address }}</div>
-                <div class="published pt-3"><strong>Visibile: </strong><i @class([$appartment->published ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash', 'ps-1'])></i></div>
+                <div class="published pt-3"><strong>Visibile: </strong><i @class([$appartment->published ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash', 'ps-1'])></i>
+              </div>
+                  
+            </a>
+
+            {{-- link per vedere i messaggi relazionati all'appartamento --}}
+
+            <div class="card-footer py-3">
+              <div class="messages">
+                <button class="my_btn">
+                  <a class="nav-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+                </button>
               </div>
             </div>
-          </a>    
-              {{-- link per vedere i messaggi relazionati all'appartamento --}}
-              
-          <div class="card-footer p-3">
-            <div class="messages">
-              <button class="my_btn">
-                <a class="nav-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
-              </button>
+
+            {{-- plan label --}}
+
+            <div class="label">
+              @if(!empty($appartment->plans))
+              @foreach($appartment->plans as $plan)
+                <span>{{ $plan->name }}</span>
+              @endforeach
+              @endif
             </div>
+
           </div>
-        </div>
+        </div> 
+      </div> 
       @empty
       @endforelse
     </div>
@@ -54,10 +69,23 @@
   .my-card {
     transition: transform 0.5s;
     cursor: pointer;
+    position: relative;
 
     .title {
       font-size: 1rem;
       font-weight: 500;
+    }
+
+    .label{
+      top: 10%;
+      position: absolute;
+
+      span{
+      background-color: azure; 
+      border-radius: 0 10px 10px 0;
+      padding: 5px 10px;
+
+      }
     }
   }
 
