@@ -25,9 +25,7 @@
                                 <button class="btn">
                                     <a class="nav-link nav_link" href="{{route('admin.services.index')}}">Services</a>
                                 </button>
-                                {{-- <button class="btn p-0">
-                                    <a class="nav-link nav_link" href="{{route('admin.messages.index')}}">Messages</a>
-                                </button> --}}
+                               
                                 <button class="btn p-0">
                                     <a class="nav-link nav_link" href="{{route('admin.appartments.index')}}">I tuoi appartamenti</a>
                                 </button>
@@ -39,6 +37,7 @@
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle nav_link" href="#" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <i class="fa-solid fa-user"></i>
                             {{ Auth::user()->name }}
                         </a>
 
