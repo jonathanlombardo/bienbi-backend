@@ -3,10 +3,6 @@
 @section('maincontent')
 
         <div class="container">
-          <div>
-            <h1 class="my-3">MESSAGGI</h1>
-          </div>
-
             <div class="row mt-5">
                 <div class="col">
 
@@ -208,10 +204,7 @@
     }
   }
 
-  .my-card:hover{
-    border: 0.1px solid rgb(236, 236, 236);
-    border-radius: 10px;
-  }
+  .my-card:hover{border: 0.1px solid rgb(205, 205, 205);}
 
   .my-dropdown{
     right: 5%;

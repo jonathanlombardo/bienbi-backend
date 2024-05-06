@@ -22,9 +22,17 @@
                         <div class="row justify-content-center align-items-center">
                             <div class="col d-flex justify-content-center align-items-center">
 
-                                <button class="btn">
+                                {{-- <button class="btn">
                                     <a class="nav-link nav_link" href="{{route('admin.services.index')}}">Services</a>
+                                </button> --}}
+
+                                {{-- link per vedere tutti i messaggi relazionati all'user --}}
+
+                                <button class="btn">
+                                    <a class="nav-link nav_link" href="{{route('admin.messages.index')}}">Messaggi</a>
                                 </button>
+
+                                {{-- link per vedere tutti gli appartamenti relazionati all'user --}}
                                
                                 <button class="btn p-0">
                                     <a class="nav-link nav_link" href="{{route('admin.appartments.index')}}">I tuoi appartamenti</a>
@@ -35,10 +43,9 @@
                     </div>
 
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle nav_link" href="#" role="button"
+                        <a id="navbarDropdown" class="nav-link toggle nav_link" href="#" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <i class="fa-solid fa-user"></i>
-                            {{ Auth::user()->name }}
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="navbarDropdown">

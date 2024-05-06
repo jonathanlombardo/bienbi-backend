@@ -6,8 +6,7 @@
     <div class="row g-5">
       <div class="col-12 col-lg-6">
         <div class="image-container ">
-          {{-- <img src="{{ $appartment->imgUrl }}" alt=""> --}}
-          <img src="{{ asset($appartment->image) }}" alt="">
+          <img src="{{ $appartment->imgUrl }}" alt="">
         </div>
       </div>
       <div class="col-12 col-lg-6">
@@ -45,7 +44,7 @@
             @endforeach
           </li>
           <li class="mt-auto">
-            <a class="nav-link page-link" href="{{ route('admin.messages.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+            <a class="nav-link page-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
           </li>
         </ul>
       </div>
