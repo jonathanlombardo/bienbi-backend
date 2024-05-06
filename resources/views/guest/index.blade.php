@@ -2,8 +2,7 @@
 
 
 @section('maincontent')
-
-    <div class="container">
+  <div class="container">
       <div class="d-flex flex-column align-items-center mb-5">
           <h1>Bien-Bì</h1>
           <h2>Bed and Breakfast</h2>
@@ -24,23 +23,13 @@
                 <span>Registrati</span>
               </div>
             </a>
-
           </div>
-
         </div>
       </div>
-
-
   </div>
 @endsection
 
 <style lang="scss" scoped>
-
-/* main{
-  .container{
-    height: 500px;
-  }
-} */
 
 .button{
   width: 200px;
@@ -48,7 +37,6 @@
   background-color: #FABC20;
   margin: 0 20px;
   border-radius: 10px;
-
   transition: transform 0.5s;
 
   color: white;
@@ -59,10 +47,9 @@
 
 .button:hover{
     transform: scale(1.1);
-        opacity: 0.9;
-        box-shadow: 2px 3px 12px  rgb(205, 45, 24);
-        background: linear-gradient(90deg, rgba(233,214,171,1) 10%, rgba(255,179,14,1) 48%, rgba(243,78,57,1) 97%);
-
+    opacity: 0.9;
+    box-shadow: 2px 3px 12px  rgb(205, 45, 24);
+    background: linear-gradient(90deg, rgba(233,214,171,1) 10%, rgba(255,179,14,1) 48%, rgba(243,78,57,1) 97%);
   }
 
 
