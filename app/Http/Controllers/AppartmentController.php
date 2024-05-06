@@ -16,7 +16,7 @@ class AppartmentController extends Controller
      */
     public function index()
     {
-        $appartments = Appartment::select(['id', 'title', 'image', 'user_id', 'slug'])->with('user:id,name,last_name')->whereBelongsTo(Auth::user())->get();
+        $appartments = Appartment::select(['id', 'title', 'image', 'user_id', 'slug', 'address', 'published'])->with('user:id,name,last_name')->whereBelongsTo(Auth::user())->get();
         return view('admin.appartments.index', compact('appartments'));
     }
 

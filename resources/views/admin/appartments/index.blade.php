@@ -9,16 +9,16 @@
         {{-- link per la show degli appartamenti --}}
 
           <a href="{{ route('admin.appartments.show', $appartment) }}" class="my-card-link d-block h-100">
-            <div class="my-card">
+            <div class="my-card h-100">
               <div class="my-card-header p-3">
                 <div class="image-container">
                   <img src="{{ $appartment->imgUrl }}" alt="">
                 </div>
               </div>
               <div class="my-card-body p-3">
-                <div class="title mt-3">
-                  <span class="title">{{ $appartment->title }}</span>
-                </div>
+                <div class="title">{{ $appartment->title }}</div>
+                <div class="address mt-1">{{ $appartment->address }}</div>
+                <div class="published pt-3"><strong>Visibile: </strong><i @class([$appartment->published ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash', 'ps-1'])></i></div>
               </div>
             </div>
           </a>    
@@ -59,6 +59,11 @@
       font-size: 1rem;
       font-weight: 500;
     }
+  }
+
+  .address {
+    font-size: 0.8rem;
+    opacity: 0.5;
   }
 
   .my-card:hover {
