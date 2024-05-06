@@ -3,8 +3,8 @@
 @section('maincontent')
   <div class="container appartment-wrapper">
     <h1 class="my-3">{{ $appartment->title }}</h1>
-    <div class="row g-5">
-      <div class="col-12 col-lg-6">
+    <div class="row d-flex flex-column g-5">
+      <div class="col-12 col-lg-6 col-image">
         <div class="image-container ">
           <img src="{{ $appartment->imgUrl }}" alt="">
         </div>
@@ -59,6 +59,10 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+      }
+
+      .col-image{
+        border-bottom: 1px solid grey;
       }
 
       .image-container {
