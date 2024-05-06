@@ -17,7 +17,7 @@
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
-    <form action="{{ $appartment->id ? route('admin.appartments.update', $appartment) : route('admin.appartments.store') }}" method="POST" class="row g-4" id="edit-form">
+    <form action="{{ $appartment->id ? route('admin.appartments.update', $appartment->slug) : route('admin.appartments.store') }}" method="POST" enctype="multipart/form-data" class="row g-4" id="edit-form">
       @csrf
       @method($appartment->id ? 'PATCH' : 'POST')
 
@@ -100,7 +100,7 @@
       <div class="col-12">
         <span>Pubblica:</span>
         <label class="switch">
-          <input type="checkbox" name="published" {{ old('published', $appartment->id ? $appartment->published : null) ? 'checked' : '' }}>
+          <input type="checkbox" name="published" id="published" {{ old('published', $appartment->id ? $appartment->published : null) ? 'checked' : '' }}>
           <span class="slider round"></span>
         </label>
         @error('published')
@@ -252,6 +252,6 @@
     const subBtn = document.querySelector('button[type="submit"]');
 
     // Invio il form solo se i campi sono validi
-    subBtn.addEventListener('click', handleSubmitClick);
+    // subBtn.addEventListener('click', handleSubmitClick);
   </script>
 @endpush

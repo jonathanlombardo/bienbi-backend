@@ -1,8 +1,8 @@
 <div id="tomtom-searchbox-wrapper">
   <div id="tomtom-searchbox">
-    <input type="text" name="address" id="tomtom-searchbox-address" class="d-none" value="{{ $appartment->id ? htmlspecialchars($appartment->address) : '' }}">
-    <input type="number" name="lng" id="tomtom-searchbox-lng" class="d-none" step="any" value="{{ $appartment->id ? $appartment->lng : '' }}">
-    <input type="number" name="lat" id="tomtom-searchbox-lat" class="d-none" step="any" value="{{ $appartment->id ? $appartment->lat : '' }}">
+    <input type="text" name="address" id="tomtom-searchbox-address" class="d-none @error('address') invalid @enderror" value="{{ $appartment->id ? ($errors->any() ? old('address') : $appartment->address) : old('address') }}">
+    <input type="number" name="lng" id="tomtom-searchbox-lng" class="d-none @error('lng') invalid @enderror" step="any" value="{{ $appartment->id ? ($errors->any() ? old('lng') : $appartment->lng) : old('lng') }}">
+    <input type="number" name="lat" id="tomtom-searchbox-lat" class="d-none @error('lat') invalid @enderror" step="any" value="{{ $appartment->id ? ($errors->any() ? old('lat') : $appartment->lat) : old('lat') }}">
     <label for="tt-search-box-input" class="form-label">Indirizzo</label>
   </div>
   <div id="search-box-feedback" class="input-feedback d-none text-danger pt-1">Seleziona un indirizzo tra quelli suggeriti</div>
@@ -16,6 +16,13 @@
 
 @push('scripts')
   <script>
+    //aggiunge le classi d'errore
+    function ttInvalidInput() {
+      searchBoxInputContainer.classList.add('border-danger');
+      searchBoxFeedbackEl.classList.remove('d-none')
+      searchBoxInput.scrollIntoView();
+    }
+
     // verifica se l'indirizzo è popolato
     function isAddressEmpty() {
       return !addressInput.value || !latInput.value || !lngInput.value;
@@ -52,9 +59,7 @@
         console.log(searchBoxInputContainer)
 
         // aggiungo classi d'errore
-        searchBoxInputContainer.classList.add('border-danger');
-        searchBoxFeedbackEl.classList.remove('d-none')
-        searchBoxInput.scrollIntoView();
+        ttInvalidInput();
 
         return true;
       }
@@ -107,5 +112,9 @@
 
     // svuoto l'indirizzo all'input della search box
     searchBoxInput.addEventListener('input', clearAddress);
+
+    //
+    if (addressInput.classList.contains('invalid') || latInput.classList.contains('invalid') || lngInput.classList.contains('invalid'))
+      ttInvalidInput();
   </script>
 @endpush

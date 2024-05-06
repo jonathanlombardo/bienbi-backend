@@ -10,6 +10,7 @@ class Appartment extends Model
 {
   use HasFactory;
 
+  protected $fillable = ['address', 'lng', 'lat', 'title', 'rooms', 'beds', 'bathrooms', 'square_meters'];
   protected $appends = ['imgUrl'];
 
   // setta uno slug unico
@@ -62,5 +63,8 @@ class Appartment extends Model
     return $this->belongsToMany(Service::class);
   }
 
-
+  static function fromSlugToAppartment($slug)
+  {
+    return Appartment::where('slug', $slug)->first();
+  }
 }
