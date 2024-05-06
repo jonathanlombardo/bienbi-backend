@@ -8,7 +8,7 @@
         <div class="col-4 mb-5 my-col">
           {{-- link per la show degli appartamenti --}}
 
-            <div class="my-card position-relative">
+            <div class="my-card">
               <a href="{{ route('admin.appartments.show', $appartment) }}" class="my-card-link">
 
                 <div class="my-card-header p-3">
@@ -32,7 +32,7 @@
 
               {{-- plan label --}}
 
-              <div>
+              <div class="label">
                 @if(!empty($appartment->plans))
                 @foreach($appartment->plans as $plan)
                   <span>{{ $plan->name }}</span>
@@ -65,10 +65,23 @@
   .my-card {
     transition: transform 0.5s;
     cursor: pointer;
+    position: relative;
 
     .title {
       font-size: 1rem,
         font-weight: 500,
+    }
+
+    .label{
+      top: 10%;
+      position: absolute;
+
+      span{
+      background-color: azure; 
+      border-radius: 0 10px 10px 0;
+      padding: 5px 10px;
+
+      }
     }
   }
 
