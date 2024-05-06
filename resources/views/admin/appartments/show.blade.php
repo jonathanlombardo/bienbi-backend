@@ -102,7 +102,7 @@
 
   .my_btn {
     font-size: 0.9rem;
-    background-color: #ffb30e;
+    background-color: rgb(233, 214, 171);
     padding: 6px 10px;
     border: none;
     border-radius: 10px;

@@ -19,8 +19,8 @@
                         <td>{{$plan->id}}</td>
 
                         <td>{{$plan->name}}</td>
-                        <td class="text-end">
-                            <div class="btn btn-primary"><a class="text-white text-decoration-none" href="{{route('admin.plans.show', $plan)}}">Vedi Piano</a></div>
+                        <td class="text-end d-flex justify-content-end">
+                            <div class="my_btn"><a class="text-black text-decoration-none" href="{{route('admin.plans.show', $plan)}}">Vedi Piano</a></div>
                         </td>
                     </tr>
                     @empty
@@ -33,3 +33,23 @@
     </div>
 </div>
 @endsection
+
+@push('assets')
+<style lang="scss">
+.my_btn {
+    font-size: 0.9rem;
+    background-color: #ffb30e;
+    padding: 6px 10px;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.my_btn:hover {
+    box-shadow: 2px 3px 12px rgba(255, 179, 14, 1);
+    transform: scale(1.1);
+}
+
+</style>
+@endpush
