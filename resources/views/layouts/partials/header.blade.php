@@ -34,11 +34,11 @@
 
                                 {{-- link per vedere tutti gli appartamenti relazionati all'user --}}
                                
-                                <button class="btn p-0">
+                                <button class="btn">
                                     <a class="nav-link nav_link" href="{{route('admin.appartments.index')}}">I tuoi appartamenti</a>
                                 </button>
-                                <button class="btn btn-primary">
-                                    <a href="{{route('admin.plans.index')}}">plans</a>
+                                <button class="btn">
+                                    <a class="nav-link nav_link" href="{{route('admin.plans.index')}}">plans</a>
                                 </button>
 
                             </div>

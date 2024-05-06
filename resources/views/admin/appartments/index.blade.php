@@ -6,30 +6,41 @@
     <div class="row g-3">
       @forelse($appartments as $appartment)
         <div class="col-4 mb-5 my-col">
-        {{-- link per la show degli appartamenti --}}
+          {{-- link per la show degli appartamenti --}}
 
-          <a href="{{ route('admin.appartments.show', $appartment) }}" class="my-card-link">
-            <div class="my-card">
-              <div class="my-card-header p-3">
-                <div class="image-container ">
-                  <img src="{{ $appartment->imgUrl }}" alt="">
-                </div>
-              </div>
-              <div class="my-card-body p-3">
-                <div class="title mt-3">
-                  <span class="title">{{ $appartment->title }}</span>
-                </div>
-              </div>
-          </a>
+            <div class="my-card position-relative">
+              <a href="{{ route('admin.appartments.show', $appartment) }}" class="my-card-link">
 
-          {{-- link per vedere i messaggi relazionati all'appartamento --}}
+                <div class="my-card-header p-3">
+                  <div class="image-container ">
+                    <img src="{{ $appartment->imgUrl }}" alt="">
+                  </div>
+                </div>
+                <div class="my-card-body p-3">
+                  <div class="title mt-3">
+                    <span class="title">{{ $appartment->title }}</span>
+                  </div>
+                </div>
+              </a>
+
+              {{-- link per vedere i messaggi relazionati all'appartamento --}}
 
               <div class="card-footer p-3">
                 <div class="messages">
                   <a class="nav-link page-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
-                </div>
-
               </div>
+
+              {{-- plan label --}}
+
+              <div>
+                @if(!empty($appartment->plans))
+                @foreach($appartment->plans as $plan)
+                  <span>{{ $plan->name }}</span>
+                @endforeach
+                @endif
+              </div>
+
+            </div>
             </div>
         </div>
       @empty
