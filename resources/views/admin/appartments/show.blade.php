@@ -3,13 +3,13 @@
 @section('maincontent')
 <div class="container appartment-wrapper">
   <h1 class="my-3">{{ $appartment->title }}</h1>
-  <div class="row d-flex flex-column g-5">
-    <div class="col-line col-12 col-lg-6">
+  <div class="row g-5">
+    <div class="col-12 col-lg-6">
       <div class="image-container ">
         <img src="{{ $appartment->imgUrl }}" alt="">
       </div>
     </div>
-    <div class="col-line col-12 col-lg-6">
+    <div class="col-12 col-lg-6">
       <ul class="h-100 p-0">
         <li>
           <img class='img-services d-inline-block' src="{{asset('/storage/stanze.png')}}">
@@ -47,8 +47,10 @@
           </div>
           @endforeach
         </li>
-        <li class="m-2">
-          <a class="nav-link page-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+        <li class="mt-auto">
+          <button class="my_btn">
+            <a class="nav-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+          </button>
         </li>
       </ul>
     </div>
@@ -85,6 +87,21 @@
         width: 30px;
       }
     }
+  }
+
+  .my_btn {
+    font-size: 0.9rem;
+    background-color: #ffb30e;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    transition: transform 0.5s;
+  }
+
+  .my_btn:hover {
+    background-color: #f34e39;
+    transform: scale(1.1);
   }
 </style>
 @endpush
