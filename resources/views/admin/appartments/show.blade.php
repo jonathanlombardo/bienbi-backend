@@ -12,22 +12,22 @@
     <div class="col-12 col-lg-6">
       <ul class="h-100 p-0">
         <li>
-          <img class='img-services d-inline-block' src="{{asset('/storage/stanze.png')}}">
+          <img class='img-services d-inline-block me-2' src="{{asset('/storage/stanze.png')}}">
           <strong>Stanze</strong>
           <span>{{ $appartment->rooms > 1 ? $appartment->rooms : 'Una' }} {{ $appartment->rooms > 1 ? ' stanze' : ' stanza' }}</span>
         </li>
         <li>
-          <img class='img-services d-inline-block' src="{{asset('/storage/letti.png')}}">
+          <img class='img-services d-inline-block me-2' src="{{asset('/storage/letti.png')}}">
           <strong>Letti</strong>
           <span>{{ $appartment->beds > 1 ? $appartment->beds : 'Un' }} {{ $appartment->beds > 1 ? ' letti' : ' letto' }}</span>
         </li>
         <li>
-          <img class='img-services d-inline-block' src="{{asset('/storage/bagni.png')}}">
+          <img class='img-services d-inline-block me-2' src="{{asset('/storage/bagni.png')}}">
           <strong>Bagni</strong>
           <span>{{ $appartment->bathrooms > 1 ? $appartment->bathrooms : 'Un' }} {{ $appartment->bathrooms > 1 ? ' bagni' : ' bagno' }}</span>
         </li>
         <li>
-          <img class='img-services d-inline-block' src="{{asset('/storage/mq.png')}}">
+          <img class='img-services d-inline-block me-2' src="{{asset('/storage/mq.png')}}">
           <strong>Metri Quadri</strong>
           <span>{{ $appartment->square_meters }} m2</span>
         </li>
@@ -66,7 +66,7 @@
   }
 
   .img-services {
-    width: 40px;
+    width: 35px;
     aspect-ratio: 1;
   }
 
@@ -95,12 +95,11 @@
     padding: 6px 10px;
     border: none;
     border-radius: 10px;
-    transition-duration: 0.5s;
     transition: transform 0.5s;
   }
 
   .my_btn:hover {
-    background-color: #f34e39;
+    box-shadow: 2px 3px 12px rgba(255, 179, 14, 1);
     transform: scale(1.1);
   }
 </style>
