@@ -46,7 +46,7 @@
     }
 
     // Prevengo l'invio del form se indirizzo assente
-    function handleSubmitClick(event) {
+    function ttHandleSubmitClick(event) {
       if (isAddressEmpty()) {
         event.preventDefault();
         console.log(searchBoxInputContainer)
@@ -54,7 +54,11 @@
         // aggiungo classi d'errore
         searchBoxInputContainer.classList.add('border-danger');
         searchBoxFeedbackEl.classList.remove('d-none')
+        searchBoxInput.scrollIntoView();
+
+        return true;
       }
+      return false;
     }
 
     // setto opzioni tom tom searchbox
@@ -94,8 +98,6 @@
     // inizializzo il valore dell'input
     searchBoxInput.value = addressInput.value;
 
-    // recupero il bottone per il submit
-    const subBtn = document.querySelector('button[type="submit"]');
 
     // popolo l'indirizzo alla selezione di un indirizzo
     ttSearchBox.on("tomtom.searchbox.resultselected", fillAddress)
@@ -105,8 +107,5 @@
 
     // svuoto l'indirizzo all'input della search box
     searchBoxInput.addEventListener('input', clearAddress);
-
-    // Invio il form solo se l'indirizzo è popolato
-    subBtn.addEventListener('click', handleSubmitClick);
   </script>
 @endpush
