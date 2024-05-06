@@ -4,10 +4,6 @@
         <span><img src="{{asset('img/logo_bienbi.png')}}" alt="Logo Bien-bì" class="logo_img"></span>
         <nav>
             <ul class="d-flex align-items-center gap-3">
-                {{-- start temporary code --}}
-
-
-                    <div class="container">
             
                 {{-- <button class="btn p-0">
                     <a class="nav_link" href="{{ route('guest.index') }}">Home</a>
