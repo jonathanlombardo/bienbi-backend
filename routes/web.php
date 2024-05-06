@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AppartmentController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ServiceController;
@@ -30,9 +31,18 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
   //Rotte dei messaggi
+
+  // Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
+
+  //rotta per vedere messaggi reazionati all'id dell'appartamento
+
+  Route::get('/messages/{appartment_slug}', [MessageController::class, 'indexMessagePerAppartment'])->name('messages.appartment.index');
+
   Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
-  Route::get('/messages/{id}', [MessageController::class, 'show'])->name('messages.show');
+  
+  Route::get('/message/{id}', [MessageController::class, 'show'])->name('messages.show');
   Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
+
 
   //rotta dei servizi
   Route::resource('/services', ServiceController::class)->only('index');
@@ -40,6 +50,11 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   //rotte dei piani
   Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
   Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
+
+
+
+  //rotta degli appartamenti
+  Route::resource('/appartments', AppartmentController::class);
 });
 
 

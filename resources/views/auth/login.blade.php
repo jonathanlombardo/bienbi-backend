@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Login') }}</div>
+                    <div class="card-header card_header_bg text-center">{{ __('Login') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
@@ -60,12 +60,12 @@
 
                             <div class="mb-4 row mb-0">
                                 <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="my_btn">
                                         {{ __('Login') }}
                                     </button>
 
                                     @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        <a class="btn text-black" href="{{ route('password.request') }}">
                                             {{ __('Forgot Your Password?') }}
                                         </a>
                                     @endif
@@ -78,3 +78,19 @@
         </div>
     </div>
 @endsection
+
+<style lang="scss" scoped>
+
+    .my_btn {
+        background-color: #ffb30e;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .my_btn:hover {
+        opacity: 0.9;
+        box-shadow: 2px 3px 12px  rgb(205, 45, 24);
+        background: linear-gradient(90deg, rgba(233,214,171,1) 10%, rgba(255,179,14,1) 48%, rgba(243,78,57,1) 97%);
+    }
+</style>
