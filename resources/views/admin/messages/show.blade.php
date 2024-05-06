@@ -23,7 +23,7 @@
                       <ul class="dropdown-menu p-1 ">
                         <li class="text-center ">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn delete-btn" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
+                          <button type="button" class="btn delete-btn text-danger" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
                             Elimina Messaggio
                           </button>
 
@@ -92,17 +92,9 @@
       font-size: 0.8rem;
     }
 
-    .option-btn{
-    }
-
     .delete-btn{
       padding: 0;
       border: none;
-
-    }
-
-    ul{
-      background-color: rgb(193, 193, 193)
     }
 
     .created{

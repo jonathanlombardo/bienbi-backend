@@ -26,7 +26,7 @@
 
               <div class="card-footer p-3">
                 <div class="messages">
-                  <a class="nav-link page-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+                  <a class="message-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
                 </div>
 
               </div>
@@ -39,6 +39,10 @@
 @endsection
 
 <style lang="scss" scoped>
+.message-link {
+  color: black;
+}
+
   .my-col {
     padding: 20px;
     border-radius: 10px;

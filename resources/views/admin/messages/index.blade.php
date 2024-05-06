@@ -45,10 +45,10 @@
                           <button class="btn option-btn align-middle position-absolute top-100 start-100 translate-middle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-ellipsis"></i>
                           </button>
-                          <ul class="dropdown-menu p-1 ">
-                            <li class="text-center ">
+                          <ul class="dropdown-menu p-0">
+                            <li class="text-center">
                               <!-- Button trigger modal -->
-                              <button type="button" class="btn delete-btn" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
+                              <button type="button" class="btn delete-btn text-start text-danger" data-bs-toggle="modal" data-bs-target="#delete-{{$message->id}}">
                                 Elimina Messaggio
                               </button>
 
@@ -187,20 +187,15 @@
       font-size: 0.8rem;
     }
 
-    .option-btn{
+    .option-btn {
       background-color: rgba(255, 235, 205, 0);
       border: none;
       position: absolute;
     }
 
-    .delete-btn{
+    .delete-btn {
       padding: 0;
       border: none;
-
-    }
-
-    ul{
-      background-color: rgb(193, 193, 193)
     }
 
     .created{
