@@ -36,21 +36,21 @@
 
 @push('assets')
 <style lang="scss">
-.my_btn {
-    font-size: 0.9rem;
-    background-color: #ffb30e;
-    padding: 6px 10px;
-    border: none;
-    width: 100px;
-    border-radius: 10px;
-    transition: transform 0.5s;
-}
+    .my_btn {
+        font-size: 0.9rem;
+        text-align: center;
+        background-color: #ffb30e;
+        padding: 6px 10px;
+        border: none;
+        width: 100px;
+        border-radius: 10px;
+        transition: transform 0.5s;
+    }
 
-.my_btn:hover {
-    background-color: #f34e39;
-    transform: scale(1.1);
-    box-shadow: 2px 3px 12px #f34e39;
-}
-
+    .my_btn:hover {
+        background-color: #f34e39;
+        transform: scale(1.1);
+        box-shadow: 2px 3px 12px #f34e39;
+    }
 </style>
 @endpush
