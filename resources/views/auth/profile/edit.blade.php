@@ -1,6 +1,10 @@
 @extends('layouts.main')
 @section('maincontent')
     <div class="container">
+        {{-- <h2 class="fs-4 text-secondary my-4">
+            {{ __('I tuoi messaggi') }}
+        </h2> --}}
+
         <h2 class="fs-4 text-secondary my-4">
             {{ __('Profile') }}
         </h2>

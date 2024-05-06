@@ -4,20 +4,25 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\AppartmentFormRequest;
 use App\Models\Appartment;
+use App\Models\Plan;
 use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
+
 
 class AppartmentController extends Controller
 {
   /**
    * Display a listing of the resource.
    *
+   * @return \Illuminate\Http\Response
    */
   public function index()
   {
-    //
+    $appartment_plans = Plan::all();
+    $appartments = Appartment::select(['id', 'title', 'image', 'user_id', 'slug',])->with('user:id,name,last_name')->whereBelongsTo(Auth::user())->get();
+    return view('admin.appartments.index', compact('appartments', 'appartment_plans'));
   }
 
   /**
@@ -69,7 +74,8 @@ class AppartmentController extends Controller
    */
   public function show($slug)
   {
-    dd(Appartment::fromSlugToAppartment($slug));
+    $appartment = Appartment::fromSlugToAppartment($slug);
+    return view('admin.appartments.show', compact('appartment'));
   }
 
   /**

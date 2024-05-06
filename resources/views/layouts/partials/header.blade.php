@@ -1,56 +1,70 @@
-<header class="py-3 bg-primary text-white">
+<header class="py-3 main_header text-white">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <span>{{ env('APP_NAME', 'NewProject') }} Header</span>
+        <span><img src="{{asset('img/logo_bienbi.png')}}" alt="Logo Bien-bì" class="logo_img"></span>
         <nav>
             <ul class="d-flex align-items-center gap-3">
-                {{-- start temporary code --}}
-                
 
-                    <div class="container">
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col d-flex justify-content-center align-items-center">
+                {{-- <button class="btn p-0">
+                    <a class="nav_link" href="{{ route('guest.index') }}">Home</a>
+                </button> --}}
+                @guest
+                {{-- <button class="btn p-0">
+                        <a class="nav_link" href="{{ route('login') }}">Login</a>
+                </button>
+                @if (Route::has('register'))
+                <button class="btn p-0">
+                    <a class="nav_link" href="{{ route('register') }}">Register</a>
+                </button>
+                @endif --}}
+                @else
+                <div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col d-flex justify-content-center align-items-center">
 
-                                <button class="btn btn-primary">
-                                    <a href="{{route('admin.services.index')}}">services</a>
-                                </button>
+                            <button class="btn">
+                                <a class="nav-link nav_link" href="{{route('admin.services.index')}}">Services</a>
+                            </button>
 
-                            </div>
+                            {{-- link per vedere tutti i messaggi relazionati all'user --}}
+
+                            <button class="btn">
+                                <a class="nav-link nav_link" href="{{route('admin.messages.index')}}">Messaggi</a>
+                            </button>
+
+                            {{-- link per vedere tutti gli appartamenti relazionati all'user --}}
+
+                            <button class="btn">
+                                <a class="nav-link nav_link" href="{{route('admin.appartments.index')}}">I tuoi appartamenti</a>
+                            </button>
+                            <button class="btn">
+                                <a class="nav-link nav_link" href="{{route('admin.plans.index')}}">plans</a>
+                            </button>
+
                         </div>
                     </div>
+                </div>
 
-                {{-- end temporary code --}}
-                <li><a href="{{ route('guest.index') }}">Home</a></li>
-                @guest
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
-                    </li>
-                    @if (Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">Register</a>
-                        </li>
-                    @endif
-                @else
-                    <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }}
-                        </a>
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link toggle nav_link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <i class="fa-solid fa-user"></i>
+                    </a>
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard</a>
-                            <a class="dropdown-item" href="{{ route('auth.profile.edit') }}">Profile</a>
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                    <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="navbarDropdown">
+                        <div class="d-flex flex-column">
+                            <a class="drop-item nav_link" href="{{ route('admin.dashboard') }}">Dashboard</a>
+                            <a class="drop-item nav_link" href="{{ route('auth.profile.edit') }}">Profile</a>
+                            <a class="drop-item nav_link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
                         </div>
-                    </li>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </div>
+                </li>
                 @endguest
             </ul>
         </nav>

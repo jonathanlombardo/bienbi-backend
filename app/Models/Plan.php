@@ -17,4 +17,9 @@ class Plan extends Model
     {
         return $this->belongsToMany(Appartment::class);
 
-    }}
+    }
+
+    public function getLabel(){
+        return "<span class='p-1'> {$this->name} </span>";
+    }
+}
