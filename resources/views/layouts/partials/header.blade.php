@@ -1,7 +1,7 @@
 <header class="py-3 main_header text-white">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <span><img src="{{asset('img/logo_bienbi.png')}}" alt="Logo Bien-bì" class="logo_img"></span>
+        <a href="{{route('admin.appartments.index')}}"><img src="{{asset('img/logo_bienbi.png')}}" alt="Logo Bien-bì" class="logo_img"></a>
         <nav>
             <ul class="d-flex align-items-center gap-3">
 
