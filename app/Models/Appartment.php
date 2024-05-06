@@ -18,7 +18,7 @@ class Appartment extends Model
   public function setSlug()
   {
     $title = $this->title;
-    $slugs = Appartment::where('id', 'IS NOT', $this->id)->get()->pluck('slug')->toArray();
+    $slugs = Appartment::where('id', '!=', $this->id)->get()->pluck('slug')->toArray();
     $baseSlug = Str::slug($title);
     $newSlug = $baseSlug;
     $counter = 0;

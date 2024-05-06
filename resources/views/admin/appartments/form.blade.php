@@ -252,6 +252,6 @@
     const subBtn = document.querySelector('button[type="submit"]');
 
     // Invio il form solo se i campi sono validi
-    // subBtn.addEventListener('click', handleSubmitClick);
+    subBtn.addEventListener('click', handleSubmitClick);
   </script>
 @endpush
