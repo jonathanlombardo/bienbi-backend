@@ -44,7 +44,9 @@
             @endforeach
           </li>
           <li class="mt-auto">
-            <a class="message-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+            <button class="my_btn">
+              <a class="nav-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+            </button>
           </li>
         </ul>
       </div>
@@ -73,8 +75,19 @@
       }
     }
 
-    .message-link {
-      color: black;
+    .my_btn {
+      font-size: 0.9rem;
+      background-color: #ffb30e;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 10px;
+      transition-duration: 0.5s;
+      transition: transform 0.5s;
+    }
+
+    .my_btn:hover {
+      background-color: #f34e39;
+      transform: scale(1.1);
     }
   </style>
 @endpush
