@@ -3,14 +3,14 @@
 
 @section('maincontent')
   <div class="container">
-      <div class="d-flex flex-column align-items-center mb-5">
-          <h1>Bien-Bì</h1>
-          <h2>Bed and Breakfast</h2>
-      </div>
+    <div class="d-flex flex-column align-items-center mb-5">
+      <h1>Bien-Bì</h1>
+      <h2>Bed and Breakfast</h2>
+    </div>
+    @guest
       <div class="row">
         <div class="col d-flex flex-column justify-content-center">
           <div class="buttons-wrapper d-flex justify-content-center">
-
             {{-- link per login --}}
             <a class="nav_link" href="{{ route('login') }}">
               <div class="button d-flex justify-content-center align-items-center">
@@ -26,57 +26,96 @@
           </div>
         </div>
       </div>
+    @else
+      <div class="row">
+        <div class="col d-flex flex-column justify-content-center">
+          <div class="buttons-wrapper d-flex justify-content-center">
+            {{-- link per gli appartamenti --}}
+            <a class="nav_link" href="{{ route('admin.appartments.index') }}">
+              <div class="button d-flex justify-content-center align-items-center">
+                <span>Appartamenti</span>
+              </div>
+            </a>
+            {{-- link per i messaggi --}}
+            <a class="nav_link" href="{{ route('admin.messages.index') }}">
+              <div class="button d-flex justify-content-center align-items-center">
+                <span>Messaggi</span>
+              </div>
+            </a>
+            {{-- link per i messaggi --}}
+            <a class="nav_link" href="{{ route('admin.appartments.create') }}">
+              <div class="button d-flex justify-content-center align-items-center">
+                <span>Nuovo Appartamento</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    @endguest
   </div>
 @endsection
 
-<style lang="scss" scoped>
+<style lang="scss">
+  .button {
+    width: 200px;
+    aspect-ratio: 1;
+    background-color: #FABC20;
+    margin: 0 20px;
+    border-radius: 10px;
+    transition: transform 0.5s;
 
-.button{
-  width: 200px;
-  aspect-ratio: 1;
-  background-color: #FABC20;
-  margin: 0 20px;
-  border-radius: 10px;
-  transition: transform 0.5s;
+    color: white;
 
-  color: white;
-  span{
-    font-size: 1.5rem;
+    span {
+      font-size: 1.5rem;
+      text-align: center;
+    }
   }
-}
 
-.button:hover{
+  .button:hover {
     transform: scale(1.1);
     opacity: 0.9;
-    box-shadow: 2px 3px 12px  rgb(205, 45, 24);
-    background: linear-gradient(90deg, rgba(233,214,171,1) 10%, rgba(255,179,14,1) 48%, rgba(243,78,57,1) 97%);
+    box-shadow: 2px 3px 12px rgb(205, 45, 24);
+    background: linear-gradient(90deg, rgba(233, 214, 171, 1) 10%, rgba(255, 179, 14, 1) 48%, rgba(243, 78, 57, 1) 97%);
   }
 
 
-@-webkit-keyframes rotate {
-    from {-webkit-transform: rotate(0deg);}
-    to {-webkit-transform: rotate(360deg);}
-}
+  @-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
 
-@-moz-keyframes rotate {
-    from {-moz-transform: rotate(0deg);}
-    to {-moz-transform: rotate(360deg);}
-}
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
 
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
+  @-moz-keyframes rotate {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 
-/* Rest of page style*/
-body{
-  background:#FABC20;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color:#393D3D;
-}
-
-
-
+  /* Rest of page style*/
+  body {
+    background: #FABC20;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #393D3D;
+  }
 </style>
