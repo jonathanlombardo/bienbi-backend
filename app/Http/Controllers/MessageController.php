@@ -15,18 +15,24 @@ class MessageController extends Controller
   //  * @return \Illuminate\Http\Response
    */
 
-   public function index()
+  public function index()
   {
     // Recupera l'utente autenticato
     $user = Auth::user();
+    $appartments = Appartment::whereBelongsTo($user)->get();
 
     // Filtra i messaggi solo per gli appartamenti dell'utente autenticato
-    $messages = Message::orderBy('created_at', 'desc')->get();
+    $messages = Message::select();
+    foreach ($appartments as $appartment) {
+      $messages->orWhereBelongsTo($appartment);
+    }
+    $messages = $messages->orderBy('created_at', 'desc')->get();
+
 
     // Passa i dati alla vista
     return view('admin.messages.index', compact('messages'));
   }
-  
+
   public function indexMessagePerAppartment($appartment_slug)
   {
     // Recupera l'utente autenticato
@@ -37,12 +43,13 @@ class MessageController extends Controller
 
     if (!$appartment) {
       return abort(404); // gestione del caso in cui lo slug non corrisponda a nessun appartamento
-  };
+    }
+    ;
 
-  // Controllo se l'appartamento appartiene all'utente autenticato
-  if (!$user->appartments->contains($appartment)) {
-    return abort(403); 
-  }
+    // Controllo se l'appartamento appartiene all'utente autenticato
+    if (!$user->appartments->contains($appartment)) {
+      return abort(403);
+    }
     // Filtra i messaggi solo per gli appartamenti dell'utente autenticato
     $messages = Message::where('appartment_id', $appartment->id)->orderBy('created_at', 'desc')->get();
 
@@ -132,6 +139,6 @@ class MessageController extends Controller
 
     $message->delete();
     return redirect()->route('admin.messages.index', ['appartment_slug' => $appartment_slug])
-    ->with('success', 'Messaggio eliminato con successo');
+      ->with('success', 'Messaggio eliminato con successo');
   }
 }
