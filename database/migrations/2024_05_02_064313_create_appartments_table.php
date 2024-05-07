@@ -24,7 +24,7 @@ return new class extends Migration {
       $table->boolean('published')->default(false);
       $table->string('address');
       $table->decimal('lat');
-      $table->decimal('lng');
+      $table->decimal('long');
       $table->foreignId('user_id')->constrained();
       $table->timestamps();
     });
