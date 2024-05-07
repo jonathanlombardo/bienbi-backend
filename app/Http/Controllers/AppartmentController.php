@@ -20,7 +20,7 @@ class AppartmentController extends Controller
   public function index()
   {
     $appartment_plans = Plan::all();
-    $appartments = Appartment::select(['id', 'title', 'image', 'user_id', 'slug', 'published', 'address'])->with('user:id,name,last_name')->whereBelongsTo(Auth::user())->get();
+    $appartments = Appartment::whereBelongsTo(Auth::user())->get();
     return view('admin.appartments.index', compact('appartments', 'appartment_plans'));
   }
 
@@ -74,6 +74,10 @@ class AppartmentController extends Controller
   public function show($slug)
   {
     $appartment = Appartment::fromSlugToAppartment($slug);
+
+    if (!$appartment || $appartment->user_id != Auth::id())
+      abort(404);
+
     return view('admin.appartments.show', compact('appartment'));
   }
 
@@ -86,10 +90,8 @@ class AppartmentController extends Controller
   {
     $appartment = Appartment::fromSlugToAppartment($slug);
 
-    if (!$appartment)
+    if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
-    if ($appartment->user_id != Auth::id())
-      abort(403);
 
     $services = Service::all();
     $appartmentServices = $appartment->services->pluck('id')->toArray();
@@ -108,10 +110,8 @@ class AppartmentController extends Controller
     $datas = $request->all();
     $appartment = Appartment::fromSlugToAppartment($slug);
 
-    if (!$appartment)
+    if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
-    if ($appartment->user_id != Auth::id())
-      abort(403);
 
     $appartment->fill($datas);
     $appartment->setSlug();
@@ -139,12 +139,14 @@ class AppartmentController extends Controller
    */
   public function destroy(Appartment $appartment)
   {
-    if ($appartment->user_id != Auth::id())
-      abort(403);
+    if (!$appartment || $appartment->user_id != Auth::id())
+      abort(404);
     if ($appartment->image)
       Storage::delete($appartment->image);
     $appartment->image = null;
     $appartment->save();
+
+    //-- to do soft delete
     $appartment->delete();
     return redirect()->route('admin.appartments.index')->with('messageClass', 'alert-success')->with('message', 'Appartamento eliminato');
   }
