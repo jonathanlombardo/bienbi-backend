@@ -44,7 +44,7 @@
         border: none;
         width: 100px;
         border-radius: 10px;
-        transition: transform 0.5s;
+        font-weight: bold;
     }
 
     .my_btn:hover {

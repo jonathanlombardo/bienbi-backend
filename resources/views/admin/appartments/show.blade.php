@@ -120,7 +120,7 @@
       border: none;
       border-radius: 10px;
       transition-duration: 0.5s;
-      transition: transform 0.5s;
+      font-weight: bold;
       text-decoration: none;
       color: inherit;
       display: block;
