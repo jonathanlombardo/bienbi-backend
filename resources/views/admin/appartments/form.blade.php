@@ -11,6 +11,7 @@
 @section('maincontent')
   <div class="container">
     <h1>{{ $appartment->id ? 'Modifica Appartamento' : 'Crea Appartamento' }}</h1>
+    <p>Tutti i campi contrassegnati con '*' sono obbligatori</p>
 
     <div class="error-alert alert alert-danger alert-dismissible fade show {{ !$errors->any() ? 'd-none' : '' }}" role="alert">
       <strong>Check and correct fields on error!</strong>
@@ -39,7 +40,7 @@
         </div>
       </div>
       <div class="col-12">
-        <label for="title" class="form-label">Titolo descrittivo</label>
+        <label for="title" class="form-label">Titolo descrittivo*</label>
         <input type="text" class="@error('title') is-invalid @enderror form-control custom-input" id="title" name="title" placeholder="Appartamento da mario, villetta con terrazzo" value="{{ $appartment->id ? ($errors->any() ? old('title') : $appartment->title) : old('title') }}">
         <div class="invalid-feedback input-feedback">
           @error('title')
@@ -48,7 +49,7 @@
         </div>
       </div>
       <div class="col-12">
-        <label for="rooms" class="form-label">Numero di stanze</label>
+        <label for="rooms" class="form-label">Numero di stanze*</label>
         <input type="number" class="@error('rooms') is-invalid @enderror form-control custom-input" id="rooms" name="rooms" placeholder="2" value="{{ $appartment->id ? ($errors->any() ? old('rooms') : $appartment->rooms) : old('rooms') }}">
         <div class="invalid-feedback input-feedback">
           @error('rooms')
@@ -57,7 +58,7 @@
         </div>
       </div>
       <div class="col-12">
-        <label for="beds" class="form-label">Numero di posti letto</label>
+        <label for="beds" class="form-label">Numero di posti letto*</label>
         <input type="number" class="@error('beds') is-invalid @enderror form-control custom-input" id="beds" name="beds" placeholder="2" value="{{ $appartment->id ? ($errors->any() ? old('beds') : $appartment->beds) : old('beds') }}">
         <div class="invalid-feedback input-feedback">
           @error('beds')
@@ -66,7 +67,7 @@
         </div>
       </div>
       <div class="col-12">
-        <label for="bathrooms" class="form-label">Numero di bagni</label>
+        <label for="bathrooms" class="form-label">Numero di bagni*</label>
         <input type="number" class="@error('bathrooms') is-invalid @enderror form-control custom-input" id="bathrooms" name="bathrooms" placeholder="2" value="{{ $appartment->id ? ($errors->any() ? old('bathrooms') : $appartment->bathrooms) : old('bathrooms') }}">
         <div class="invalid-feedback input-feedback">
           @error('bathrooms')
@@ -75,7 +76,7 @@
         </div>
       </div>
       <div class="col-12">
-        <label for="square_meters" class="form-label">Superfice (metri quadri)</label>
+        <label for="square_meters" class="form-label">Superfice* (metri quadri)</label>
         <input type="number" class="@error('square_meters') is-invalid @enderror form-control custom-input" id="square_meters" name="square_meters" placeholder="2" value="{{ $appartment->id ? ($errors->any() ? old('square_meters') : $appartment->square_meters) : old('square_meters') }}">
         <div class="invalid-feedback input-feedback">
           @error('square_meters')
@@ -84,7 +85,7 @@
         </div>
       </div>
       <div class="col-12 row g-4">
-        <div class="col-12">Servizi offerti</div>
+        <div class="col-12">Servizi offerti*</div>
         @foreach ($services as $service)
           <div class="col-12 col-md-6 col-xl-4">
             <input type="checkbox" class="@error('services') is-invalid @enderror form-check-input" name="services[]" id="service{{ $service->id }}" value="{{ $service->id }}" {{ in_array($service->id, old('services', $appartment->id ? $appartmentServices : [])) ? 'checked' : '' }}>
