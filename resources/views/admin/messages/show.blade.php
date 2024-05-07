@@ -76,11 +76,8 @@
 
   .my-card {
     padding: 10px 20px;
-    border-radius: 10px;
     border: 0.1px solid rgb(236, 236, 236);
     background: #f3c665;
-    opacity: 0.6;
-    cursor: pointer;
 
     .name {
       font-size: 1rem;
@@ -106,8 +103,4 @@
 
   }
 
-  .my-card:hover {
-    border: 0.1px solid rgb(236, 236, 236);
-    opacity: 1;
-  }
 </style>

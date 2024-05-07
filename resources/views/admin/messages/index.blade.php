@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="my-card-body d-flex justify-content-between">
-                      <div class="message">{{ $message->body }}</div>
+                      <div class="message">{{ $message->getAbstract(30) }}</div>
                       <div class="created">{{ $message->created_at }}</div>
                     </div>
 

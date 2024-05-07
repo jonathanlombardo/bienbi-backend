@@ -1,0 +1,31 @@
+messaggio,mail,nome,cognome,appartment_id
+"Ho visto il tuo annuncio e vorrei avere ulteriori informazioni sull'appartamento.",john.doe@example.com,John,Doe,1
+"Sarei interessato a conoscere il prezzo dell'affitto e la disponibilità dell'appartamento.",alice.smith@example.com,Alice,Smith,1
+"Potresti inviarmi delle foto dell'interno dell'appartamento?",david.jones@example.com,David,Jones,1
+"Vorrei sapere se sono ammessi animali domestici nell'appartamento.",emma.wilson@example.com,Emma,Wilson,1
+"Mi piacerebbe prenotare l'appartamento per un weekend lungo. È disponibile?",michael.brown@example.com,Michael,Brown,2
+"Potresti fornirmi maggiori dettagli sulla posizione dell'appartamento?",sarah.taylor@example.com,Sarah,Taylor,2
+"Qual è la durata minima del contratto di locazione?",james.white@example.com,James,White,2
+"Sono interessato all'appartamento. Potremmo organizzare una visita?",olivia.jackson@example.com,Olivia,Jackson,3
+"Avete parcheggio disponibile per gli ospiti?",william.miller@example.com,William,Miller,3
+"Potrei avere informazioni sui servizi inclusi nell'affitto?",sophia.thompson@example.com,Sophia,Thompson,4
+"Ho bisogno di sapere se l'appartamento è completamente arredato.",ethan.anderson@example.com,Ethan,Anderson,4
+"Vorrei conoscere il costo delle utenze aggiuntive.",ava.white@example.com,Ava,White,5
+"Potreste fornire una lista dettagliata degli elettrodomestici disponibili?",jacob.harris@example.com,Jacob,Harris,6
+"Mi piacerebbe sapere se ci sono spazi comuni o aree esterne.",mia.martin@example.com,Mia,Martin,7
+"Ho bisogno di sapere se è prevista una caparra e quali sono le condizioni di pagamento.",alexander.thomas@example.com,Alexander,Thomas,8
+"Vorrei avere informazioni sulla disponibilità dell'appartamento per la settimana prossima.",oliver.thompson@example.com,Oliver,Thompson,8
+"Potreste indicarmi se ci sono negozi o supermercati nelle vicinanze?",isabella.johnson@example.com,Isabella,Johnson,9
+"Mi piacerebbe sapere se ci sono spazi per lavorare da remoto nell'appartamento.",ethan.davis@example.com,Ethan,Davis,9
+"Quali sono i costi aggiuntivi oltre all'affitto?",amelia.wilson@example.com,Amelia,Wilson,10
+"Potresti fornire informazioni sui trasporti pubblici disponibili?",william.jones@example.com,William,Jones,10
+"Vorrei sapere se ci sono locali notturni o ristoranti nelle vicinanze.",mia.thomas@example.com,Mia,Thomas,11
+"Ho bisogno di sapere se è possibile affittare l'appartamento per un periodo più lungo.",jacob.clark@example.com,Jacob,Clark,11
+"Sarebbe possibile avere informazioni sul riscaldamento e sulle spese condominiali?",sophia.lewis@example.com,Sophia,Lewis,12
+"Mi piacerebbe sapere se è previsto un deposito cauzionale.",emily.hall@example.com,Emily,Hall,12
+"Potete indicarmi se l'appartamento è adatto a famiglie con bambini?",oliver.hill@example.com,Oliver,Hill,13
+"Mi interesserebbe sapere se ci sono parchi o aree verdi nelle vicinanze.",ava.green@example.com,Ava,Green,13
+"Vorrei avere informazioni sulle opzioni di trasporto pubblico disponibili.",noah.baker@example.com,Noah,Baker,14
+"Potete indicarmi se è possibile avere animali domestici nell'appartamento?",emma.adams@example.com,Emma,Adams,14
+"Mi piacerebbe sapere se ci sono costi aggiuntivi per il parcheggio.",liam.ross@example.com,Liam,Ross,15
+"Quali sono i servizi inclusi nell'affitto?",olivia.wood@example.com,Olivia,Wood,15
