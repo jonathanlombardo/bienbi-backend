@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
+use Carbon\CarbonInterval;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -29,6 +31,35 @@ class Appartment extends Model
     }
 
     $this->slug = $newSlug;
+  }
+
+  public function addSponsor(Plan $newPlan)
+  {
+    // calcolo da quando deve partire la sponsorizzazione
+    if ($this->plans->count() && $this->isSponsored) {
+      $lastExpDate = $this->plans[0]->pivot->expired_at;
+      foreach ($this->plans as $plan) {
+        if ($plan->pivot->expired_at > $lastExpDate)
+          $lastExpDate = $plan->pivot->expired_at;
+      }
+      $dateIssue = Carbon::createFromFormat('Y-m-d H:i:s', $lastExpDate);
+    } else {
+      $dateIssue = now();
+    }
+
+
+
+    // calcolo la data di scadenza
+    $newPlanInterval = CarbonInterval::createFromFormat('H:i:s', $newPlan->time);
+    $expDate = new Carbon($dateIssue);
+    $expDate->add($newPlanInterval);
+
+    // collego l'appartamento al piano sottoscritto
+    $this->plans()->attach($newPlan->id, [
+      'expired_at' => $expDate,
+      'date_of_issue' => $dateIssue,
+      'created_at' => now()
+    ]);
   }
 
   public function getImgUrlAttribute()

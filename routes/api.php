@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Api\AppartmentController;
 use App\Http\Controllers\ServiceController;
+use App\Models\Appartment;
+use App\Models\Plan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +23,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('/appartments', AppartmentController::class)->only('index', 'show');
+
+Route::get('/test', function () {
+  $appartment = Appartment::find(9);
+  $plan = Plan::find(1);
+
+  $appartment->addSponsor($plan);
+
+  return response()->json('test');
+});
