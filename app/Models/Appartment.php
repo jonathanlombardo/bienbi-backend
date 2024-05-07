@@ -12,7 +12,7 @@ class Appartment extends Model
 
   protected $fillable = ['address', 'lng', 'lat', 'title', 'rooms', 'beds', 'bathrooms', 'square_meters'];
 
-  protected $appends = ['imgUrl'];
+  protected $appends = ['imgUrl', 'isSponsored'];
 
   // setta uno slug unico
   public function setSlug()
@@ -36,6 +36,19 @@ class Appartment extends Model
     return $this->image ? asset("storage/$this->image") : asset("storage/appartments/appartment_placeholder.jpg");
   }
 
+  // verifica se l'appartamento ha una sponsorizzazione valida
+  public function getIsSponsoredAttribute()
+  {
+    $isSponsored = false;
+    foreach ($this->plans as $plan) {
+      if ($plan->pivot->expired_at > now()) {
+        $isSponsored = true;
+        break;
+      }
+    }
+    return $isSponsored;
+  }
+
 
   //RELAZIONI
 
@@ -57,7 +70,7 @@ class Appartment extends Model
 
   public function plans()
   {
-    return $this->belongsToMany(Plan::class);
+    return $this->belongsToMany(Plan::class)->withPivot('expired_at', 'date_of_issue');
   }
   public function services()
   {
