@@ -30,7 +30,6 @@ class AppartmentSeeder extends Seeder
         $appartment->beds = rand(1, $appartment->rooms + 2);
         $appartment->bathrooms = rand(1, $appartment->rooms > 2 ? 2 : 1);
         $appartment->square_meters = rand($appartment->rooms * 20, $appartment->rooms * 40);
-        $appartment->image = '/appartments/appartment_placeholder.jpg';
         $appartment->published = (rand(0, 1) ? true : false);
         $appartment->address = $faker->address();
         $appartment->lat = $faker->latitude(41.77, 42);

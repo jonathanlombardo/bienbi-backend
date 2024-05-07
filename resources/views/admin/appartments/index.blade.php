@@ -2,7 +2,10 @@
 
 @section('maincontent')
   <div class="container">
-    <h1 class="my-3">I Tuoi Appartamenti</h1>
+    <div class="wrapper d-flex justify-content-between align-items-center">
+      <h1 class="">I Tuoi Appartamenti</h1>
+      <a href="{{ route('admin.appartments.create') }}" class="my_btn">Crea Appartamento</a>
+    </div>
     <div class="row g-3">
       @forelse($appartments as $appartment)
         <div class="col-4 mb-5 my-col">
@@ -26,13 +29,10 @@
             </a>
 
             {{-- link per vedere i messaggi relazionati all'appartamento --}}
-            {{-- link per vedere i messaggi relazionati all'appartamento --}}
 
             <div class="card-footer py-3">
               <div class="messages">
-                <button class="my_btn">
-                  <a class="nav-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
-                </button>
+                <a class="my_btn" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
               </div>
             </div>
 
@@ -53,67 +53,71 @@
   </div>
 @endsection
 
-<style lang="scss" scoped>
-  .my-col {
-    padding: 20px;
-    border-radius: 10px;
+@push('assets')
+  <style lang="scss">
+    .my-col {
+      padding: 20px;
+      border-radius: 10px;
 
-  }
-
-  .my-card-link {
-    color: black;
-    text-decoration: none;
-  }
-
-  .my-card {
-    transition: transform 0.5s;
-    cursor: pointer;
-    position: relative;
-
-    .title {
-      font-size: 1rem;
-      font-weight: 500;
     }
 
-    .label {
-      position: absolute;
-      top: 10%;
-      left: 0;
+    .my-card-link {
+      color: black;
+      text-decoration: none;
+    }
 
-      span {
-        background-color: #e9d09a;
-        border-radius: 0 10px 10px 0;
-        padding: 5px 10px;
+    .my-card {
+      transition: transform 0.5s;
+      cursor: pointer;
+      position: relative;
+
+      .title {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      .label {
+        position: absolute;
+        top: 10%;
+        left: 0;
+
+        span {
+          background-color: #e9d09a;
+          border-radius: 0 10px 10px 0;
+          padding: 5px 10px;
+        }
       }
     }
-  }
 
-  .address {
-    font-size: 0.8rem;
-    opacity: 0.5;
-  }
+    .address {
+      font-size: 0.8rem;
+      opacity: 0.5;
+    }
 
-  .my-card:hover {
-    transform: scale(1.1);
-  }
+    .my-card:hover {
+      transform: scale(1.1);
+    }
 
-  .image-container {
-    border-radius: 10px;
-    overflow: hidden;
-  }
+    .image-container {
+      border-radius: 10px;
+      overflow: hidden;
+    }
 
-  .my_btn {
-    font-size: 0.9rem;
-    background-color: #ffb30e;
-    padding: 6px 10px;
-    border: none;
-    border-radius: 10px;
-    transition-duration: 0.5s;
-    transition: transform 0.5s;
-  }
+    .my_btn {
+      font-size: 0.9rem;
+      background-color: #ffb30e;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 10px;
+      transition-duration: 0.5s;
+      transition: transform 0.5s;
+      text-decoration: none;
+      color: inherit;
+    }
 
-  .my_btn:hover {
-    background-color: #f34e39;
-    transform: scale(1.1);
-  }
-</style>
+    .my_btn:hover {
+      background-color: #f34e39;
+      transform: scale(1.1);
+    }
+  </style>
+@endpush

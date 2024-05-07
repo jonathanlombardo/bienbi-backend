@@ -20,7 +20,7 @@ class AppartmentController extends Controller
   public function index()
   {
     $appartment_plans = Plan::all();
-    $appartments = Appartment::select(['id', 'title', 'image', 'user_id', 'slug',])->with('user:id,name,last_name')->whereBelongsTo(Auth::user())->get();
+    $appartments = Appartment::select(['id', 'title', 'image', 'user_id', 'slug', 'published', 'address'])->with('user:id,name,last_name')->whereBelongsTo(Auth::user())->get();
     return view('admin.appartments.index', compact('appartments', 'appartment_plans'));
   }
 
@@ -145,6 +145,7 @@ class AppartmentController extends Controller
       Storage::delete($appartment->image);
     $appartment->image = null;
     $appartment->save();
+    $appartment->delete();
     return redirect()->route('admin.appartments.index')->with('messageClass', 'alert-success')->with('message', 'Appartamento eliminato');
   }
 }
