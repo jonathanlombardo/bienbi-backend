@@ -1,0 +1,16 @@
+nome appartamento,slug,numero di stanze,numero di letti,numero di bagni,metratura,published,indirizzo,latitudine,longitudine,user_id
+"Villa sul Lago","villa-sul-lago",4,6,3,250,1,"Via dei Cigni, 10, Milano",45.478309,9.213057,1
+"Appartamento al Centro","appartamento-al-centro",2,1,1,60,1,"Via Roma, 25, Milano",45.464211,9.191383,2
+"Casa Vacanze Relax","casa-vacanze-relax",3,2,2,120,0,"Via Garibaldi, 15, Milano",45.475834,9.188280,1
+"Villetta con Giardino","villetta-con-giardino",3,4,2,150,1,"Via del Sole, 5, Milano",45.459976,9.201543,1
+"Loft Moderno","loft-moderno",1,2,1,80,1,"Corso Como, 20, Milano",45.483708,9.190678,2
+"Appartamento Vista Panoramica","appartamento-vista-panoramica",2,3,2,100,1,"Piazza del Duomo, 1, Milano",45.464101,9.189857,2
+"Chalet di Montagna","chalet-di-montagna",3,5,3,180,1,"Via Monte Bianco, 30, Milano",45.475015,9.191123,1
+"Stanza nel Cuore di Milano","stanza-nel-cuore-di-milano",1,1,1,40,1,"Via della Spiga, 7, Milano",45.467872,9.196741,2
+"Appartamento con Terrazza","appartamento-con-terrazza",2,2,1,70,1,"Via Montenapoleone, 15, Milano",45.469493,9.195416,1
+"Casa Vacanze sul Mare","casa-vacanze-sul-mare",4,6,2,200,0,"Via della Salute, 50, Milano",45.472732,9.184823,1
+"Bilocale Rinnovato","bilocale-rinnovato",2,3,1,75,1,"Via Manzoni, 12, Milano",45.467163,9.194332,2
+"Attico Luminoso","attico-luminoso",3,4,2,160,1,"Via Dante, 35, Milano",45.465689,9.183869,2
+"Monolocale Economico","monolocale-economico",1,1,1,35,1,"Via Torino, 18, Milano",45.462950,9.187927,1
+"Appartamento Design","appartamento-design",2,2,1,90,1,"Via XX Settembre, 8, Milano",45.472312,9.182702,2
+"Casa Vacanze Rustica","casa-vacanze-rustica",3,3,2,120,1,"Via Garofalo, 22, Milano",45.470568,9.188952,1
