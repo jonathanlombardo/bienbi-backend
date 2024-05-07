@@ -3,7 +3,7 @@
     <input type="text" name="address" id="tomtom-searchbox-address" class="d-none @error('address') invalid @enderror" value="{{ $appartment->id ? ($errors->any() ? old('address') : $appartment->address) : old('address') }}">
     <input type="number" name="lng" id="tomtom-searchbox-lng" class="d-none @error('lng') invalid @enderror" step="any" value="{{ $appartment->id ? ($errors->any() ? old('lng') : $appartment->lng) : old('lng') }}">
     <input type="number" name="lat" id="tomtom-searchbox-lat" class="d-none @error('lat') invalid @enderror" step="any" value="{{ $appartment->id ? ($errors->any() ? old('lat') : $appartment->lat) : old('lat') }}">
-    <label for="tt-search-box-input" class="form-label">Indirizzo</label>
+    <label for="tt-search-box-input" class="form-label">Indirizzo*</label>
   </div>
   <div id="search-box-feedback" class="input-feedback d-none text-danger pt-1">Seleziona un indirizzo tra quelli suggeriti</div>
 </div>
