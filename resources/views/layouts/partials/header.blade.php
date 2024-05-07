@@ -22,23 +22,16 @@
                     <div class="row justify-content-center align-items-center">
                         <div class="col d-flex justify-content-center align-items-center">
 
+                            {{-- link per vedere tutti gli appartamenti relazionati all'user --}}
+
                             <button class="btn">
-                                <a class="nav-link nav_link" href="{{route('admin.services.index')}}">Services</a>
+                                <a class="nav-link nav_link" href="{{route('admin.appartments.index')}}">I tuoi appartamenti</a>
                             </button>
 
                             {{-- link per vedere tutti i messaggi relazionati all'user --}}
 
                             <button class="btn">
                                 <a class="nav-link nav_link" href="{{route('admin.messages.index')}}">Messaggi</a>
-                            </button>
-
-                            {{-- link per vedere tutti gli appartamenti relazionati all'user --}}
-
-                            <button class="btn">
-                                <a class="nav-link nav_link" href="{{route('admin.appartments.index')}}">I tuoi appartamenti</a>
-                            </button>
-                            <button class="btn">
-                                <a class="nav-link nav_link" href="{{route('admin.plans.index')}}">Plans</a>
                             </button>
 
                         </div>

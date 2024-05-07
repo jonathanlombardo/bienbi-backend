@@ -43,10 +43,6 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   Route::get('/message/{id}', [MessageController::class, 'show'])->name('messages.show');
   Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 
-
-  //rotta dei servizi
-  Route::resource('/services', ServiceController::class)->only('index');
-
   //rotte dei piani
   Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
   Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
