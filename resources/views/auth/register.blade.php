@@ -73,11 +73,6 @@
                       </div>
 
                       <div class="mb-4 row mb-0">
-                        <div class="col-md-6 offset-md-4">
-                          <button type="submit" class="my_btn">
-                            {{ __('Register') }}
-                          </button>
-                        </div>
                         <div class="mb-4 row">
                           <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
@@ -100,13 +95,19 @@
                           </div>
                         </div>
 
-                        <div class="mb-4 row mb-0">
+                        <div class="col-md-6 offset-md-4">
+                          <button type="submit" class="my_btn">
+                            {{ __('Register') }}
+                          </button>
+                        </div>
+
+                        <!-- <div class="mb-4 row mb-0">
                           <div class="col-md-6 offset-md-4">
                             <button type="submit" class="btn btn-primary">
                               {{ __('Register') }}
                             </button>
                           </div>
-                        </div>
+                        </div> -->
                     </form>
                   </div>
                 </div>
