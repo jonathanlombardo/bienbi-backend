@@ -3,9 +3,9 @@
 
 @import "~bootstrap/scss/bootstrap";
 
-// ::selection {
-//     background: rgb(233, 214, 171);
-// }
+::selection {
+    background: rgba(236, 170, 15, 0.24);
+}
 
 * {
     margin: 0;
@@ -28,7 +28,7 @@ img {
     background: rgb(233, 214, 171);
     background: linear-gradient(
         90deg,
-        rgba(233, 214, 171, 1) 10%,
+        rgb(226, 199, 137) 10%,
         rgba(255, 179, 14, 1) 48%,
         rgba(243, 78, 57, 1) 97%
     );
@@ -90,6 +90,81 @@ img {
     }
 }
 
+form {
+    input.custom-input {
+        border-radius: 0;
+        border: 1px solid #ccc;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    .input-feedback {
+        position: absolute;
+        font-size: 0.8rem;
+        width: fit-content;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+label.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 26px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196f3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
+
 .main_header {
     background: rgb(233, 214, 171);
     background: linear-gradient(
@@ -100,7 +175,6 @@ img {
     );
     margin-bottom: 2rem;
 }
-
 .drop-item {
     padding: 0.5rem;
 }

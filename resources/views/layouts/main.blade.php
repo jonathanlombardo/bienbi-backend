@@ -13,7 +13,6 @@
     {{ env('APP_NAME') }} | @yield('title', Route::currentRouteName())
   </title>
   @vite('resources/js/app.js')
-
   @stack('assets')
 </head>
 
@@ -26,6 +25,8 @@
     @include('layouts.partials.footer')
   </div>
 
+
+  @stack('scripts')
 </body>
 
 </html>

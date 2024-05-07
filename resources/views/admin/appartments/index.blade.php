@@ -9,7 +9,7 @@
           {{-- link per la show degli appartamenti --}}
 
           <div class="my-card h-100">
-            <a href="{{ route('admin.appartments.show', $appartment) }}" class="my-card-link d-block h-100">
+            <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="my-card-link d-block h-100">
               <div class="my-card-header p-3">
                 <div class="image-container">
                   <img src="{{ $appartment->imgUrl }}" alt="">
@@ -18,10 +18,14 @@
               <div class="my-card-body p-3">
                 <div class="title">{{ $appartment->title }}</div>
                 <div class="address mt-1">{{ $appartment->address }}</div>
-                <div class="published pt-3"><strong>Visibile: </strong><i @class([$appartment->published ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash', 'ps-1'])></i></div>
+                <div class="published pt-3"><strong>Visibile: </strong><i @class([
+                    $appartment->published ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash',
+                    'ps-1',
+                ])></i></div>
               </div>
             </a>
 
+            {{-- link per vedere i messaggi relazionati all'appartamento --}}
             {{-- link per vedere i messaggi relazionati all'appartamento --}}
 
             <div class="card-footer py-3">
@@ -35,14 +39,14 @@
             {{-- plan label --}}
 
             <div class="label">
-              @if(!empty($appartment->plans))
-              @foreach($appartment->plans as $plan)
-                <span>{{ $plan->name }}</span>
-              @endforeach
+              @if (!empty($appartment->plans))
+                @foreach ($appartment->plans as $plan)
+                  <span>{{ $plan->name }}</span>
+                @endforeach
               @endif
             </div>
           </div>
-        </div> 
+        </div>
       @empty
       @endforelse
     </div>
@@ -71,12 +75,12 @@
       font-weight: 500;
     }
 
-    .label{
+    .label {
       position: absolute;
       top: 10%;
       left: 0;
 
-      span{
+      span {
         background-color: #e9d09a;
         border-radius: 0 10px 10px 0;
         padding: 5px 10px;
@@ -112,5 +116,4 @@
     background-color: #f34e39;
     transform: scale(1.1);
   }
-
 </style>
