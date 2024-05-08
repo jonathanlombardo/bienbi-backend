@@ -16,6 +16,7 @@ class AppartmentController extends Controller
    */
   public function index()
   {
+
     // recupero tutti gli appartamenti
     $appartments = Appartment::all();
     $sponsoredAppartments = [];
@@ -62,21 +63,23 @@ class AppartmentController extends Controller
       'key' => 'GkJjTzfTAB01jy6W7VUViPfOdDf7dx9I',
     ];
 
-    $geometry_list = [[
-      "type" => "CIRCLE",
-      "position" => "45, 9",
-      "radius" => 10000
-    ]];
+    $geometry_list = [
+      [
+        "type" => "CIRCLE",
+        "position" => "45, 9",
+        "radius" => 10000
+      ]
+    ];
 
     $geometry_list_json_string = json_encode($geometry_list);
 
-    $appartments_list = [[]];
+    $appartments_list = [];
     foreach ($appartments as $appartment) {
-      $appartments_list[0][] = [
+      $appartments_list[] = [
         'poi' => ['id' => $appartment->id],
         'position' => [
           'lat' => $appartment->lat,
-          'long' => $appartment->long,
+          'lon' => $appartment->long,
         ]
       ];
     }
@@ -85,9 +88,14 @@ class AppartmentController extends Controller
     // creo url concatenando i parametri
     $url = 'https://api.tomtom.com/search/2/geometryFilter.json?key=' . $params['key'] . '&geometryList=' . $geometry_list_json_string . '&poiList=' . $appartments_list_json_string;
 
+
+    // echo $url;
+    // exit;
+
     $client = new \GuzzleHttp\Client();
     $request = new \GuzzleHttp\Psr7\Request('GET', $url);
     $promise = $client->sendAsync($request)->then(function ($response) {
+      // echo 'done';
       return response()->json($response->getBody());
     });
     $promise->wait();
