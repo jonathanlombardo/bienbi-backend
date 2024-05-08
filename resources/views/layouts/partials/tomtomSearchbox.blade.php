@@ -1,7 +1,7 @@
 <div id="tomtom-searchbox-wrapper">
   <div id="tomtom-searchbox">
     <input type="text" name="address" id="tomtom-searchbox-address" class="d-none @error('address') invalid @enderror" value="{{ $appartment->id ? ($errors->any() ? old('address') : $appartment->address) : old('address') }}">
-    <input type="number" name="lng" id="tomtom-searchbox-lng" class="d-none @error('lng') invalid @enderror" step="any" value="{{ $appartment->id ? ($errors->any() ? old('long') : $appartment->long) : old('long') }}">
+    <input type="number" name="long" id="tomtom-searchbox-long" class="d-none @error('long') invalid @enderror" step="any" value="{{ $appartment->id ? ($errors->any() ? old('long') : $appartment->long) : old('long') }}">
     <input type="number" name="lat" id="tomtom-searchbox-lat" class="d-none @error('lat') invalid @enderror" step="any" value="{{ $appartment->id ? ($errors->any() ? old('lat') : $appartment->lat) : old('lat') }}">
     <label for="tt-search-box-input" class="form-label">Indirizzo*</label>
   </div>
@@ -98,7 +98,7 @@
     // recupero input nascosti
     const addressInput = document.querySelector('#tomtom-searchbox-address');
     const latInput = document.querySelector('#tomtom-searchbox-lat');
-    const lngInput = document.querySelector('#tomtom-searchbox-lng');
+    const lngInput = document.querySelector('#tomtom-searchbox-long');
 
     // inizializzo il valore dell'input
     searchBoxInput.value = addressInput.value;
