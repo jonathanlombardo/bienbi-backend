@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Appartment;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 
 class AppartmentController extends Controller
@@ -53,10 +54,27 @@ class AppartmentController extends Controller
   public function filtered(Request $request)
   {
 
-    // requpero dati della request (lat long raggio)
+    // function distance($lat1, $lon1, $lat2, $lon2) {
+    //   if (($lat1 == $lat2) && ($lon1 == $lon2)) {
+    //     return 0;
+    //   }
+    //   else {
+    //     $theta = $lon1 - $lon2;
+    //     $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) +  cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+    //     $dist = acos($dist);
+    //     $dist = rad2deg($dist);
+    //     $miles = $dist * 60 * 1.1515;
+
+    //     return ($miles * 1.609344);
+    //   }
+    // }
+
+    // requpero dati della request
+
     $data_req = $request->all();
     // recupero tutti gli appartamenti
     $appartments = Appartment::select('id', 'lat', 'long')->get();
+
     // definisco i parametri per la richiesta api a tomtom per filtrare gli appartamenti
     $params = [
       'key' => 'GkJjTzfTAB01jy6W7VUViPfOdDf7dx9I',
@@ -87,28 +105,18 @@ class AppartmentController extends Controller
     $url = 'https://api.tomtom.com/search/2/geometryFilter.json';
 
 
-
+    // invio la richiesta
     $response = Http::get($url, [
       'key' => $params['key'],
       'geometryList' => $geometry_list_json_string,
       'poiList' => $appartments_list_json_string
     ]);
+    $resIds = array_map(fn($res) => $res->poi->id, $response->object()->results);
 
-    // $appartments = Appartment::select();
-    // foreach ($response->object()->results as $result) {
-    //   $appartments->orWhere('id', $result->poi->id);
-    // }
-    // $appartments->whereNot('published', false);
-    // $appartments = $appartments->get();
+    // recupero solo gli appartamenti pubblicati che corrispondono ai risultati
+    $appartments = Appartment::whereIn('id', $resIds)->where('published', true)->get()->setHidden(['plans', 'published', 'image', 'user_id']);
 
-
-
-    $appartments = Appartment::where(function ($query) use ($response) {
-      foreach ($response->object()->results as $result) {
-        $query->orWhere('id', $result->poi->id);
-      }
-    })->where('published', true)->get()->setHidden(['plans', 'published', 'image', 'user_id']);
-
+    // restituisco il json
     return response()->json($appartments);
 
 
