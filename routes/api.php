@@ -23,12 +23,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('/appartments', AppartmentController::class)->only('index', 'show');
+Route::get('/appartments/filtered', [AppartmentController::class, 'filtered'])->name('api.appartments.filtered');
 
-Route::get('/test', function () {
-  $appartment = Appartment::find(9);
-  $plan = Plan::find(1);
+// Route::get('/test', function () {
+//   $appartment = Appartment::find(9);
+//   $plan = Plan::find(1);
 
-  $appartment->addSponsor($plan);
+//   $appartment->addSponsor($plan);
 
-  return response()->json('test');
-});
+//   return response()->json('test');
+// });

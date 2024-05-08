@@ -47,4 +47,9 @@ class AppartmentController extends Controller
   {
     //
   }
+
+  public function filtered(Request $request)
+  {
+    //
+  }
 }
