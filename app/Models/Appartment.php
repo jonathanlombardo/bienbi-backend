@@ -12,7 +12,7 @@ class Appartment extends Model
 {
   use HasFactory;
 
-  protected $fillable = ['address', 'lng', 'lat', 'title', 'rooms', 'beds', 'bathrooms', 'square_meters'];
+  protected $fillable = ['address', 'long', 'lat', 'title', 'rooms', 'beds', 'bathrooms', 'square_meters'];
 
   protected $appends = ['imgUrl', 'isSponsored'];
 
