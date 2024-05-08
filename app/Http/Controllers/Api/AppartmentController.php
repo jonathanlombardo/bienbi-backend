@@ -53,25 +53,25 @@ class AppartmentController extends Controller
 
   public function filtered(Request $request)
   {
+    function distance($lat1, $lon1, $lat2, $lon2)
+    {
+      if (($lat1 === $lat2) && ($lon1 === $lon2)) {
+        return 0;
+      } else {
+        $theta = $lon1 - $lon2;
+        $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) + cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+        $dist = acos($dist);
+        $dist = rad2deg($dist);
+        $miles = $dist * 60 * 1.1515;
 
-    // function distance($lat1, $lon1, $lat2, $lon2) {
-    //   if (($lat1 == $lat2) && ($lon1 == $lon2)) {
-    //     return 0;
-    //   }
-    //   else {
-    //     $theta = $lon1 - $lon2;
-    //     $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) +  cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
-    //     $dist = acos($dist);
-    //     $dist = rad2deg($dist);
-    //     $miles = $dist * 60 * 1.1515;
-
-    //     return ($miles * 1.609344);
-    //   }
-    // }
+        return ($miles * 1.609344 * 1000);
+      }
+    }
 
     // requpero dati della request
 
     $data_req = $request->all();
+
     // recupero tutti gli appartamenti
     $appartments = Appartment::select('id', 'lat', 'long')->get();
 
@@ -86,9 +86,7 @@ class AppartmentController extends Controller
         "radius" => $data_req['radius']
       ]
     ];
-
     $geometry_list_json_string = json_encode($geometry_list);
-
     $appartments_list = [];
     foreach ($appartments as $appartment) {
       $appartments_list[] = [
@@ -100,8 +98,6 @@ class AppartmentController extends Controller
       ];
     }
     $appartments_list_json_string = json_encode($appartments_list);
-
-    // creo url
     $url = 'https://api.tomtom.com/search/2/geometryFilter.json';
 
 
@@ -111,14 +107,27 @@ class AppartmentController extends Controller
       'geometryList' => $geometry_list_json_string,
       'poiList' => $appartments_list_json_string
     ]);
-    $resIds = array_map(fn($res) => $res->poi->id, $response->object()->results);
 
-    // recupero solo gli appartamenti pubblicati che corrispondono ai risultati
-    $appartments = Appartment::whereIn('id', $resIds)->where('published', true)->get()->setHidden(['plans', 'published', 'image', 'user_id']);
+    // --recupero solo gli appartamenti pubblicati che corrispondono ai risultati
+    $resIds = array_map(fn($res) => $res->poi->id, $response->object()->results);
+    $appartments = Appartment::whereIn('id', $resIds)
+      ->where('published', true)
+      ->get()
+      ->setHidden(['plans', 'published', 'image', 'user_id']);
+    //---------------------------------------------------------------------------
+
+    // aggiungo la distanza
+    foreach ($appartments as $appartment) {
+      $appartment->distance = round(distance($data_req['lat'], $data_req['long'], $appartment->lat, $appartment->long));
+    }
+
+    // ordino per sponsorizzati e distanza
+    $sorted = $appartments->sortBy([
+      ['isSponsored', 'desc'],
+      ['distance', 'asc'],
+    ]);
 
     // restituisco il json
-    return response()->json($appartments);
-
-
+    return response()->json($sorted);
   }
 }
