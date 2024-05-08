@@ -14,7 +14,20 @@ class MessageController extends Controller
    *
   //  * @return \Illuminate\Http\Response
    */
-  public function index($appartment_slug)
+
+   public function index()
+  {
+    // Recupera l'utente autenticato
+    $user = Auth::user();
+
+    // Filtra i messaggi solo per gli appartamenti dell'utente autenticato
+    $messages = Message::orderBy('created_at', 'desc')->get();
+
+    // Passa i dati alla vista
+    return view('admin.messages.index', compact('messages'));
+  }
+  
+  public function indexMessagePerAppartment($appartment_slug)
   {
     // Recupera l'utente autenticato
     $user = Auth::user();
@@ -29,7 +42,7 @@ class MessageController extends Controller
   // Controllo se l'appartamento appartiene all'utente autenticato
   if (!$user->appartments->contains($appartment)) {
     return abort(403); 
-}
+  }
     // Filtra i messaggi solo per gli appartamenti dell'utente autenticato
     $messages = Message::where('appartment_id', $appartment->id)->orderBy('created_at', 'desc')->get();
 

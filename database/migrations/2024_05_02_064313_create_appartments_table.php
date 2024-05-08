@@ -20,7 +20,7 @@ return new class extends Migration {
       $table->tinyInteger('beds')->unsigned();
       $table->tinyInteger('bathrooms')->unsigned();
       $table->integer('square_meters')->unsigned();
-      $table->string('image');
+      $table->string('image')->nullable();
       $table->boolean('published')->default(false);
       $table->string('address');
       $table->decimal('lat');

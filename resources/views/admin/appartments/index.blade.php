@@ -5,10 +5,12 @@
     <h1 class="my-3">I Tuoi Appartamenti</h1>
     <div class="row g-3">
       @forelse($appartments as $appartment)
-        {{-- link per la show degli appartamenti --}}
         <div class="col-4 mb-5 my-col">
-          <a href="{{ route('admin.appartments.show', $appartment) }}" class="my-card-link">
-            <div class="my-card">
+          {{-- link per la show degli appartamenti --}}
+
+          <div class="my-card">
+            <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="my-card-link">
+
               <div class="my-card-header p-3">
                 <div class="image-container ">
                   <img src="{{ $appartment->imgUrl }}" alt="">
@@ -18,12 +20,28 @@
                 <div class="title mt-3">
                   <span class="title">{{ $appartment->title }}</span>
                 </div>
-                <div class="messages">
-                  <a class="nav-link page-link" href="{{ route('admin.messages.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
-                </div>
               </div>
+            </a>
+
+            {{-- link per vedere i messaggi relazionati all'appartamento --}}
+
+            <div class="card-footer p-3">
+              <div class="messages">
+                <a class="nav-link page-link" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
+              </div>
+
+              {{-- plan label --}}
+
+              <div class="label">
+                @if (!empty($appartment->plans))
+                  @foreach ($appartment->plans as $plan)
+                    <span>{{ $plan->name }}</span>
+                  @endforeach
+                @endif
+              </div>
+
             </div>
-          </a>
+          </div>
         </div>
       @empty
       @endforelse
@@ -47,10 +65,23 @@
   .my-card {
     transition: transform 0.5s;
     cursor: pointer;
+    position: relative;
 
     .title {
-      font-size: 1rem,
-        font-weight: 500,
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .label {
+      top: 10%;
+      position: absolute;
+
+      span {
+        background-color: azure;
+        border-radius: 0 10px 10px 0;
+        padding: 5px 10px;
+
+      }
     }
   }
 
