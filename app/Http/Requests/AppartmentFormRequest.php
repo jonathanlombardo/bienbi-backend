@@ -26,7 +26,7 @@ class AppartmentFormRequest extends FormRequest
     return [
       'address' => 'required|string',
       'lat' => 'required|decimal:0,999',
-      'lng' => 'required|decimal:0,999',
+      'long' => 'required|decimal:0,999',
       'title' => 'required|min:10',
       'image' => 'nullable|image',
       'rooms' => 'required|integer|min:1',
