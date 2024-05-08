@@ -47,8 +47,6 @@ class Appartment extends Model
       $dateIssue = now();
     }
 
-
-
     // calcolo la data di scadenza
     $newPlanInterval = CarbonInterval::createFromFormat('H:i:s', $newPlan->time);
     $expDate = new Carbon($dateIssue);

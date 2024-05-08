@@ -38,13 +38,11 @@
 
             {{-- plan label --}}
 
-            <div class="label">
-              @if (!empty($appartment->plans))
-                @foreach ($appartment->plans as $plan)
-                  <span>{{ $plan->name }}</span>
-                @endforeach
-              @endif
-            </div>
+            @if (!empty($appartment->isSponsored))
+              <div class="label">
+                <span>Sponsored</span>
+              </div>
+            @endif
           </div>
         </div>
       @empty
