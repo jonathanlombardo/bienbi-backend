@@ -64,8 +64,8 @@ class AppartmentController extends Controller
 
     $geometry_list = [[
       "type" => "CIRCLE",
-      "position" => "{$data_req['lat']}, {$data_req['long']}",
-      "radius" => $data_req['radius']
+      "position" => "45, 9",
+      "radius" => 10000
     ]];
 
     $geometry_list_json_string = json_encode($geometry_list);
@@ -84,5 +84,12 @@ class AppartmentController extends Controller
 
     // creo url concatenando i parametri
     $url = 'https://api.tomtom.com/search/2/geometryFilter.json?key=' . $params['key'] . '&geometryList=' . $geometry_list_json_string . '&poiList=' . $appartments_list_json_string;
+
+    $client = new \GuzzleHttp\Client();
+    $request = new \GuzzleHttp\Psr7\Request('GET', $url);
+    $promise = $client->sendAsync($request)->then(function ($response) {
+      return response()->json($response->getBody());
+    });
+    $promise->wait();
   }
 }
