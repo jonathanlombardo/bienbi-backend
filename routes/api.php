@@ -22,8 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
   return $request->user();
 });
 
-Route::apiResource('/appartments', AppartmentController::class)->only('index', 'show');
 Route::get('/appartments/filtered', [AppartmentController::class, 'filtered'])->name('api.appartments.filtered');
+Route::apiResource('/appartments', AppartmentController::class)->only('index', 'show');
 
 // Route::get('/test', function () {
 //   $appartment = Appartment::find(9);
