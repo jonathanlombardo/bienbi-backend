@@ -116,7 +116,8 @@ class AppartmentController extends Controller
 
     // --recupero solo gli appartamenti pubblicati che corrispondono ai risultati
     $resIds = array_map(fn($res) => $res->poi->id, $response->object()->results);
-    $appartments = Appartment::whereIn('id', $resIds)
+    $appartments = Appartment::with('user:id,name')
+      ->whereIn('id', $resIds)
       ->where('published', true)
       ->paginate()
       ->setHidden(['plans', 'published', 'image', 'user_id']);
