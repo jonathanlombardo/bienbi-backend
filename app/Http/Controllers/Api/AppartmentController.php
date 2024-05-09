@@ -112,7 +112,7 @@ class AppartmentController extends Controller
     $resIds = array_map(fn($res) => $res->poi->id, $response->object()->results);
     $appartments = Appartment::whereIn('id', $resIds)
       ->where('published', true)
-      ->get()
+      ->paginate()
       ->setHidden(['plans', 'published', 'image', 'user_id']);
     //---------------------------------------------------------------------------
 
