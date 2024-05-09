@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AppartmentController;
-use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\Api\ServiceController;
 use App\Models\Appartment;
 use App\Models\Plan;
 use Illuminate\Http\Request;
@@ -24,6 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/appartments/filtered', [AppartmentController::class, 'filtered'])->name('api.appartments.filtered');
 Route::apiResource('/appartments', AppartmentController::class)->only('index', 'show');
+Route::apiResource('/services', ServiceController::class)->only('index');
 
 // Route::get('/test', function () {
 //   $appartment = Appartment::find(9);
