@@ -36,7 +36,7 @@ class AppartmentController extends Controller
     foreach ($sponsoredAppartments as $appartmentId) {
       $appartments->orWhere('id', $appartmentId);
     }
-    $appartments = $appartments->where('published', true)->with('user:id,name,last_name')->paginate()->setHidden(['plans', 'published', 'image', 'user_id']);
+    $appartments = $appartments->where('published', true)->with('user:id,name,last_name', 'services:id,label')->paginate()->setHidden(['plans', 'published', 'image', 'user_id']);
 
     // ritorno il json
     return response()->json($appartments);
@@ -136,7 +136,7 @@ class AppartmentController extends Controller
 
     // --recupero solo gli appartamenti pubblicati che corrispondono ai risultati
     $resIds = array_map(fn($res) => $res->poi->id, $response->object()->results);
-    $appartments = Appartment::with('user:id,name')
+    $appartments = Appartment::with('user:id,name,last_name', 'services:id,label')
       ->whereIn('id', $resIds)
       ->where('published', true);
     if ($rooms)
