@@ -74,9 +74,26 @@ class AppartmentController extends Controller
       }
     }
 
-    // requpero dati della request
-
+    // requpero e valido i dati della request
     $data_req = $request->all();
+    $rooms = false;
+    $beds = false;
+    $bathrooms = false;
+    $square_meters = false;
+
+
+    if (isset($data_req['rooms']) && is_numeric($data_req['rooms']) && $data_req['rooms'] > 0) {
+      $rooms = (int) $data_req['rooms'];
+    }
+    if (isset($data_req['beds']) && is_numeric($data_req['beds']) && $data_req['beds'] > 0) {
+      $beds = (int) $data_req['beds'];
+    }
+    if (isset($data_req['bathrooms']) && is_numeric($data_req['bathrooms']) && $data_req['bathrooms'] > 0) {
+      $bathrooms = (int) $data_req['bathrooms'];
+    }
+    if (isset($data_req['square_meters']) && is_numeric($data_req['square_meters']) && $data_req['square_meters'] > 0) {
+      $square_meters = (int) $data_req['square_meters'];
+    }
 
     // recupero tutti gli appartamenti
     $appartments = Appartment::select('id', 'lat', 'long')->get();
@@ -118,8 +135,17 @@ class AppartmentController extends Controller
     $resIds = array_map(fn($res) => $res->poi->id, $response->object()->results);
     $appartments = Appartment::with('user:id,name')
       ->whereIn('id', $resIds)
-      ->where('published', true)
-      ->paginate()
+      ->where('published', true);
+    if ($rooms)
+      $appartments->where('rooms', '>=', $rooms);
+    if ($beds)
+      $appartments->where('beds', '>=', $beds);
+    if ($bathrooms)
+      $appartments->where('bathrooms', '>=', $bathrooms);
+    if ($square_meters)
+      $appartments->where('square_meters', '>=', $square_meters);
+
+    $appartments = $appartments->paginate()
       ->setHidden(['plans', 'published', 'image', 'user_id']);
     //---------------------------------------------------------------------------
 
@@ -129,12 +155,21 @@ class AppartmentController extends Controller
     }
 
     // ordino per sponsorizzati e distanza
-    $sorted = $appartments->sortBy([
-      ['isSponsored', 'desc'],
-      ['distance', 'asc'],
-    ]);
+    $appartments = $appartments->toArray();
+    usort($appartments, function ($a, $b) {
+      if ($a['isSponsored'] && $b['isSponsored']) {
+        return $a['distance'] < $b['distance'] ? -1 : 1;
+      } elseif ($a['isSponsored'] && !$b['isSponsored']) {
+        return -1;
+      } elseif (!$a['isSponsored'] && $b['isSponsored']) {
+        return 1;
+      } elseif (!$a['isSponsored'] && !$b['isSponsored']) {
+        return $a['distance'] < $b['distance'] ? -1 : 1;
+      }
+    });
+
 
     // restituisco il json
-    return response()->json($sorted);
+    return response()->json($appartments);
   }
 }
