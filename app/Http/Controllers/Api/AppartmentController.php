@@ -48,7 +48,13 @@ class AppartmentController extends Controller
    */
   public function show($id)
   {
-    //
+    $appartment = Appartment::where('id', '=', $id)
+      ->where('published', '=', true)->first();
+
+    if ($appartment)
+      $appartment->setHidden(['plans', 'published', 'image', 'user_id']);
+
+    return response()->json($appartment);
   }
 
   public function filtered(Request $request)
