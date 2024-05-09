@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Appartment;
+use App\Models\Service;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Database\Eloquent\Builder;
 
 class AppartmentController extends Controller
 {
@@ -80,6 +82,7 @@ class AppartmentController extends Controller
     $beds = false;
     $bathrooms = false;
     $square_meters = false;
+    $services = Service::all();
 
 
     if (isset($data_req['rooms']) && is_numeric($data_req['rooms']) && $data_req['rooms'] > 0) {
@@ -144,6 +147,15 @@ class AppartmentController extends Controller
       $appartments->where('bathrooms', '>=', $bathrooms);
     if ($square_meters)
       $appartments->where('square_meters', '>=', $square_meters);
+
+    foreach ($services as $service) {
+      $dataService = $data_req["service$service->id"] ?? null;
+      if ($dataService === 'true') {
+        $appartments->whereHas('services', function (Builder $query) use ($service) {
+          $query->where('services.id', '=', $service->id);
+        });
+      }
+    }
 
     $appartments = $appartments->paginate()
       ->setHidden(['plans', 'published', 'image', 'user_id']);
