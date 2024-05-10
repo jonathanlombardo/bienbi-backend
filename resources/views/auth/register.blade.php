@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title','Registrazione')
 
 @section('maincontent')
   <div class="container mt-4">
@@ -15,10 +16,14 @@
                     <form method="POST" action="{{ route('register') }}">
                       @csrf
 
+                      <span class="d-block mb-4">
+                        I campi contrassegnati da (*) sono obbligatori
+                      </span>
+
                       <div class="mb-4 row">
                         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome*') }}</label>
                         <div class="col-md-6">
-                          <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                          <input id="name" type="text" class="form-control  @error('name') is-invalid @enderror" placeholder="Mario" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                           @error('name')
                             <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
@@ -31,7 +36,7 @@
                         <label for="last_name" class="col-md-4 col-form-label text-md-right">{{ __('Cognome*') }}</label>
 
                         <div class="col-md-6">
-                          <input id="last_name" type="text" class="form-control @error('last_name') is-invalid @enderror" name="last_name" required>
+                          <input id="last_name" type="text" class="form-control @error('last_name') is-invalid @enderror" placeholder="Rossi" name="last_name" required>
 
                           @error('last_name')
                             <span class="invalid-feedback" role="alert">
@@ -45,7 +50,7 @@
                         <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail*') }}</label>
 
                         <div class="col-md-6">
-                          <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                          <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Mario.Rossi@mail.com" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                           @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -58,7 +63,7 @@
                       <div class="mb-4 row">
                         <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password*') }}</label>
                         <div class="col-md-6">
-                          <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                          <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password" name="password" required autocomplete="new-password">
                           @error('password')
                             <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
@@ -70,9 +75,9 @@
                       <div class="mb-4 row">
                         <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Conferma Password*') }}</label>
                         <div class="col-md-6">
-                          <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                          <input id="password-confirm" type="password" class="form-control" placeholder="Conferma Password" name="password_confirmation" required autocomplete="new-password">
                           <span class="invalid-feedback" role="alert">
-                            <strong>La password non corrispone</strong>
+                            <strong>La password non corrisponde</strong>
                           </span>
                         </div>
                       </div>
@@ -90,6 +95,15 @@
                           @enderror
                         </div>
                       </div>
+
+                      <div class="mb-4 row">
+                        <div class="col-md-8 offset-md-4">
+                            Sei già registrato?
+                            <a href="{{ route('login') }}">
+                                Accedi qui
+                            </a>
+                        </div>
+                    </div>
 
                       <div class="col-md-6 offset-md-4">
                         <button type="submit" class="my_btn">
