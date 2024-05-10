@@ -13,11 +13,11 @@
         <div class="col-4 mb-5 my-col">
           {{-- link per la show degli appartamenti --}}
 
-          <div class="my-card h-100">
-            <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="my-card-link d-block h-100">
-              <div class="my-card-header p-3">
-                <div class="image-container">
-                  <img src="{{ $appartment->imgUrl }}" alt="">
+          <div class="my-card h-100  w-100">
+            <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="my-card-link d-block h-100 w-100">
+              <div class="my-card-header p-3 w-100">
+                <div class="image-container w-100">
+                  <img class="image w-100" src="{{ $appartment->imgUrl }}" alt="">
                 </div>
               </div>
               <div class="my-card-body p-3">
@@ -101,6 +101,12 @@
     .image-container {
       border-radius: 10px;
       overflow: hidden;
+    }
+
+    .image{
+      object-fit: cover;
+      aspect-ratio: 16/9;
+      object-position: center;
     }
 
     .my_btn {
