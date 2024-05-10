@@ -44,10 +44,13 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 
   // rotta per la pagina della sponsorizzazione per un appartamento
-  Route::get('/plans/{appartmentId}', [PlanController::class, 'promotion'])->name('promotion');
+  Route::get('/plans/{appartmentId}', [PlanController::class, 'promotion'])->name('plans.promotion');
   //rotte dei piani
-  Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
-  Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
+  // Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
+  // Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
+  Route::post('/plans', [PlanController::class, 'generatePaymentToken'])->name('plans.generatePaymentToken');
+
+
 
 
 
