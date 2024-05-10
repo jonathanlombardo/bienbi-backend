@@ -51,7 +51,8 @@ class AppartmentController extends Controller
   public function show(string $slug)
   {
     $appartment = Appartment::where('slug', '=', $slug)
-      ->where('published', '=', true)->first();
+      ->where('published', '=', true)->first()
+      ->with('user:id,name,last_name', 'services:id,label');
 
     if ($appartment)
       $appartment->setHidden(['plans', 'published', 'image', 'user_id']);
