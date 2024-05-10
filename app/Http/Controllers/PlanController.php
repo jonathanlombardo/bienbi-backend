@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appartment;
 use App\Models\Plan;
 use Illuminate\Http\Request;
 
@@ -41,18 +42,18 @@ class PlanController extends Controller
         //
     }
 
-      /**
-   * Display the specified resource.
-   *
+    /**
+     * Display the specified resource.
+     *
   //  * @param  int  $id
   //  * @return \Illuminate\Http\Response
-   */
-  public function show($id)
-  {
-    $plan = Plan::find($id);
+     */
+    public function show($id)
+    {
+        $plan = Plan::find($id);
 
-    return view('admin.plans.show', compact('plan'));
-  }
+        return view('admin.plans.show', compact('plan'));
+    }
 
     /**
      * Show the form for editing the specified resource.
@@ -86,5 +87,11 @@ class PlanController extends Controller
     public function destroy(Plan $plan)
     {
         //
+    }
+
+    public function promotion(Appartment $appartment)
+    {
+        $plans = Plan::all();
+        return view('admin.sponsor-form', compact('plans', 'appartment'));
     }
 }

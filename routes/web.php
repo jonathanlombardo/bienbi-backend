@@ -7,7 +7,7 @@ use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlanController;
-
+use App\Models\Plan;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,6 +43,8 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   Route::get('/message/{id}', [MessageController::class, 'show'])->name('messages.show');
   Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 
+  // rotta per la pagina della sponsorizzazione per un appartamento
+  Route::get('/plans/{appartmentId}', [PlanController::class, 'promotion'])->name('promotion');
   //rotte dei piani
   Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
   Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
@@ -51,11 +53,6 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
 
   //rotta degli appartamenti
   Route::resource('/appartments', AppartmentController::class);
-
-  // rotta per la pagina della sponsorizzazione per un appartamento
-  Route::get('/sponsor-promotion', function () {
-    return view('admin.sponsor-form');
-  })->name('sponsor.index');
 });
 
 
