@@ -1,4 +1,10 @@
 @extends('layouts.main')
+@section('title')
+@forelse($messages as $message)
+Messaggio per {{ $message->appartment->title }}
+@endforelse
+@endsection
+
 
 @section('maincontent')
 <div class="container">

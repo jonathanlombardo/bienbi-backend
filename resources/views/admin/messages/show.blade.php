@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@section('title')
+Messaggio per {{ $message->appartment->title }}
+@endsection
 
 @section('maincontent')
   <div class="container">

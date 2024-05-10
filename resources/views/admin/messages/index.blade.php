@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title','Messaggi')
 
 @section('maincontent')
 <div class="container">

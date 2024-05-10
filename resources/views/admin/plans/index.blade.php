@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'Piani di sponsorizzazione')
+
 
 @section('maincontent')
 <div class="container">

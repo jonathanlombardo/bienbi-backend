@@ -1,4 +1,8 @@
 @extends('layouts.main')
+@section('title')
+{{ $appartment->title }}
+@endsection
+
 
 @section('maincontent')
   <div class="container appartment-wrapper">

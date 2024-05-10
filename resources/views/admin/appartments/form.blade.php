@@ -1,5 +1,11 @@
 @extends('layouts.main')
-
+@section('title')
+@if(Route::currentRouteName()=='admin.appartments.create')
+Nuovo Appartamento
+@else
+Modifica Appartamento
+@endif
+@endsection
 @push('assets')
   <style lang="scss">
     form .image-preview {
