@@ -80,7 +80,7 @@
         </div>
 
         <div class="d-flex align-items-center gap-4">
-            <button class="btn btn-primary" type="submit">{{ __('Salva Modifiche') }}</button>
+            <button class="w-20 my_btn" type="submit">{{ __('Salva Modifiche') }}</button>
 
             @if (session('status') === 'profile-updated')
             <script>
@@ -96,3 +96,5 @@
         </div>
     </form>
 </section>
+
+

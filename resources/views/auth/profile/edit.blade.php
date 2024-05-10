@@ -29,3 +29,28 @@
         </div>
     </div>
 @endsection
+
+@push("assets")
+<style>
+    .my_btn {
+      font-size: 0.9rem;
+      background-color: #ffb30e;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 10px;
+      transition-duration: 0.5s;
+      font-weight: bold;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 15%;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .my_btn:hover {
+      background-color: #f34e39;
+      box-shadow: 2px 3px 12px #f34e39;
+    }
+</style>
+@endpush
