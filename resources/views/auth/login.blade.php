@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title','Accedi')
 
 @section('maincontent')
     <div class="container mt-4">
@@ -55,6 +56,15 @@
                                             {{ __('Ricordami') }}
                                         </label>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4 row">
+                                <div class="col-md-8 offset-md-4">
+                                    Non sei ancora registrato?
+                                    <a href="{{ route('register') }}">
+                                        Registrati qui
+                                    </a>
                                 </div>
                             </div>
 
