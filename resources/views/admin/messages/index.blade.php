@@ -13,7 +13,7 @@
         <div class="my-card">
           <div class="my-card-header d-flex justify-content-between">
             <div>
-              <div class="mail">{{ $message->appartment->title }}</div>
+              <div class="appartment">{{ $message->appartment->title }}</div>
 
               <div class="name">{{ $message->first_name }} {{ $message->last_name }}</div>
               <div class="mail">{{ $message->mail }}</div>
@@ -97,10 +97,16 @@
     background: #f3c665;
     cursor: pointer;
 
-    .name {
+
+    .appartment {
       font-size: 1rem;
       font-weight: bold;
       font-weight: bold;
+    }
+
+    .name{
+      font-size: 0.9rem;
+
     }
 
     .mail {
@@ -125,6 +131,10 @@
     .created {
       font-size: 0.7rem;
     }
+  }
+
+  .my-card:hover{
+    filter: brightness(1.05);
   }
 
 
