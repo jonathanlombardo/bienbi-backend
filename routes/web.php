@@ -51,6 +51,11 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
 
   //rotta degli appartamenti
   Route::resource('/appartments', AppartmentController::class);
+
+  // rotta per la pagina della sponsorizzazione per un appartamento
+  Route::get('/sponsor-promotion', function () {
+    return view('admin.sponsor-form');
+  })->name('sponsor.index');
 });
 
 
