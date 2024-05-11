@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PaymentRequest;
 use App\Models\Appartment;
 use App\Models\Plan;
 use Braintree\Gateway;
@@ -42,8 +43,9 @@ class PlanController extends Controller
     return view('admin.sponsor-form', compact('plans', 'appartment', 'clientToken'));
   }
 
-  public function generateTransaction(Request $request)
+  public function generateTransaction(PaymentRequest $request)
   {
+    $request->validated();
     $data = $request->all();
 
     $paymentNonce = $data['paymentNonce'];
@@ -74,7 +76,7 @@ class PlanController extends Controller
 
     session()->forget(['appartmentId', 'planId', 'clientToken', 'gateway']);
 
-    // dd($result);
+    dd($result);
 
     $appartment->addSponsor($plan);
 

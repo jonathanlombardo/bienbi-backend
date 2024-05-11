@@ -2,6 +2,15 @@
 @section('title', 'Aquista una sponsorizzazione')
 
 @section('maincontent')
+  @if ($errors->any())
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+          <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
+  @endif
   <section class="py-5">
     <div class="container">
       <h1 class="my-4">Scegli il piano che fa per il tuo appartamento {{ $appartment->title }}</h1>
