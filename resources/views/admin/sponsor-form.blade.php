@@ -2,18 +2,11 @@
 @section('title', 'Aquista una sponsorizzazione')
 
 @section('maincontent')
-  @if ($errors->any())
-    <div class="alert alert-danger">
-      <ul>
-        @foreach ($errors->all() as $error)
-          <li>{{ $error }}</li>
-        @endforeach
-      </ul>
-    </div>
-  @endif
   <section class="">
     <div class="container">
       <h1 class="mb-4">Scegli il piano che fa per il tuo appartamento {{ $appartment->title }}</h1>
+      @include('layouts.partials.alert_message')
+      @include('layouts.partials.error_message')
       <div class="row flex-column g-3" id="accordion-row">
         @foreach ($plans as $plan)
           <div class="col">
