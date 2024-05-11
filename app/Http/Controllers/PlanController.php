@@ -88,10 +88,11 @@ class PlanController extends Controller
   public function promotion($slug)
   {
     $appartment = Appartment::fromSlugToAppartment($slug);
-    $appartmentId = $appartment->id;
 
     if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
+
+    $appartmentId = $appartment->id;
 
     $plans = Plan::all();
 
@@ -132,6 +133,8 @@ class PlanController extends Controller
 
     if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
+    if (!$plan)
+      abort(404);
 
     $nonceFromTheClient = $paymentNonce;
 
@@ -145,6 +148,8 @@ class PlanController extends Controller
     ]);
 
     session()->forget(['appartmentId', 'planId', 'clientToken', 'gateway']);
+
+    // dd($result);
 
     $appartment->addSponsor($plan);
 
