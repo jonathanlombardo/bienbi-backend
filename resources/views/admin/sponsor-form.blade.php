@@ -119,6 +119,11 @@
         authorization: {{ Illuminate\Support\Js::from($clientToken) }},
         selector: '#dropin-container',
         dataCollector: true,
+        card: {
+          cardholderName: {
+            required: true
+          }
+        }
       },
       function(err, instance) {
         button.classList.remove('d-none')
