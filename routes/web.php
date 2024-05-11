@@ -7,7 +7,7 @@ use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlanController;
-
+use App\Models\Plan;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,23 +31,14 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
   //Rotte dei messaggi
-
-  // Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
-
-  //rotta per vedere messaggi reazionati all'id dell'appartamento
-
   Route::get('/messages/{appartment_slug}', [MessageController::class, 'indexMessagePerAppartment'])->name('messages.appartment.index');
-
   Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
-
   Route::get('/message/{id}', [MessageController::class, 'show'])->name('messages.show');
   Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 
-  //rotte dei piani
-  Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
-  Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
-
-
+  // rotta per la pagina della sponsorizzazione per un appartamento
+  Route::post('/plans/payment', [PlanController::class, 'generateTransaction'])->name('plans.generateTransaction');
+  Route::get('/plans/{appartmentSlug}', [PlanController::class, 'promotion'])->name('plans.promotion');
 
   //rotta degli appartamenti
   Route::resource('/appartments', AppartmentController::class);

@@ -2,89 +2,84 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PaymentRequest;
+use App\Models\Appartment;
 use App\Models\Plan;
+use Braintree\Gateway;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PlanController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-
-        $plans = Plan::all();
-
-        return view('admin.plans.index', compact('plans'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-      /**
-   * Display the specified resource.
-   *
-  //  * @param  int  $id
-  //  * @return \Illuminate\Http\Response
-   */
-  public function show($id)
+  public function promotion($slug)
   {
-    $plan = Plan::find($id);
+    $appartment = Appartment::fromSlugToAppartment($slug);
 
-    return view('admin.plans.show', compact('plan'));
+    if (!$appartment || $appartment->user_id != Auth::id())
+      abort(404);
+
+    $appartmentId = $appartment->id;
+
+    $plans = Plan::all();
+
+    $customerId = Auth::id();
+
+    $gateway = new Gateway([
+      'environment' => 'sandbox',
+      'merchantId' => 'qct7jcqp9gwbbzmx',
+      'publicKey' => 'cswn5swkxd5thvf9',
+      'privateKey' => 'bbc3393ddc3ce8c92a05a9894febd18f'
+    ]);
+
+    $clientToken = $gateway->clientToken()->generate(
+      // [
+      // "customerId" => $data['userId']
+      //  ]
+    );
+
+    session()->flash('appartmentId', $appartmentId);
+    session()->flash('gateway', $gateway);
+
+    return view('admin.sponsor-form', compact('plans', 'appartment', 'clientToken'));
   }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Plan  $plan
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Plan $plan)
-    {
-        //
-    }
+  public function generateTransaction(PaymentRequest $request)
+  {
+    $request->validated();
+    $data = $request->all();
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Plan  $plan
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Plan $plan)
-    {
-        //
-    }
+    $paymentNonce = $data['paymentNonce'];
+    $deviceDataFromTheClient = $data['deviceDataFromTheClient'];
+    $planId = $data['planId'];
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Plan  $plan
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Plan $plan)
-    {
-        //
-    }
+    $appartmentId = session('appartmentId');
+    $gateway = session('gateway');
+
+    $appartment = Appartment::find($appartmentId);
+    $plan = Plan::find($planId);
+
+    if (!$appartment || $appartment->user_id != Auth::id())
+      abort(404);
+    if (!$plan)
+      abort(404);
+
+    $nonceFromTheClient = $paymentNonce;
+
+    $result = $gateway->transaction()->sale([
+      'amount' => Plan::find($planId)->price,
+      'paymentMethodNonce' => $nonceFromTheClient,
+      'deviceData' => $deviceDataFromTheClient,
+      'options' => [
+        'submitForSettlement' => True
+      ]
+    ]);
+
+    session()->forget(['appartmentId', 'planId', 'clientToken', 'gateway']);
+
+    dd($result);
+
+    $appartment->addSponsor($plan);
+
+    return redirect()->route('admin.appartments.show', $appartment->slug)->with('messageClass', 'alert-success')->with('message', 'Appartamento sponsorizzato');
+  }
 }
