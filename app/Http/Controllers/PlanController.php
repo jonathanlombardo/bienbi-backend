@@ -120,7 +120,11 @@ class PlanController extends Controller
       //  ]
     );
 
-    session()->put(['appartmentId' => $appartmentId, 'planId' => $planId, 'clientToken' => $clientToken, 'gateway' => $gateway]);
+    session()->flash('appartmentId', $appartmentId);
+    session()->flash('planId', $planId);
+    session()->flash('clientToken', $clientToken);
+    session()->flash('gateway', $gateway);
+    // session()->put(['appartmentId' => $appartmentId, 'planId' => $planId, 'clientToken' => $clientToken, 'gateway' => $gateway]);
 
     return redirect()->route('admin.plans.payment');
   }
@@ -136,9 +140,7 @@ class PlanController extends Controller
     if (!$appartmentId || !$planId || !$clientToken || !$gateway)
       abort(404);
 
-    // session()->forget(['appartmentId', 'planId', 'clientToken', 'gateway']);
-
-
+    session()->reflash();
 
     return view('admin.payment', compact('appartmentId', 'planId', 'clientToken', 'gateway'));
   }
@@ -175,6 +177,8 @@ class PlanController extends Controller
         'submitForSettlement' => True
       ]
     ]);
+
+    session()->forget(['appartmentId', 'planId', 'clientToken', 'gateway']);
 
     dd($result);
   }
