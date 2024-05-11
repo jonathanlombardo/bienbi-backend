@@ -11,55 +11,69 @@
       </ul>
     </div>
   @endif
-  <section class="py-5">
+  <section class="">
     <div class="container">
-      <h1 class="my-4">Scegli il piano che fa per il tuo appartamento {{ $appartment->title }}</h1>
-      {{-- @dump($appartment) --}}
-      <div class="row justify-content-center">
+      <h1 class="mb-4">Scegli il piano che fa per il tuo appartamento {{ $appartment->title }}</h1>
+      <div class="row flex-column g-3" id="accordion-row">
         @foreach ($plans as $plan)
-          <div class="col-3">
-            <div class="card">
-              <h3>Paccheto {{ $plan->name }}</h3>
-              @if ($plan->name === 'base')
-                <p>Il pacchetto base offre una solida base per la tua sponsorizzazione. Con questo pacchetto, avrai visibilità sul nostro sito e potrai raggiungere una vasta audience di poten
-                  ziali clienti. Ottimo per coloro che vogliono testare le acque della sponsorizzazione online e iniziare a far crescere la loro presenza online.</p>
-              @elseif($plan->name === 'medium')
-                <p> Il pacchetto medium è progettato per chi cerca di ottenere una maggiore visibilità e coinvolgimento. Oltre ai vantaggi del pacchetto base, avrai accesso a funzionalità aggiuntive come pubblicità mirata e presenza sui social media. Ideale per coloro che vogliono espandere la propria presenza online e raggiungere un pubblico più ampio.</p>
-              @else
-                <p>Il pacchetto premium è il massimo livello di sponsorizzazione disponibile sul nostro sito. Con questo pacchetto, otterrai tutti i vantaggi dei pacchetti base e medium, oltre a una serie di privilegi esclusivi. Questo include posizionamenti privilegiati, contenuti personalizzati e supporto dedicato per massimizzare il tuo impatto. Perfetto per aziende che cercano una visibilità di alto livello e un coinvolgimento mirato.</p>
-              @endif
-              <p><i class="fa-regular fa-clock"></i> {{ $plan->time }}</p>
-              <p>€ {{ $plan->price }}</p>
-              <div class="form-check">
-
-                <input class="form-check-input" type="radio" id="plans{{ $plan->id }}" name="plans" class="btn btn-primary" value="{{ $plan->id }}">
-                <label class="form-check-label" for="plans{{ $plan->id }}">Acquista questo</label>
+          <div class="col">
+            <div class="card p-0 border-0">
+              <div class="card-body p-0">
+                <div class="accordion accordion-flush" id="accordionPlan{{ $plan->id }}">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="p-0 accordion-button custom-acc-btn py-1 d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlan{{ $plan->id }}" aria-expanded="false" aria-controls="collapsePlan{{ $plan->id }}">
+                        <h3 class="mb-0 input-wrapper d-flex align-items-center gap-3">
+                          <input class="form-check-input fs-6" type="radio" id="plans{{ $plan->id }}" name="plans" class="btn btn-primary" value="{{ $plan->id }}">
+                          <div class="form-check-label">Paccheto {{ $plan->name }}</div>
+                        </h3>
+                        <div class="details-wrapper d-flex align-items-center gap-3 ms-auto me-3">
+                          <p class="mb-0"><i class="fa-regular fa-clock"></i> {{ $plan->getTime() }}</p>
+                          <p class="mb-0">€ {{ $plan->price }}</p>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapsePlan{{ $plan->id }}" class="accordion-collapse collapse" data-bs-parent="#accordion-row">
+                      <div class="accordion-body">
+                        {{ config('plans')[$plan->id - 1]['description'] }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-
-
             </div>
           </div>
         @endforeach
-
-        <section class="py-5">
+        <div class="col">
           <div id="dropin-container"></div>
-          <button id="submit-button" class="button button--small button--green d-none">Purchase</button>
+          <button id="submit-button" class="button button--small button--green d-none">Acquista</button>
+          <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="button button--small button--yellow">Annulla</a>
+
           <form id="transaction-form" action="{{ route('admin.plans.generateTransaction') }}" class="d-none" method="POST">
             @csrf
             @method('POST')
             <input type="number" id="planId" name="planId" value="-1">
           </form>
-        </section>
-
+        </div>
       </div>
-      <a href="#" class="btn btn-warning">Annulla</a>
     </div>
   </section>
 @endsection
 
 @push('assets')
   <style lang="scss">
+    button.custom-acc-btn::after {
+      margin-left: 0;
+    }
+
+    button.custom-acc-btn:not(.collapsed) {
+      background-color: transparent;
+    }
+
+    button.custom-acc-btn:focus {
+      box-shadow: none;
+    }
+
     .button {
       cursor: pointer;
       font-weight: 500;
@@ -86,6 +100,14 @@
       background-color: #64d18a;
       border-color: #64d18a;
       color: white;
+      transition: all 200ms ease;
+    }
+
+    .button--yellow {
+      outline: none;
+      background-color: #FDB61D;
+      border-color: #FDB61D;
+      color: rgb(0, 0, 0);
       transition: all 200ms ease;
     }
 
@@ -125,8 +147,20 @@
   <script>
     const planIdInput = document.querySelector('input#planId');
     const planRadios = document.querySelectorAll('input[name="plans"]');
+    const accItems = document.querySelectorAll('.accordion-item');
+    const accCollapses = document.querySelectorAll('[id*="collapsePlan"]');
+    // const accButtons = document.querySelectorAll('.accordion-button');
 
-    planRadios.forEach((radio) => {
+    accItems.forEach((acc, i) => {
+
+
+      acc.addEventListener('click', function() {
+        planRadios[i].checked = true;
+        planIdInput.value = planRadios[i].value;
+      })
+    })
+
+    planRadios.forEach((radio, i) => {
       radio.addEventListener('change', function() {
         planIdInput.value = this.value;
       })
