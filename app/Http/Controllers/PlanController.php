@@ -93,17 +93,9 @@ class PlanController extends Controller
       abort(404);
 
     $plans = Plan::all();
-    return view('admin.sponsor-form', compact('plans', 'appartment'));
-  }
 
-  public function generatePaymentToken(Request $request)
-  {
-    $data = $request->all();
-    $appartmentId = $data['appartmentId'];
-    $planId = $data['planId'];
 
-    if (!Appartment::find($appartmentId) || Appartment::find($appartmentId)->user_id != Auth::id())
-      abort(404);
+    //--
 
     $customerId = Auth::id();
 
@@ -120,30 +112,68 @@ class PlanController extends Controller
       //  ]
     );
 
+    // session()->flash('planId', $planId);
+    // session()->flash('clientToken', $clientToken);
     session()->flash('appartmentId', $appartmentId);
-    session()->flash('planId', $planId);
-    session()->flash('clientToken', $clientToken);
     session()->flash('gateway', $gateway);
-    // session()->put(['appartmentId' => $appartmentId, 'planId' => $planId, 'clientToken' => $clientToken, 'gateway' => $gateway]);
 
-    return redirect()->route('admin.plans.payment');
+    //--
+
+
+
+
+
+    return view('admin.sponsor-form', compact('plans', 'appartment', 'clientToken'));
   }
 
-  public function payment()
-  {
+  // public function generatePaymentToken(Request $request)
+  // {
+  //   $data = $request->all();
+  //   $appartmentId = $data['appartmentId'];
+  //   $planId = $data['planId'];
 
-    $appartmentId = session('appartmentId');
-    $planId = session('planId');
-    $clientToken = session('clientToken');
-    $gateway = session('gateway');
+  //   if (!Appartment::find($appartmentId) || Appartment::find($appartmentId)->user_id != Auth::id())
+  //     abort(404);
 
-    if (!$appartmentId || !$planId || !$clientToken || !$gateway)
-      abort(404);
+  //   $customerId = Auth::id();
 
-    session()->reflash();
+  //   $gateway = new Gateway([
+  //     'environment' => 'sandbox',
+  //     'merchantId' => 'qct7jcqp9gwbbzmx',
+  //     'publicKey' => 'cswn5swkxd5thvf9',
+  //     'privateKey' => 'bbc3393ddc3ce8c92a05a9894febd18f'
+  //   ]);
 
-    return view('admin.payment', compact('appartmentId', 'planId', 'clientToken', 'gateway'));
-  }
+  //   $clientToken = $gateway->clientToken()->generate(
+  //     // [
+  //     // "customerId" => $data['userId']
+  //     //  ]
+  //   );
+
+  //   session()->flash('appartmentId', $appartmentId);
+  //   session()->flash('planId', $planId);
+  //   session()->flash('clientToken', $clientToken);
+  //   session()->flash('gateway', $gateway);
+  //   // session()->put(['appartmentId' => $appartmentId, 'planId' => $planId, 'clientToken' => $clientToken, 'gateway' => $gateway]);
+
+  //   return redirect()->route('admin.plans.payment');
+  // }
+
+  // public function payment()
+  // {
+
+  //   $appartmentId = session('appartmentId');
+  //   $planId = session('planId');
+  //   $clientToken = session('clientToken');
+  //   $gateway = session('gateway');
+
+  //   if (!$appartmentId || !$planId || !$clientToken || !$gateway)
+  //     abort(404);
+
+  //   session()->reflash();
+
+  //   return view('admin.payment', compact('appartmentId', 'planId', 'clientToken', 'gateway'));
+  // }
 
   public function generateTransaction(Request $request)
   {
@@ -156,10 +186,10 @@ class PlanController extends Controller
 
     $paymentNonce = $data['paymentNonce'];
     $deviceDataFromTheClient = $data['deviceDataFromTheClient'];
+    $planId = $data['planId'];
 
+    // $clientToken = session('clientToken');
     $appartmentId = session('appartmentId');
-    $planId = session('planId');
-    $clientToken = session('clientToken');
     $gateway = session('gateway');
 
 

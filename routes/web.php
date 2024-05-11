@@ -31,30 +31,14 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
   Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
   //Rotte dei messaggi
-
-  // Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
-
-  //rotta per vedere messaggi reazionati all'id dell'appartamento
-
   Route::get('/messages/{appartment_slug}', [MessageController::class, 'indexMessagePerAppartment'])->name('messages.appartment.index');
-
   Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
-
   Route::get('/message/{id}', [MessageController::class, 'show'])->name('messages.show');
   Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 
   // rotta per la pagina della sponsorizzazione per un appartamento
-  //rotte dei piani
-  // Route::get('/plans', [PlanController::class, 'index'])->name('plans.index');
-  // Route::get('/plans/{id}', [PlanController::class, 'show'])->name('plans.show');
-  Route::post('/plans', [PlanController::class, 'generatePaymentToken'])->name('plans.generatePaymentToken');
-  Route::get('/plans/payment', [PlanController::class, 'payment'])->name('plans.payment');
   Route::post('/plans/payment', [PlanController::class, 'generateTransaction'])->name('plans.generateTransaction');
   Route::get('/plans/{appartmentId}', [PlanController::class, 'promotion'])->name('plans.promotion');
-
-
-
-
 
   //rotta degli appartamenti
   Route::resource('/appartments', AppartmentController::class);
