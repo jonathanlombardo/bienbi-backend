@@ -126,9 +126,10 @@ class PlanController extends Controller
     $appartmentId = session('appartmentId');
     $gateway = session('gateway');
 
+    $appartment = Appartment::find($appartmentId);
+    $plan = Plan::find($planId);
 
-
-    if (!Appartment::find($appartmentId) || Appartment::find($appartmentId)->user_id != Auth::id())
+    if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
 
     $nonceFromTheClient = $paymentNonce;
@@ -144,6 +145,8 @@ class PlanController extends Controller
 
     session()->forget(['appartmentId', 'planId', 'clientToken', 'gateway']);
 
-    dd($result);
+    $appartment->addSponsor($plan);
+
+    return redirect()->route('admin.appartments.show', $appartment->slug)->with('messageClass', 'alert-success')->with('message', 'Appartamento sponsorizzato');
   }
 }
