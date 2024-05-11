@@ -115,28 +115,60 @@ class PlanController extends Controller
     ]);
 
     $clientToken = $gateway->clientToken()->generate(
-      //   [
-      //   "customerId" => $data['userId']
-      //    ]
+      // [
+      // "customerId" => $data['userId']
+      //  ]
     );
 
-    // dump($appartmentId);
-    // dump($planId);
-    // dump($clientToken);
-    // dump($gateway);
+    session()->put(['appartmentId' => $appartmentId, 'planId' => $planId, 'clientToken' => $clientToken, 'gateway' => $gateway]);
+
+    return redirect()->route('admin.plans.payment');
+  }
+
+  public function payment()
+  {
+
+    $appartmentId = session('appartmentId');
+    $planId = session('planId');
+    $clientToken = session('clientToken');
+    $gateway = session('gateway');
+
+    if (!$appartmentId || !$planId || !$clientToken || !$gateway)
+      abort(404);
+
+    // session()->forget(['appartmentId', 'planId', 'clientToken', 'gateway']);
+
+
 
     return view('admin.payment', compact('appartmentId', 'planId', 'clientToken', 'gateway'));
   }
 
-  public function generateTransaction($appartmentId, $planId, $clientToken, $gateway, $paymentNonce, $deviceDataFromTheClient)
+  public function generateTransaction(Request $request)
   {
+    $data = $request->all();
+
+    // $appartmentId = $data['appartmentId'];
+    // $planId = $data['planId'];
+    // $gateway = $data['gateway'];
+    // $clientToken = $data['clientToken'];
+
+    $paymentNonce = $data['paymentNonce'];
+    $deviceDataFromTheClient = $data['deviceDataFromTheClient'];
+
+    $appartmentId = session('appartmentId');
+    $planId = session('planId');
+    $clientToken = session('clientToken');
+    $gateway = session('gateway');
+
+
+
     if (!Appartment::find($appartmentId) || Appartment::find($appartmentId)->user_id != Auth::id())
       abort(404);
 
     $nonceFromTheClient = $paymentNonce;
 
     $result = $gateway->transaction()->sale([
-      'amount' => Plan::find($planId),
+      'amount' => Plan::find($planId)->price,
       'paymentMethodNonce' => $nonceFromTheClient,
       'deviceData' => $deviceDataFromTheClient,
       'options' => [

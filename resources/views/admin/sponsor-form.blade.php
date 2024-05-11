@@ -24,11 +24,11 @@
 
 
               <!-- con questi volevamo magari personalizzare la vista della card aggiungendoci qualche icon per tipo di sponsorizzazione
+                                  <i class="fa-regular fa-flag"></i>
+                                <i class="fa-solid fa-crown"></i>
+                                <i class="fa-solid fa-award"></i>
                                 <i class="fa-regular fa-flag"></i>
-                              <i class="fa-solid fa-crown"></i>
-                              <i class="fa-solid fa-award"></i>
-                              <i class="fa-regular fa-flag"></i>
-                              <i class="fa-solid fa-euro-sign"></i> -->
+                                <i class="fa-solid fa-euro-sign"></i> -->
               <form action="{{ route('admin.plans.generatePaymentToken', ['appartmentId' => $appartment->id, 'planId' => $plan->id]) }}" method="POST">
                 @csrf
                 @method('POST')
