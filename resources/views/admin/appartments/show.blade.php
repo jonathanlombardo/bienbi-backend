@@ -65,7 +65,7 @@
             <a class="my_btn" href="{{ route('admin.appartments.index') }}">Torna agli appartamenti</a>
             <a class="my_btn" href="{{ route('admin.appartments.edit', $appartment->slug) }}">Modifica Appartamento</a>
             <a class="my_btn" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
-            <a class="my_btn" href="{{ route('admin.plans.promotion', $appartment->id) }}">Sponsorizza questo appartamento</a>
+            <a class="my_btn" href="{{ route('admin.plans.promotion', $appartment->slug) }}">Sponsorizza questo appartamento</a>
             <button type="button" class="my_btn" data-bs-toggle="modal" data-bs-target="#destroy-modal">
               Elimina appartamento
             </button>

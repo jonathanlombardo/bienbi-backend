@@ -85,9 +85,10 @@ class PlanController extends Controller
     //
   }
 
-  public function promotion($appartmentId)
+  public function promotion($slug)
   {
-    $appartment = Appartment::find($appartmentId);
+    $appartment = Appartment::fromSlugToAppartment($slug);
+    $appartmentId = $appartment->id;
 
     if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
