@@ -68,6 +68,7 @@ class PlanController extends Controller
     $result = $gateway->transaction()->sale([
       'amount' => Plan::find($planId)->price,
       'paymentMethodNonce' => $nonceFromTheClient,
+      // 'paymentMethodNonce' => 'fake--nonce',
       'deviceData' => $deviceDataFromTheClient,
       'options' => [
         'submitForSettlement' => True
@@ -76,10 +77,13 @@ class PlanController extends Controller
 
     session()->forget(['appartmentId', 'planId', 'clientToken', 'gateway']);
 
-    dd($result);
+    // dd($result);
 
     $appartment->addSponsor($plan);
 
-    return redirect()->route('admin.appartments.show', $appartment->slug)->with('messageClass', 'alert-success')->with('message', 'Appartamento sponsorizzato');
+    if ($result->success)
+      return redirect()->route('admin.appartments.show', $appartment->slug)->with('messageClass', 'alert-success')->with('message', 'Appartamento sponsorizzato');
+
+    return redirect()->back()->with('messageClass', 'alert-danger')->with('message', 'La transazione non è andata a buon fine. Riprova.');
   }
 }
