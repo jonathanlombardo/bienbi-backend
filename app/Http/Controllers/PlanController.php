@@ -25,10 +25,10 @@ class PlanController extends Controller
     $customerId = Auth::id();
 
     $gateway = new Gateway([
-      'environment' => 'sandbox',
-      'merchantId' => 'qct7jcqp9gwbbzmx',
-      'publicKey' => 'cswn5swkxd5thvf9',
-      'privateKey' => 'bbc3393ddc3ce8c92a05a9894febd18f'
+      'environment' => config('gatewayInfo')['environment'],
+      'merchantId' => config('gatewayInfo')['merchantId'],
+      'publicKey' => config('gatewayInfo')['publicKey'],
+      'privateKey' => config('gatewayInfo')['privateKey']
     ]);
 
     $clientToken = $gateway->clientToken()->generate(
@@ -48,10 +48,10 @@ class PlanController extends Controller
     $data = $request->all();
 
     $gateway = new Gateway([
-      'environment' => 'sandbox',
-      'merchantId' => 'qct7jcqp9gwbbzmx',
-      'publicKey' => 'cswn5swkxd5thvf9',
-      'privateKey' => 'bbc3393ddc3ce8c92a05a9894febd18f'
+      'environment' => config('gatewayInfo')['environment'],
+      'merchantId' => config('gatewayInfo')['merchantId'],
+      'publicKey' => config('gatewayInfo')['publicKey'],
+      'privateKey' => config('gatewayInfo')['privateKey']
     ]);
 
     $paymentNonce = $data['paymentNonce'];
