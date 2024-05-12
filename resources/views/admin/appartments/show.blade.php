@@ -6,7 +6,8 @@
 
 @section('maincontent')
   <div class="container appartment-wrapper">
-    <h1 class="mb-5">{{ $appartment->title }}</h1>
+    <h1 class="mb-4">{{ $appartment->title }}</h1>
+    @include('layouts.partials.alert_message')
     <div class="row g-5">
       <div class="col-12 col-lg-6">
         <div class="image-container ">

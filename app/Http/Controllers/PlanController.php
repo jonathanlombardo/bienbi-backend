@@ -25,10 +25,10 @@ class PlanController extends Controller
     $customerId = Auth::id();
 
     $gateway = new Gateway([
-      'environment' => 'sandbox',
-      'merchantId' => 'qct7jcqp9gwbbzmx',
-      'publicKey' => 'cswn5swkxd5thvf9',
-      'privateKey' => 'bbc3393ddc3ce8c92a05a9894febd18f'
+      'environment' => config('gatewayInfo')['environment'],
+      'merchantId' => config('gatewayInfo')['merchantId'],
+      'publicKey' => config('gatewayInfo')['publicKey'],
+      'privateKey' => config('gatewayInfo')['privateKey']
     ]);
 
     $clientToken = $gateway->clientToken()->generate(
@@ -38,7 +38,6 @@ class PlanController extends Controller
     );
 
     session()->flash('appartmentId', $appartmentId);
-    session()->flash('gateway', $gateway);
 
     return view('admin.sponsor-form', compact('plans', 'appartment', 'clientToken'));
   }
@@ -48,12 +47,18 @@ class PlanController extends Controller
     $request->validated();
     $data = $request->all();
 
+    $gateway = new Gateway([
+      'environment' => config('gatewayInfo')['environment'],
+      'merchantId' => config('gatewayInfo')['merchantId'],
+      'publicKey' => config('gatewayInfo')['publicKey'],
+      'privateKey' => config('gatewayInfo')['privateKey']
+    ]);
+
     $paymentNonce = $data['paymentNonce'];
     $deviceDataFromTheClient = $data['deviceDataFromTheClient'];
     $planId = $data['planId'];
 
     $appartmentId = session('appartmentId');
-    $gateway = session('gateway');
 
     $appartment = Appartment::find($appartmentId);
     $plan = Plan::find($planId);
@@ -67,19 +72,24 @@ class PlanController extends Controller
 
     $result = $gateway->transaction()->sale([
       'amount' => Plan::find($planId)->price,
+      // 'amount' => 3000.00, // card 4000111111111115
       'paymentMethodNonce' => $nonceFromTheClient,
+      // 'paymentMethodNonce' => 'fake--nonce', // card all
       'deviceData' => $deviceDataFromTheClient,
       'options' => [
         'submitForSettlement' => True
       ]
     ]);
 
-    session()->forget(['appartmentId', 'planId', 'clientToken', 'gateway']);
+    session()->forget(['appartmentId']);
 
-    dd($result);
+    // dd($result);
 
     $appartment->addSponsor($plan);
 
-    return redirect()->route('admin.appartments.show', $appartment->slug)->with('messageClass', 'alert-success')->with('message', 'Appartamento sponsorizzato');
+    if ($result->success)
+      return redirect()->route('admin.appartments.show', $appartment->slug)->with('messageClass', 'alert-success')->with('message', 'Appartamento sponsorizzato');
+
+    return redirect()->back()->with('messageClass', 'alert-danger')->with('message', 'La transazione non è andata a buon fine. Riprova.');
   }
 }
