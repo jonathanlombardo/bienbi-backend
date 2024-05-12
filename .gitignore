@@ -16,4 +16,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-config/gatawayInfo.php
+config/gatewayInfo.php
