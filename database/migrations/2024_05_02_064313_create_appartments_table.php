@@ -23,8 +23,8 @@ return new class extends Migration {
       $table->string('image')->nullable();
       $table->boolean('published')->default(false);
       $table->string('address');
-      $table->decimal('lat');
-      $table->decimal('long');
+      $table->decimal('lat', 9, 6);
+      $table->decimal('long', 9, 6);
       $table->foreignId('user_id')->constrained();
       $table->timestamps();
     });
