@@ -160,6 +160,10 @@
       transform: scale(1.1);
       box-shadow: 2px 3px 12px #f34e39;
     }
+
+    img{
+      width: 100%;
+    }
   </style>
 @endpush
 
