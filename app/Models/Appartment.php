@@ -53,7 +53,12 @@ class Appartment extends Model
     $expireDate = $this->expireSponsor();
     if ($expireDate) {
       $expireDate = $expireDate->toArray();
-      return $expireDate["day"] . '/' . $expireDate["month"] . '/' . $expireDate["year"] . " alle ore " . $expireDate["hour"] . ':' . $expireDate["minute"];
+      $day = $expireDate["day"] < 10 ? '0' . $expireDate["day"] : $expireDate["day"];
+      $month = $expireDate["month"] < 10 ? '0' . $expireDate["month"] : $expireDate["month"];
+      $year = $expireDate["year"] < 10 ? '0' . $expireDate["year"] : $expireDate["year"];
+      $hour = $expireDate["hour"] < 10 ? '0' . $expireDate["hour"] : $expireDate["hour"];
+      $minute = $expireDate["minute"] < 10 ? '0' . $expireDate["minute"] : $expireDate["minute"];
+      return $day . '/' . $month . '/' . $year . " alle ore " . $hour . ':' . $minute;
     }
   }
 
