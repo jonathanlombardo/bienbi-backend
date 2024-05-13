@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title','I tuoi Appartamenti')
+@section('title', 'I tuoi Appartamenti')
 
 
 @section('maincontent')
@@ -18,6 +18,9 @@
               <div class="my-card-header p-3 w-100">
                 <div class="image-container w-100">
                   <img class="image w-100" src="{{ $appartment->imgUrl }}" alt="">
+                  @if (!empty($appartment->isSponsored))
+                    <div class="label">Sponsorizzato fino al {{ $appartment->expireSponsor }}</div>
+                  @endif
                 </div>
               </div>
               <div class="my-card-body p-3">
@@ -40,11 +43,7 @@
 
             {{-- plan label --}}
 
-            @if (!empty($appartment->isSponsored))
-              <div class="label">
-                <span>Sponsored</span>
-              </div>
-            @endif
+
           </div>
         </div>
       @empty
@@ -76,16 +75,20 @@
         font-weight: 500;
       }
 
-      .label {
-        position: absolute;
-        top: 10%;
-        left: 0;
+      .image-container {
+        position: relative;
+      }
 
-        span {
-          background-color: #e9d09a;
-          border-radius: 0 10px 10px 0;
-          padding: 5px 10px;
-        }
+      .label {
+        padding: 4px 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgba(244, 84, 56, 0.605);
+        color: white;
+        font-weight: bold;
       }
     }
 
@@ -103,7 +106,7 @@
       overflow: hidden;
     }
 
-    .image{
+    .image {
       object-fit: cover;
       aspect-ratio: 16/9;
       object-position: center;
