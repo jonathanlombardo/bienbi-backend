@@ -14,7 +14,7 @@ class Appartment extends Model
 
   protected $fillable = ['address', 'long', 'lat', 'title', 'rooms', 'beds', 'bathrooms', 'square_meters'];
 
-  protected $appends = ['imgUrl', 'isSponsored'];
+  protected $appends = ['imgUrl', 'isSponsored', 'expireSponsor'];
 
   // setta uno slug unico
   public function setSlug()
@@ -33,7 +33,7 @@ class Appartment extends Model
     $this->slug = $newSlug;
   }
 
-  public function addSponsor(Plan $newPlan)
+  private function expireSponsor()
   {
     // calcolo da quando deve partire la sponsorizzazione
     if ($this->plans->count() && $this->isSponsored) {
@@ -42,10 +42,26 @@ class Appartment extends Model
         if ($plan->pivot->expired_at > $lastExpDate)
           $lastExpDate = $plan->pivot->expired_at;
       }
-      $dateIssue = Carbon::createFromFormat('Y-m-d H:i:s', $lastExpDate);
+      return Carbon::createFromFormat('Y-m-d H:i:s', $lastExpDate);
     } else {
-      $dateIssue = now();
+      return false;
     }
+  }
+
+  public function getExpireSponsorAttribute()
+  {
+    $expireDate = $this->expireSponsor();
+    if ($expireDate) {
+      $expireDate = $expireDate->toArray();
+      return $expireDate["day"] . '/' . $expireDate["month"] . '/' . $expireDate["year"] . " alle ore " . $expireDate["hour"] . ':' . $expireDate["minute"];
+    }
+  }
+
+  public function addSponsor(Plan $newPlan)
+  {
+    // calcolo da quando deve partire la sponsorizzazione
+    $expireDate = $this->expireSponsor();
+    $dateIssue = $expireDate ? $expireDate : now();
 
     // calcolo la data di scadenza
     $newPlanInterval = CarbonInterval::createFromFormat('H:i:s', $newPlan->time);

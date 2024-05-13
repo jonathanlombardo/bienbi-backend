@@ -7,11 +7,15 @@
 @section('maincontent')
   <div class="container appartment-wrapper">
     <h1 class="mb-4">{{ $appartment->title }}</h1>
+    {{-- <h1>{{ $appartment->expireSponsor }}</h1> --}}
     @include('layouts.partials.alert_message')
     <div class="row g-5">
       <div class="col-12 col-lg-6">
         <div class="image-container ">
           <img src="{{ $appartment->imgUrl }}" alt="">
+          @if ($appartment->expireSponsor)
+            <div class="sponsor-label">Sponsorizzato fino al {{ $appartment->expireSponsor }}</div>
+          @endif
         </div>
       </div>
       <div class="col-12 col-lg-6">
@@ -79,6 +83,22 @@
 
 @push('assets')
   <style lang="scss">
+    .image-container {
+      position: relative;
+    }
+
+    .sponsor-label {
+      padding: 4px 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: rgba(244, 84, 56, 0.605);
+      color: white;
+      font-weight: bold;
+    }
+
     .my-card {
       border: 1px solid #c85f5f;
       /* width: 150px; */
