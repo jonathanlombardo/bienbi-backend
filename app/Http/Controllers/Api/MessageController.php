@@ -28,23 +28,23 @@ class MessageController extends Controller
     $body = $data['body'] ?? null;
 
     if ($id != (int) $id) {
-      return response()->json(['response' => false, 'message' => 'invalid id']);
+      return response()->json(['response' => false, 'message' => 'id']);
     }
     if (!$mail) {
-      return response()->json(['response' => false, 'message' => 'invalid mail']);
+      return response()->json(['response' => false, 'message' => 'mail']);
     }
     if (!$name || strlen($name) <= 0 || strlen($name) > 40) {
-      return response()->json(['response' => false, 'message' => 'invalid name']);
+      return response()->json(['response' => false, 'message' => 'name']);
     }
     if (!$lastName || strlen($lastName) <= 0 || strlen($name) > 40) {
-      return response()->json(['response' => false, 'message' => 'invalid lastname']);
+      return response()->json(['response' => false, 'message' => 'lastname']);
     }
     if (!$body || strlen($body) <= 0) {
-      return response()->json(['response' => false, 'message' => 'invalid body']);
+      return response()->json(['response' => false, 'message' => 'body']);
     }
     $appartment = Appartment::find($id);
     if (!$appartment) {
-      return response()->json(['response' => false, 'message' => 'invalid id']);
+      return response()->json(['response' => false, 'message' => 'id']);
     }
 
     // creo e allego il messaggio
