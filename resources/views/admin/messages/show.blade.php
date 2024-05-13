@@ -73,6 +73,7 @@ Messaggio per {{ $message->appartment->title }}
 @endsection
 
 <style lang="scss" scoped>
+
   .title {
     color: #e8620c;
     font-size: 3rem;
