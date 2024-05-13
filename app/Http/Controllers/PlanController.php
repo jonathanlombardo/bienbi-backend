@@ -31,13 +31,8 @@ class PlanController extends Controller
       'privateKey' => config('gatewayInfo')['privateKey']
     ]);
 
-    $clientToken = $gateway->clientToken()->generate(
-      // [
-      // "customerId" => $data['userId']
-      //  ]
-    );
+    $clientToken = $gateway->clientToken()->generate();
 
-    session()->flash('appartmentId', $appartmentId);
 
     return view('admin.sponsor-form', compact('plans', 'appartment', 'clientToken'));
   }
@@ -57,8 +52,8 @@ class PlanController extends Controller
     $paymentNonce = $data['paymentNonce'];
     $deviceDataFromTheClient = $data['deviceDataFromTheClient'];
     $planId = $data['planId'];
+    $appartmentId = $data['appartmentId'];
 
-    $appartmentId = session('appartmentId');
 
     $appartment = Appartment::find($appartmentId);
     $plan = Plan::find($planId);
@@ -80,10 +75,6 @@ class PlanController extends Controller
         'submitForSettlement' => True
       ]
     ]);
-
-    session()->forget(['appartmentId']);
-
-    // dd($result);
 
     $appartment->addSponsor($plan);
 

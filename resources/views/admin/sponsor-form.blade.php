@@ -49,6 +49,7 @@
             @csrf
             @method('POST')
             <input type="number" id="planId" name="planId" value="-1">
+            <input type="number" id="appartmentId" name="appartmentId" value="{{ $appartment->id }}">
           </form>
         </div>
       </div>

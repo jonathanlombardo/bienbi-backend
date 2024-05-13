@@ -26,7 +26,8 @@ class PaymentRequest extends FormRequest
     return [
       'paymentNonce' => 'required|string',
       'deviceDataFromTheClient' => 'required|json',
-      'planId' => 'required|exists:plans,id'
+      'planId' => 'required|exists:plans,id',
+      'appartmentId' => 'required|exists:appartments,id'
     ];
   }
 
@@ -44,6 +45,8 @@ class PaymentRequest extends FormRequest
       'deviceDataFromTheClient.json' => 'Errore nella generazione del pagamento',
       'planId.required' => 'E\' necessario fornire un Piano valido',
       'planId.exists' => 'E\' necessario fornire un Piano valido',
+      'appartmentId.required' => 'E\' necessario fornire un Appartamento valido',
+      'appartmentId.exists' => 'E\' necessario fornire un Appartamento valido',
     ];
   }
 }
