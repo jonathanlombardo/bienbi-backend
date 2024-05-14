@@ -7,13 +7,12 @@
 @section('maincontent')
   <div class="container appartment-wrapper">
     <h1 class="mb-4">{{ $appartment->title }}</h1>
-    {{-- <h1>{{ $appartment->expireSponsor }}</h1> --}}
     @include('layouts.partials.alert_message')
     <div class="row g-5">
       <div class="col-12 col-lg-6">
         <div class="image-container ">
           <img class="image-preview" src="{{ $appartment->imgUrl }}" alt="">
-          @if ($appartment->expireSponsor)
+          @if ($appartment->isSponsored)
             <div class="sponsor-label">Sponsorizzato fino al {{ $appartment->expireSponsor }}</div>
           @endif
         </div>
@@ -161,7 +160,7 @@
       box-shadow: 2px 3px 12px #f34e39;
     }
 
-    .image-preview{
+    .image-preview {
       width: 100%;
       aspect-ratio: 16/9;
       object-fit: cover;
