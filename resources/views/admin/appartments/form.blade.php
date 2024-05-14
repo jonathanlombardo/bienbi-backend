@@ -17,6 +17,10 @@ Modifica Appartamento
       text-align: center;
       display: inline-block;
     }
+
+    .service-container {
+      height: 650px;
+    }
   </style>
 @endpush
 
@@ -96,8 +100,8 @@ Modifica Appartamento
           @enderror
         </div>
       </div>
-      <div class="col-12 row g-4">
-        <div class="col-12">Servizi offerti*</div>
+      <div class="col-12 col-md-6 mt-5">Servizi offerti*</div>
+      <div class="col-12 row d-flex flex-column service-container g-4 m-0">
         @foreach ($services as $service)
           <div class="col-12 col-md-6 col-xl-4">
             <input type="checkbox" class="@error('services') is-invalid @enderror form-check-input" name="services[]" id="service{{ $service->id }}" value="{{ $service->id }}" {{ in_array($service->id, old('services', $appartment->id ? $appartmentServices : [])) ? 'checked' : '' }}>
