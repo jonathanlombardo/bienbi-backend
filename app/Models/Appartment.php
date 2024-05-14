@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Carbon\CarbonInterval;
+use Carbon\CarbonTimeZone;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -51,6 +52,8 @@ class Appartment extends Model
   public function getExpireSponsorAttribute()
   {
     $expireDate = $this->expireSponsor();
+    $expireDate->tz('Europe/Rome');
+
     if ($expireDate) {
       $expireDate = $expireDate->toArray();
       $day = $expireDate["day"] < 10 ? '0' . $expireDate["day"] : $expireDate["day"];
