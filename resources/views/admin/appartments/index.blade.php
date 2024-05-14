@@ -113,20 +113,7 @@
     }
 
     .my_btn {
-      font-size: 0.9rem;
-      background-color: #ffb30e;
-      padding: 6px 10px;
-      border: none;
-      border-radius: 10px;
-      transition-duration: 0.5s;
-      transition: transform 0.5s;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .my_btn:hover {
-      background-color: #f34e39;
-      transform: scale(1.1);
+      width: 200px;
     }
   </style>
 @endpush

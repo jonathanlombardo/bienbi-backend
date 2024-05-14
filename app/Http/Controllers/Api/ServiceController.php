@@ -15,7 +15,8 @@ class ServiceController extends Controller
    */
   public function index()
   {
-    return response()->json(Service::all()->setHidden(['created_at', 'updated_at']));
+    return response()->json(Service::orderBy('label', 'asc')->get());
+    // return response()->json(Service::all())->setHidden(['created_at', 'updated_at']);
   }
 
   /**

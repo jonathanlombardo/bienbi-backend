@@ -31,7 +31,7 @@ class AppartmentController extends Controller
   public function create()
   {
     $appartment = new Appartment;
-    $services = Service::all();
+    $services = Service::orderBy('label', 'asc')->get();
     $appartmentServices = $appartment->services->pluck('id')->toArray();
     return view('admin.appartments.form', compact('appartment', 'services', 'appartmentServices'));
   }
@@ -93,7 +93,7 @@ class AppartmentController extends Controller
     if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
 
-    $services = Service::all();
+    $services = Service::orderBy('label', 'asc')->get();
     $appartmentServices = $appartment->services->pluck('id')->toArray();
     return view('admin.appartments.form', compact('appartment', 'services', 'appartmentServices'));
   }

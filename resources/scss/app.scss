@@ -209,3 +209,25 @@ h1 {
 i {
     cursor: pointer;
 }
+
+.my_btn {
+    font-size: 0.9rem;
+    background-color: #ffb30e;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.my_btn:hover {
+    background-color: #f34e39;
+    transform: scale(1.1);
+    box-shadow: 2px 3px 12px #f34e39;
+    color: white;
+}
