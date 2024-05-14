@@ -32,10 +32,7 @@ class AppartmentController extends Controller
     }
 
     // recupero una paginazione degli appartamenti sponsorizzati
-    $appartments = Appartment::select();
-    foreach ($sponsoredAppartments as $appartmentId) {
-      $appartments->orWhere('id', $appartmentId);
-    }
+    $appartments = Appartment::whereIn('id', $sponsoredAppartments);
     $appartments = $appartments->where('published', true)->with('user:id,name,last_name', 'services:id,label')->paginate()->setHidden(['plans', 'published', 'image', 'user_id']);
 
     // ritorno il json
