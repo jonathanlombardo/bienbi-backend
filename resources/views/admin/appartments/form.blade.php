@@ -7,20 +7,34 @@ Modifica Appartamento
 @endif
 @endsection
 @push('assets')
-  <style lang="scss">
-    form .image-preview {
-      max-width: 200px;
-    }
+<style lang="scss">
+  form .image-preview {
+    max-width: 200px;
+  }
 
-    .icon-container{
-      width: 40px;
-      text-align: center;
-      display: inline-block;
-    }
+  .icon-container{
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+  }
 
-    .service-container {
-      height: 650px;
-    }
+  .service-container {
+    height: 650px;
+  }
+
+  .form-check-input:checked {
+    background-color: #f34e39 !important;
+    border-color: #f34e39 !important;
+  }
+
+  label.switch input:checked + .slider {
+    background-color: #f34e39 !important;
+  }
+  
+  .reset-img {
+    color: #f34e39 !important;
+    padding-left: 0 !important;
+  }
   </style>
 @endpush
 
@@ -104,7 +118,7 @@ Modifica Appartamento
       <div class="col-12 row d-flex flex-column service-container g-4 m-0">
         @foreach ($services as $service)
           <div class="col-12 col-md-6 col-xl-4">
-            <input type="checkbox" class="@error('services') is-invalid @enderror form-check-input" name="services[]" id="service{{ $service->id }}" value="{{ $service->id }}" {{ in_array($service->id, old('services', $appartment->id ? $appartmentServices : [])) ? 'checked' : '' }}>
+            <input type="checkbox" class="@error('services') is-invalid @enderror form-check-input" name="services[]" id="service {{ $service->id }}" value="{{ $service->id }}" {{ in_array($service->id, old('services', $appartment->id ? $appartmentServices : [])) ? 'checked' : '' }}>
             <div class="invalid-feedback input-feedback">
               @error('services')
                 {{ $message }}
@@ -125,7 +139,7 @@ Modifica Appartamento
         @enderror
       </div>
       <div class="col-12">
-        <button type="submit" class="btn btn-primary">{{ $appartment->id ? 'Modifica Appartamento' : 'Crea Appartamento' }}</button>
+        <button type="submit" class="btn my_btn">{{ $appartment->id ? 'Modifica Appartamento' : 'Crea Appartamento' }}</button>
       </div>
     </form>
 
