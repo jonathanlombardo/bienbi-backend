@@ -52,9 +52,9 @@ class Appartment extends Model
   public function getExpireSponsorAttribute()
   {
     $expireDate = $this->expireSponsor();
-    $expireDate->tz('Europe/Rome');
 
     if ($expireDate) {
+      $expireDate->tz('Europe/Rome');
       $expireDate = $expireDate->toArray();
       $day = $expireDate["day"] < 10 ? '0' . $expireDate["day"] : $expireDate["day"];
       $month = $expireDate["month"] < 10 ? '0' . $expireDate["month"] : $expireDate["month"];
