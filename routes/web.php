@@ -38,6 +38,7 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
 
   // rotta per la pagina della sponsorizzazione per un appartamento
   Route::post('/plans/payment', [PlanController::class, 'generateTransaction'])->name('plans.generateTransaction');
+  Route::get('/plans/sponsor-history/{appartmentSlug}', [PlanController::class, 'sponsorHistory'])->name('plans.history');
   Route::get('/plans/{appartmentSlug}', [PlanController::class, 'promotion'])->name('plans.promotion');
 
   //rotta degli appartamenti

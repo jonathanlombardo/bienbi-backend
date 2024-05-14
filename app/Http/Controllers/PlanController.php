@@ -83,4 +83,17 @@ class PlanController extends Controller
 
     return redirect()->back()->with('messageClass', 'alert-danger')->with('message', 'La transazione non è andata a buon fine. Riprova.');
   }
+
+
+  public function sponsorHistory($slug)
+  {
+    $appartment = Appartment::fromSlugToAppartment($slug);
+
+    if (!$appartment || $appartment->user_id != Auth::id())
+      abort(404);
+
+
+
+    return view('admin.sponsor-history', compact('appartment'));
+  }
 }
