@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AppartmentController;
 use App\Http\Controllers\API\MessageController;
 use App\Http\Controllers\Api\ServiceController;
+use App\Http\Controllers\Api\ViewsController;
 use App\Models\Appartment;
 use App\Models\Plan;
 use Illuminate\Http\Request;
@@ -27,6 +28,7 @@ Route::get('/appartments/filtered', [AppartmentController::class, 'filtered'])->
 Route::apiResource('/appartments', AppartmentController::class)->only('index', 'show');
 Route::apiResource('/services', ServiceController::class)->only('index');
 Route::apiResource('/messages', MessageController::class)->only('store');
+Route::post('/views', [ViewsController::class, 'setView'])->name('api.views.setView');
 
 // Route::get('/test', function () {
 //   $appartment = Appartment::find(9);
