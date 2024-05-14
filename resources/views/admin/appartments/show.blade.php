@@ -12,7 +12,7 @@
     <div class="row g-5">
       <div class="col-12 col-lg-6">
         <div class="image-container ">
-          <img src="{{ $appartment->imgUrl }}" alt="">
+          <img class="image-preview" src="{{ $appartment->imgUrl }}" alt="">
           @if ($appartment->expireSponsor)
             <div class="sponsor-label">Sponsorizzato fino al {{ $appartment->expireSponsor }}</div>
           @endif
@@ -161,7 +161,7 @@
       box-shadow: 2px 3px 12px #f34e39;
     }
 
-    img{
+    .image-preview{
       width: 100%;
       aspect-ratio: 16/9;
       object-fit: cover;
