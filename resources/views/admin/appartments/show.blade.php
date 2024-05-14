@@ -163,6 +163,9 @@
 
     img{
       width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      object-position: center;
     }
   </style>
 @endpush
