@@ -10,8 +10,8 @@
       <p class="plans-fb mb-1 text-danger d-none">Seleziona un piano:</p>
       <div class="row flex-column g-3" id="accordion-row">
         @foreach ($plans as $plan)
-          <div class="col">
-            <div class="card p-0 border-0">
+          <div class="col card">
+            <div>
               <div class="card-body p-0">
                 <div class="accordion accordion-flush" id="accordionPlan{{ $plan->id }}">
                   <div class="accordion-item">
