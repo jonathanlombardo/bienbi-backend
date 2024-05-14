@@ -1,40 +1,59 @@
 @extends('layouts.main')
 @section('title')
-@if(Route::currentRouteName()=='admin.appartments.create')
-Nuovo Appartamento
-@else
-Modifica Appartamento
-@endif
+  @if (Route::currentRouteName() == 'admin.appartments.create')
+    Nuovo Appartamento
+  @else
+    Modifica Appartamento
+  @endif
 @endsection
 @push('assets')
-<style lang="scss">
-  form .image-preview {
-    max-width: 200px;
-  }
+  @php
+    echo '<style>.service-container {--serviceEl:' . $services->count() . ';}</style>';
+  @endphp
 
-  .icon-container{
-    width: 40px;
-    text-align: center;
-    display: inline-block;
-  }
+  <style lang="scss">
+    form .image-preview {
+      max-width: 200px;
+    }
 
-  .service-container {
-    height: 650px;
-  }
+    .icon-container {
+      width: 40px;
+      text-align: center;
+      display: inline-block;
+    }
 
-  .form-check-input:checked {
-    background-color: #f34e39 !important;
-    border-color: #f34e39 !important;
-  }
+    .service-container {
+      --serviceHeight: 32px;
+      --serviceCol: 1;
 
-  label.switch input:checked + .slider {
-    background-color: #f34e39 !important;
-  }
-  
-  .reset-img {
-    color: #f34e39 !important;
-    padding-left: 0 !important;
-  }
+      height: calc(var(--serviceHeight) * (var(--serviceEl) / var(--serviceCol)) - (var(--serviceHeight) / var(--serviceCol)) + var(--serviceHeight));
+    }
+
+    @media only screen and (min-width: 720px) {
+      .service-container {
+        --serviceCol: 2;
+      }
+    }
+
+    @media only screen and (min-width: 1140px) {
+      .service-container {
+        --serviceCol: 3;
+      }
+    }
+
+    .form-check-input:checked {
+      background-color: #f34e39 !important;
+      border-color: #f34e39 !important;
+    }
+
+    label.switch input:checked+.slider {
+      background-color: #f34e39 !important;
+    }
+
+    .reset-img {
+      color: #f34e39 !important;
+      padding-left: 0 !important;
+    }
   </style>
 @endpush
 
@@ -115,16 +134,18 @@ Modifica Appartamento
         </div>
       </div>
       <div class="col-12 col-md-6 mt-5">Servizi offerti*</div>
-      <div class="col-12 row d-flex flex-column service-container g-4 m-0">
+      <div class="col-12 row flex-column service-container m-0">
         @foreach ($services as $service)
-          <div class="col-12 col-md-6 col-xl-4">
+          <div class="col-auto mt-2">
             <input type="checkbox" class="@error('services') is-invalid @enderror form-check-input" name="services[]" id="service {{ $service->id }}" value="{{ $service->id }}" {{ in_array($service->id, old('services', $appartment->id ? $appartmentServices : [])) ? 'checked' : '' }}>
             <div class="invalid-feedback input-feedback">
               @error('services')
                 {{ $message }}
               @enderror
             </div>
-            <label class="form-check-label ms-2" for="service{{ $service->id }}"><div class="icon-container"><i class="{{ $service->faIconClass }}"></i></div>{{ $service->label }}</label>
+            <label class="form-check-label ms-2" for="service{{ $service->id }}">
+              <div class="icon-container"><i class="{{ $service->faIconClass }}"></i></div>{{ $service->label }}
+            </label>
           </div>
         @endforeach
       </div>
