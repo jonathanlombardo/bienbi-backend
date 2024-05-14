@@ -11,6 +11,12 @@ Modifica Appartamento
     form .image-preview {
       max-width: 200px;
     }
+
+    .icon-container{
+      width: 40px;
+      text-align: center;
+      display: inline-block;
+    }
   </style>
 @endpush
 
@@ -100,7 +106,7 @@ Modifica Appartamento
                 {{ $message }}
               @enderror
             </div>
-            <label class="form-check-label ms-2" for="service{{ $service->id }}">{{ $service->label }}</label>
+            <label class="form-check-label ms-2" for="service{{ $service->id }}"><div class="icon-container"><i class="{{ $service->faIconClass }}"></i></div>{{ $service->label }}</label>
           </div>
         @endforeach
       </div>
