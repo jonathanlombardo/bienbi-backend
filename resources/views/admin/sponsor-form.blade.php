@@ -7,6 +7,7 @@
       <h1 class="mb-4">Scegli il piano che fa per il tuo appartamento {{ $appartment->title }}</h1>
       @include('layouts.partials.alert_message')
       @include('layouts.partials.error_message')
+      <p class="plans-fb mb-1 text-danger d-none">Seleziona un piano:</p>
       <div class="row flex-column g-3" id="accordion-row">
         @foreach ($plans as $plan)
           <div class="col">
@@ -137,6 +138,26 @@
     const button = document.querySelector('#submit-button');
     const buttonWrap = document.querySelector('#submit-button-wrapper');
     const paymentLoaderEl = document.querySelector('#payment-loader');
+    const alertEl = document.querySelector('.alert');
+    const planIdInput = document.querySelector('input#planId');
+    const accItems = document.querySelectorAll('.accordion-item');
+    const planRadios = document.querySelectorAll('input[name="plans"]');
+    const planFbEl = document.querySelector('.plans-fb');
+
+    function setPlansInvalid(bool = true) {
+      if (bool) {
+        planFbEl.classList.remove('d-none')
+        accItems.forEach((acc) => {
+          acc.classList.add('border', 'border-danger')
+        })
+      } else {
+        planFbEl.classList.add('d-none')
+        accItems.forEach((acc) => {
+          acc.classList.remove('border', 'border-danger')
+        })
+      }
+    }
+
     braintree.dropin.create({
         authorization: {{ Illuminate\Support\Js::from($clientToken) }},
         selector: '#dropin-container',
@@ -151,10 +172,16 @@
       function(err, instance) {
         button.classList.remove('d-none')
         button.addEventListener('click', function() {
+          if (planIdInput.value <= 0) {
+            setPlansInvalid();
+            return
+          }
           instance.requestPaymentMethod(function(err, payload) {
             // Submit payload.nonce to your server
 
             const form = document.querySelector('#transaction-form');
+            if (alertEl) alertEl.classList.add('d-none');
+
             form.action += '?paymentNonce=' + payload.nonce;
             form.action += '&deviceDataFromTheClient=' + payload.deviceData;
             form.submit();
@@ -168,43 +195,20 @@
       }
     );
 
-    // if (dropinInstance.isPaymentMethodRequestable()) {
-    //   // This will be true if you generated the client token
-    //   // with a customer ID and there is a saved payment method
-    //   // available to tokenize with that customer.
-    //   submitButton.removeAttribute('disabled');
-    // }
 
-    // dropinInstance.on('paymentMethodRequestable', function(event) {
-    //   console.log(event.type); // The type of Payment Method, e.g 'CreditCard', 'PayPalAccount'.
-    //   console.log(event.paymentMethodIsSelected); // True if a customer has selected a payment method when paymentMethodRequestable fires.
-
-    //   submitButton.removeAttribute('disabled');
-    // });
-
-    // dropinInstance.on('noPaymentMethodRequestable', function() {
-    //   submitButton.setAttribute('disabled', true);
-    // });
-  </script>
-  <script>
-    const planIdInput = document.querySelector('input#planId');
-    const planRadios = document.querySelectorAll('input[name="plans"]');
-    const accItems = document.querySelectorAll('.accordion-item');
-    const accCollapses = document.querySelectorAll('[id*="collapsePlan"]');
-    // const accButtons = document.querySelectorAll('.accordion-button');
 
     accItems.forEach((acc, i) => {
-
-
       acc.addEventListener('click', function() {
         planRadios[i].checked = true;
         planIdInput.value = planRadios[i].value;
+        setPlansInvalid(false);
       })
     })
 
     planRadios.forEach((radio, i) => {
       radio.addEventListener('change', function() {
         planIdInput.value = this.value;
+        setPlansInvalid(false);
       })
     });
   </script>
