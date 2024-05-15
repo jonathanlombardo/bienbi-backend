@@ -7,33 +7,38 @@
 
   <script>
     const ctx = document.getElementById('myChart');
+    let views_time = {{ Illuminate\Support\Js::from($appartment_views) }};
+    views_time = JSON.parse(views_time);
 
-    let views_time = <?php echo $appartment_views; ?>;
+    console.log(views_time);
 
-    sumViewsPerInterval('intervallo');
+    //--- DEFINISCO IL TIPO DI GRAFICO
+    const sumViews = sumViewsPerInterval('year', '2024');
+    // const sumViews = sumViewsPerInterval('month', '11-2023');
+    // const sumViews = sumViewsPerInterval('day', '2024-05-14');
 
-    const year = ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'];
-    const day = ['00:00', '03:00', '06:00', '09:00', '12:00', '15:00', '18:00', '21:00'];
-
+    // creo la tabella
     const chart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: year,
+        labels: sumViews.labels,
         datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          label: 'Visualizzazioni 2024',
+          data: sumViews.resData,
           borderWidth: 1
         }]
       },
       options: {
         scales: {
           y: {
-            beginAtZero: true
+            beginAtZero: true,
+            ticks: {
+              stepSize: 100
+            }
           }
         }
       }
     });
-
 
 
     // FUNZIONI
@@ -48,62 +53,107 @@
       dateTimes.forEach(date => {
         // recupero la data della view
         const dateView = new Date(Date.parse(date));
+
+        console.log(date);
         // la separo in vari campi di tipo numerico
         views.push({
           hours: dateView.getHours(),
           minutes: dateView.getMinutes(),
           day: dateView.getDate(),
-          month: dateView.getMonth(),
+          month: dateView.getMonth() + 1,
           year: dateView.getFullYear(),
+          date: dateView.getFullYear() + '-' + (dateView.getMonth() < 10 ? '0' + (dateView.getMonth() + 1) : dateView.getMonth() + 1) + '-' + (dateView.getDate() < 10 ? '0' + dateView.getDate() : dateView.getDate()),
+          dateMonth: (dateView.getMonth() < 10 ? '0' + (dateView.getMonth() + 1) : dateView.getMonth() + 1) + '-' + dateView.getFullYear()
         });
       });
-      return [totViews, views];
       // console.log(dateTimes, totViews, views);
+      return [totViews, views];
     }
 
-    function sumViewsPerInterval(interval) {
-      const views = getViews(views_time)[1];
+
+    function sumViewsPerInterval(interval, date) {
+      const getViewsRes = getViews(views_time);
+      const views = getViewsRes[1];
       const viewsData = [];
       let countView = 0;
-      views.forEach(view => {
-        if (interval === 'day') {
-          for (let i = 0; i < 46; i + 2) {
-            if (view.hours === i) {
-              if (views.minutes >= 30) {
-                viewsData[i + 1] = countView++;
-              }
-            } else {
-              viewsData[i] = countView++;
-            }
-            countView = 0
-          }
+      const data = {};
+      const resData = [];
+      // const resLabel = [];
+
+      let iIndex;
+      let viewParentKey;
+      let viewChildKey;
+      let labelArray = [];
+
+      if (interval === 'day') {
+        iIndex = 24;
+        viewParentKey = 'date';
+        viewChildKey = 'hours';
+        for (let i = 1; i <= iIndex; i++) {
+          const h = i < 10 ? `0${i}:00` : `${i}:00`;
+          labelArray.push(h);
         }
-        if (interval === 'week') {
-          return
+      }
+      if (interval === 'month') {
+        iIndex = 31;
+        viewParentKey = 'dateMonth';
+        viewChildKey = 'day';
+        for (let i = 1; i <= iIndex; i++) {
+          const d = i < 10 ? `0${i}` : `${i}`;
+          labelArray.push(d);
         }
-        if (interval === 'month') {
-          return
-        }
-        if (interval === 'year') {
-          return
+      }
+      if (interval === 'year') {
+        iIndex = 12;
+        viewParentKey = 'year';
+        viewChildKey = 'month';
+        labelArray = [
+          "Gennaio",
+          "Febbraio",
+          "Marzo",
+          "Aprile",
+          "Maggio",
+          "Giugno",
+          "Luglio",
+          "Agosto",
+          "Settembre",
+          "Ottobre",
+          "Novembre",
+          "Dicembre"
+        ]
+      }
+
+
+      for (let i = 1; i <= iIndex; i++) {
+        data[i] = {};
+        data[i].x = labelArray[i - 1];
+        data[i].y = 0;
+      }
+      views.forEach((view) => {
+        if (view[viewParentKey] == date) {
+          data[view[viewChildKey]].y += 1;
+          countView++;
         }
       });
-    }
 
 
-    function changeTime(e, legendItem, legend) {
-      console.log(e, legendItem, legend);
-      const index = legendItem.datasetIndex;
-      const ci = legend.chart;
-      if (ci.isDatasetVisible(index)) {
-        ci.hide(index);
-        legendItem.hidden = true;
-      } else {
-        ci.show(index);
-        legendItem.hidden = false;
+      for (const key in data) {
+        resData.push(data[key]);
       }
+
+      const labels = resData.map((res) => {
+        return res.x;
+      })
+
+      console.log(labelArray)
+
+      return {
+        resData,
+        labels: labelArray,
+        totViews: countView
+      };
+
     }
-    // changeTime(null, null, chart.options.plugins.legend);
   </script>
 
 </div>
