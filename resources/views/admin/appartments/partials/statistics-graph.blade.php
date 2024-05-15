@@ -2,9 +2,10 @@
   <div>
     <canvas id="myChart"></canvas>
   </div>
+</div>
 
+@push('scripts')
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
   <script>
     const ctx = document.getElementById('myChart');
     let views_time = {{ Illuminate\Support\Js::from($appartment_views) }};
@@ -155,5 +156,4 @@
 
     }
   </script>
-
-</div>
+@endpush
