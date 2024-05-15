@@ -16,8 +16,7 @@ class Plan extends Model
 
   public function appartments()
   {
-    return $this->belongsToMany(Appartment::class);
-
+    return $this->belongsToMany(Appartment::class)->withPivot('created_at', 'appartment_id');
   }
 
   public function getLabel()

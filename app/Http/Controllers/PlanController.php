@@ -6,6 +6,8 @@ use App\Http\Requests\PaymentRequest;
 use App\Models\Appartment;
 use App\Models\Plan;
 use Braintree\Gateway;
+use Carbon\Carbon;
+use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -85,15 +87,53 @@ class PlanController extends Controller
   }
 
 
-  public function sponsorHistory($slug)
+  public function sponsorHistory($slug = null)
   {
-    $appartment = Appartment::fromSlugToAppartment($slug);
+    $appartments = $slug ? collect([Appartment::fromSlugToAppartment($slug)]) : Appartment::whereHas('plans')->whereBelongsTo(Auth::user())->get();
 
-    if (!$appartment || $appartment->user_id != Auth::id())
+    if ($slug && (!$appartments[0] || $appartments[0]->user_id != Auth::id()))
       abort(404);
 
+    $sortedPlans = collect([]);
+
+    foreach ($appartments as $appartment) {
+      foreach ($appartment->plans as $plan) {
+        $sortedPlans->push($plan);
+      }
+    }
+
+    $appartment = $slug ? $appartments[0] : null;
+
+    $sortedPlans = $sortedPlans->sortByDesc(function ($plan) {
+      return $plan->pivot->created_at;
+    });
+
+    foreach ($sortedPlans as $plan) {
+      $plan->appartment = Appartment::find($plan->pivot->appartment_id)->title;
+
+      $dt = Carbon::createFromFormat('Y-m-d H:i:s', $plan->pivot->expired_at)->tz('Europe/Rome');
+      $day = $dt->day < 10 ? "0$dt->day" : $dt->day;
+      $month = $dt->month < 10 ? "0$dt->month" : $dt->month;
+      $hour = $dt->hour < 10 ? "0$dt->hour" : $dt->hour;
+      $plan->expDate = "$day/$month/$dt->year";
+      $plan->expHour = "$hour:$dt->minute";
+
+      $dt = Carbon::createFromFormat('Y-m-d H:i:s', $plan->pivot->date_of_issue)->tz('Europe/Rome');
+      $day = $dt->day < 10 ? "0$dt->day" : $dt->day;
+      $month = $dt->month < 10 ? "0$dt->month" : $dt->month;
+      $hour = $dt->hour < 10 ? "0$dt->hour" : $dt->hour;
+      $plan->issueDate = "$day/$month/$dt->year";
+      $plan->issueHour = "$hour:$dt->minute";
 
 
-    return view('admin.sponsor-history', compact('appartment'));
+      $dt = Carbon::createFromFormat('Y-m-d H:i:s', $plan->pivot->created_at)->tz('Europe/Rome');
+      $day = $dt->day < 10 ? "0$dt->day" : $dt->day;
+      $month = $dt->month < 10 ? "0$dt->month" : $dt->month;
+      $hour = $dt->hour < 10 ? "0$dt->hour" : $dt->hour;
+      $plan->createdDate = "$day/$month/$dt->year";
+      $plan->createdHour = "$hour:$dt->minute";
+    }
+
+    return view('admin.sponsor-history', compact('appartment', 'sortedPlans'));
   }
 }

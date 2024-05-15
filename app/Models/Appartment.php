@@ -123,7 +123,7 @@ class Appartment extends Model
 
   public function plans()
   {
-    return $this->belongsToMany(Plan::class)->withPivot('expired_at', 'date_of_issue');
+    return $this->belongsToMany(Plan::class)->withPivot('expired_at', 'date_of_issue', 'created_at');
   }
   public function services()
   {

@@ -29,7 +29,7 @@ class AppartmentPlanSeeder extends Seeder
         // recupero l'intervallo del piano
         $plan_interval = CarbonInterval::createFromFormat('H:i:s', $random_plan->time);
         // collego il piano all'appartamento
-        $appartment->plans()->attach($random_plan->id, ['date_of_issue' => now(), 'expired_at' => now()->add($plan_interval)]);
+        $appartment->plans()->attach($random_plan->id, ['date_of_issue' => now(), 'expired_at' => now()->add($plan_interval), 'created_at' => now()]);
       }
     }
   }
