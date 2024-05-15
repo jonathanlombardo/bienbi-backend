@@ -56,19 +56,20 @@
 
     // FUNZIONI
 
-    //funzione per recuperare il totale delle views e le views con parametri temporali distinti a partire dalle date in formato stringa passate come parametro
+    /**
+     * param dateTimes: Array di stringhe (date views)
+     * 
+     * return: Array 
+     *  [0] totale delle views
+     *  [1] views formattate oggetto
+     */
     function getViews(dateTimes) {
-      // calcolo il totale delle view per appartamento
       const totViews = dateTimes.length;
 
-      // compongo un insieme di views con i campi della data separati
+      // formatto le date in oggetti con proprietà data suddivise
       const views = [];
       dateTimes.forEach(date => {
-        // recupero la data della view
         const dateView = new Date(Date.parse(date));
-
-        console.log(date);
-        // la separo in vari campi di tipo numerico
         views.push({
           hours: dateView.getHours(),
           minutes: dateView.getMinutes(),
@@ -79,67 +80,58 @@
           dateMonth: (dateView.getMonth() < 10 ? '0' + (dateView.getMonth() + 1) : dateView.getMonth() + 1) + '-' + dateView.getFullYear()
         });
       });
-      // console.log(dateTimes, totViews, views);
+
       return [totViews, views];
     }
 
+    /**
+     * param interval: Enum Periodo ('year', 'month', 'day')
+     * param date: La data da considerare ('yyyy', 'mm-yy', 'yyyy-mm-dd')
+     * param views_time: Array di date in cui son state effettuate le views
+     * 
+     * return: Object 
+     *  resData: views per data/mese/anno
+     *  totViews: views totali nell'intervallo
+     */
     function sumViewsPerInterval(interval, date, views_time) {
+      // recuperero le date views formattate
       const getViewsRes = getViews(views_time);
       const views = getViewsRes[1];
+
+      // inizializzo le variabili
       const viewsData = [];
       let countView = 0;
       const data = {};
       const resData = [];
-
       let iIndex;
       let viewParentKey;
       let viewChildKey;
-      let labelArray = [];
 
+      // inizializzo variabili per periodo
       if (interval === 'day') {
         iIndex = 24;
         viewParentKey = 'date';
         viewChildKey = 'hours';
-        for (let i = 1; i <= iIndex; i++) {
-          const h = i < 10 ? `0${i}:00` : `${i}:00`;
-          labelArray.push(h);
-        }
       }
       if (interval === 'month') {
         iIndex = 31;
         viewParentKey = 'dateMonth';
         viewChildKey = 'day';
-        for (let i = 1; i <= iIndex; i++) {
-          const d = i < 10 ? `0${i}` : `${i}`;
-          labelArray.push(d);
-        }
       }
       if (interval === 'year') {
         iIndex = 12;
         viewParentKey = 'year';
         viewChildKey = 'month';
-        labelArray = [
-          "Gennaio",
-          "Febbraio",
-          "Marzo",
-          "Aprile",
-          "Maggio",
-          "Giugno",
-          "Luglio",
-          "Agosto",
-          "Settembre",
-          "Ottobre",
-          "Novembre",
-          "Dicembre"
-        ]
       }
 
-
+      // inizializzo dati per gli assi
       for (let i = 1; i <= iIndex; i++) {
         data[i] = {};
-        data[i].x = labelArray[i - 1];
+        data[i].x = setLabels(interval)[i - 1];
         data[i].y = 0;
       }
+
+      // popolo i dati per l'asse y
       views.forEach((view) => {
         if (view[viewParentKey] == date) {
           data[view[viewChildKey]].y += 1;
@@ -147,25 +139,24 @@
         }
       });
 
-
+      // aggrego i risultati
       for (const key in data) {
         resData.push(data[key]);
       }
 
-      const labels = resData.map((res) => {
-        return res.x;
-      })
-
-      console.log(labelArray)
-
+      // ritorno i risultati
       return {
         resData,
-        labels: labelArray,
         totViews: countView
       };
 
     }
 
+    /**
+     * param interval: Enum Periodo ('year', 'month', 'day')
+     * 
+     * return: Array delle labels
+     */
     function setLabels(interval) {
       let labelArray = [];
       if (interval === 'day') {
@@ -196,6 +187,8 @@
           "Dicembre"
         ]
       }
+
+      return labelArray;
     }
   </script>
 @endpush
