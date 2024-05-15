@@ -2,12 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appartment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
   public function dashboard()
   {
-    return view('admin.dashboard');
+    $appartments = Appartment::whereBelongsTo(Auth::user())->get();
+    $appartments_views = [];
+    foreach ($appartments as $appartment) {
+      $views = json_decode($appartment->jsonViews());
+      $title = $appartment->title;
+      $appartments_views[] = [
+        'views' => $views,
+        'title' => $title
+      ];
+    }
+
+    $appartments_views = json_encode($appartments_views);
+    return view('admin.dashboard', compact('appartments_views'));
   }
 }
