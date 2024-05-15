@@ -79,39 +79,9 @@
     </div>
   </div>
 </div>
-<div class="container p-5">
-  <div>
-    <canvas id="myChart"></canvas>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+@include('admin.appartments.partials.statistics-graph')
 
-  <script>
-    const ctx = document.getElementById('myChart');
-
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['Gennaio', 'Febbraio', 'Marzo', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'],
-        datasets: [{
-          label: 'Visualizzazioni',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 3,
-          borderColor: '#f34e39',
-          backgroundColor: '#f34e39',
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-  </script>
-
-</div>
 @endsection
 
 @push('assets')
