@@ -22,6 +22,7 @@
         </div>
       </div>
     </div>
+    @include('admin.appartments.partials.statistics-graph')
   </div>
 @endsection
 

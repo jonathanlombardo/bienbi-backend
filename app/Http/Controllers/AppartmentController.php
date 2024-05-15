@@ -78,9 +78,18 @@ class AppartmentController extends Controller
     if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
 
-    $appartment_views = $appartment->jsonViews();
+    $views = json_decode($appartment->jsonViews());
+    $title = $appartment->title;
+    $appartments_views = [
+      [
+        'views' => $views,
+        'title' => $title
+      ]
+    ];
 
-    return view('admin.appartments.show', compact('appartment', 'appartment_views'));
+    $appartments_views = json_encode($appartments_views);
+
+    return view('admin.appartments.show', compact('appartment', 'appartments_views'));
   }
 
   /**

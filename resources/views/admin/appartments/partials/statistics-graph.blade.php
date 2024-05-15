@@ -8,26 +8,38 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     const ctx = document.getElementById('myChart');
-    let views_time = {{ Illuminate\Support\Js::from($appartment_views) }};
-    views_time = JSON.parse(views_time);
 
-    console.log(views_time);
+    let allViews = {{ Illuminate\Support\Js::from($appartments_views) }};
+    allViews = JSON.parse(allViews);
+
+    let datasets = [];
+    let labels = setLabels('year');
+
+    console.log(allViews);
+
+    allViews.forEach((appartment) => {
+      const sumViews = sumViewsPerInterval('year', '2024', appartment.views);
+      datasets.push({
+        label: appartment.title,
+        data: sumViews.resData,
+        borderWidth: 1,
+      })
+    })
+
+
+    // console.log(views_time);
 
     //--- DEFINISCO IL TIPO DI GRAFICO
-    const sumViews = sumViewsPerInterval('year', '2024');
-    // const sumViews = sumViewsPerInterval('month', '11-2023');
-    // const sumViews = sumViewsPerInterval('day', '2024-05-14');
+    // const sumViews = sumViewsPerInterval('year', '2024'); // per anno
+    // const sumViews = sumViewsPerInterval('month', '11-2023'); // per mese
+    // const sumViews = sumViewsPerInterval('day', '2024-05-14'); // per giorno
 
     // creo la tabella
     const chart = new Chart(ctx, {
-      type: 'line',
+      type: 'bar',
       data: {
-        labels: sumViews.labels,
-        datasets: [{
-          label: 'Visualizzazioni 2024',
-          data: sumViews.resData,
-          borderWidth: 1
-        }]
+        labels: labels,
+        datasets: datasets
       },
       options: {
         scales: {
@@ -71,15 +83,13 @@
       return [totViews, views];
     }
 
-
-    function sumViewsPerInterval(interval, date) {
+    function sumViewsPerInterval(interval, date, views_time) {
       const getViewsRes = getViews(views_time);
       const views = getViewsRes[1];
       const viewsData = [];
       let countView = 0;
       const data = {};
       const resData = [];
-      // const resLabel = [];
 
       let iIndex;
       let viewParentKey;
@@ -154,6 +164,38 @@
         totViews: countView
       };
 
+    }
+
+    function setLabels(interval) {
+      let labelArray = [];
+      if (interval === 'day') {
+        for (let i = 1; i <= iIndex; i++) {
+          const h = i < 10 ? `0${i}:00` : `${i}:00`;
+          labelArray.push(h);
+        }
+      }
+      if (interval === 'month') {
+        for (let i = 1; i <= iIndex; i++) {
+          const d = i < 10 ? `0${i}` : `${i}`;
+          labelArray.push(d);
+        }
+      }
+      if (interval === 'year') {
+        labelArray = [
+          "Gennaio",
+          "Febbraio",
+          "Marzo",
+          "Aprile",
+          "Maggio",
+          "Giugno",
+          "Luglio",
+          "Agosto",
+          "Settembre",
+          "Ottobre",
+          "Novembre",
+          "Dicembre"
+        ]
+      }
     }
   </script>
 @endpush
