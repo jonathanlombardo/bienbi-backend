@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class AppartmentController extends Controller
 {
@@ -32,8 +33,10 @@ class AppartmentController extends Controller
     }
 
     // recupero una paginazione degli appartamenti sponsorizzati
+    $nPerPages = 15;
     $appartments = Appartment::whereIn('id', $sponsoredAppartments);
-    $appartments = $appartments->where('published', true)->with('user:id,name,last_name', 'services:id,label')->paginate()->setHidden(['plans', 'published', 'image', 'user_id']);
+    $appartments = $appartments->where('published', true)->with('user:id,name,last_name', 'services:id,label')->paginate($nPerPages);
+    // ->setHidden(['plans', 'published', 'image', 'user_id']);
 
     // ritorno il json
     return response()->json($appartments);
@@ -83,6 +86,11 @@ class AppartmentController extends Controller
     $square_meters = false;
     $services = Service::all();
 
+    $page = $data_req['page'] ?? 1;
+
+    if ($page != (int) $page || $page <= 0) {
+      $page = 1;
+    }
 
     if (isset($data_req['rooms']) && is_numeric($data_req['rooms']) && $data_req['rooms'] > 0) {
       $rooms = (int) $data_req['rooms'];
@@ -156,9 +164,11 @@ class AppartmentController extends Controller
       }
     }
 
-    $appartments = $appartments->paginate()
+    $appartments = $appartments->get()
       ->setHidden(['plans', 'published', 'image', 'user_id']);
     //---------------------------------------------------------------------------
+
+    // dd($appartments);
 
     // aggiungo la distanza
     foreach ($appartments as $appartment) {
@@ -178,6 +188,17 @@ class AppartmentController extends Controller
         return $a['distance'] < $b['distance'] ? -1 : 1;
       }
     });
+
+
+    // pagino i risultati
+    $nPerPages = 15;
+    $paginatedAppartments = [];
+
+    for ($i = $nPerPages * ($page - 1); $i < $nPerPages * $page && $i < count($appartments); $i++) {
+      $paginatedAppartments[] = $appartments[$i];
+    }
+
+    $appartments = new LengthAwarePaginator($paginatedAppartments, count($appartments), $nPerPages, null, ['path' => 'http://127.0.0.1:8000/api/appartments/filtered', 'query' => $data_req]);
 
 
     // restituisco il json
