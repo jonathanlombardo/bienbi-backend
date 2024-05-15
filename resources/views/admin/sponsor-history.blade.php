@@ -46,10 +46,10 @@
     @endif
     <div class="text-center">
       @if ($appartment)
-        <a href="#" class="my_btn">Torna ai dettagli</a>
-        <a href="#" class="my_btn">Sponsorizza appartamento</a>
+        <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="my_btn">Torna ai dettagli</a>
+        <a href="{{ route('admin.plans.promotion', $appartment->slug) }}" class="my_btn">Sponsorizza appartamento</a>
       @else
-        <a href="#" class="my_btn">Torna agli appartamenti</a>
+        <a href="{{ route('admin.appartments.index') }}" class="my_btn">Torna agli appartamenti</a>
       @endif
     </div>
   </div>
