@@ -24,7 +24,7 @@
       @foreach ($appartments as $appartment)
         <div class="col">
           <div data-border-app-id="{{ $appartment->id }}" class="p-2 border border-1">
-            <div data-app-id="{{ $appartment->id }}" class="text-center btn w-100 p-2 border border-1">{{ $appartment->title }}</div>
+            <div data-app-id="{{ $appartment->id }}" data-app-is-active="false" class="text-center btn w-100 p-2 border border-1">{{ $appartment->title }}</div>
           </div>
         </div>
       @endforeach
@@ -88,14 +88,6 @@
       })
     })
 
-
-    // console.log(views_time);
-
-    //--- DEFINISCO IL TIPO DI GRAFICO
-    // const sumViews = sumViewsPerInterval('year', '2024'); // per anno
-    // const sumViews = sumViewsPerInterval('month', '11-2023'); // per mese
-    // const sumViews = sumViewsPerInterval('day', '2024-05-14'); // per giorno
-
     // creo la tabella
     const chart = new Chart(ctx, {
       type: 'bar',
@@ -124,7 +116,6 @@
         }
       }
     });
-
 
     dtEndInput.addEventListener('change', function() {
       const dtStart = dtStartInput.value;
@@ -166,18 +157,18 @@
         let messagesColor = messagesDataset.backgroundColor.replace('rgba', 'rgb');;
         messagesColor = messagesDataset.backgroundColor.replace(', 0.5', '');
 
-
         if (viewsDataset.hidden && messagesDataset.hidden) {
+          appEl.setAttribute('data-app-is-active', 'true');
           appEl.style.backgroundColor = viewsColor;
           document.querySelector(`[data-border-app-id="${id}"]`).style.backgroundColor = messagesColor;
         } else {
+          appEl.setAttribute('data-app-is-active', 'false');
           appEl.style.removeProperty('background-color');
           document.querySelector(`[data-border-app-id="${id}"]`).style.removeProperty('background-color');
         }
 
         viewsDataset.hidden = !viewsDataset.hidden;
         messagesDataset.hidden = !messagesDataset.hidden;
-
 
         console.log(viewsDataset.backgroundColor);
         chart.update();
@@ -398,21 +389,27 @@
 
       allViews.forEach((appartment) => {
         const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.views);
+        const appEl = document.querySelector(`[data-app-id="${appartment.id}"]`);
+        const active = (appEl ? appEl.getAttribute('data-app-is-active') : 'true') === 'true';
         datasets.push({
           label: 'Views ' + appartment.title,
           data: sumViews.resData,
           borderWidth: 1,
-          stack: appartment.id
+          stack: appartment.id,
+          hidden: !active,
         })
       })
 
       allMessages.forEach((appartment) => {
         const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.messages);
+        const appEl = document.querySelector(`[data-app-id="${appartment.id}"]`);
+        const active = (appEl ? appEl.getAttribute('data-app-is-active') : 'true') === 'true';
         datasets.push({
           label: 'Messaggi ' + appartment.title,
           data: sumViews.resData,
           borderWidth: 1,
-          stack: appartment.id
+          stack: appartment.id,
+          hidden: !active,
         })
       })
 
