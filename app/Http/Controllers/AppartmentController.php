@@ -100,7 +100,11 @@ class AppartmentController extends Controller
 
     $appartments_messages = json_encode($appartments_messages);
 
-    return view('admin.appartments.show', compact('appartment', 'appartments_views', 'appartments_messages'));
+    $now = now();
+    $dtEnd = $now->toDateTimeString();
+    $dtStart = $now->subMonths(6)->toDateTimeString();
+
+    return view('admin.appartments.show', compact('appartment', 'appartments_views', 'appartments_messages', 'dtEnd', 'dtStart'));
   }
 
   /**

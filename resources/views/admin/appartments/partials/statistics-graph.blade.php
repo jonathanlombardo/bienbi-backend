@@ -8,6 +8,8 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     const ctx = document.getElementById('myChart');
+    let dtEnd = {{ Illuminate\Support\Js::from($dtEnd) }}
+    let dtStart = {{ Illuminate\Support\Js::from($dtStart) }}
 
     let allViews = {{ Illuminate\Support\Js::from($appartments_views) }};
     allViews = JSON.parse(allViews);
@@ -21,12 +23,15 @@
 
 
     let datasets = [];
-    let labels = setLabels('day', '2024-05-01 00:00', '2024-05-17 23:59');
+    let labels = setLabels('month', dtStart, dtEnd);
+
+    console.log(dtEnd);
+    console.log(dtStart);
 
     // console.log(allViews);
 
     allViews.forEach((appartment) => {
-      const sumViews = sumViewsPerInterval('day', '2024-05-01 00:00', '2024-05-17 23:59', appartment.views);
+      const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.views);
       datasets.push({
         label: 'Views ' + appartment.title,
         data: sumViews.resData,
@@ -36,7 +41,7 @@
     })
 
     allMessages.forEach((appartment) => {
-      const sumViews = sumViewsPerInterval('day', '2024-05-01 00:00', '2024-05-17 23:59', appartment.messages);
+      const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.messages);
       datasets.push({
         label: 'Messaggi ' + appartment.title,
         data: sumViews.resData,
