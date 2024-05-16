@@ -12,16 +12,21 @@
     let allViews = {{ Illuminate\Support\Js::from($appartments_views) }};
     allViews = JSON.parse(allViews);
 
+    console.log(allViews);
+
     let allMessages = {{ Illuminate\Support\Js::from($appartments_messages) }};
     allMessages = JSON.parse(allMessages);
 
+    console.log(allMessages);
+
+
     let datasets = [];
-    let labels = setLabels('year');
+    let labels = setLabels('day', '2024-05-01 00:00', '2024-05-17 23:59');
 
     // console.log(allViews);
 
     allViews.forEach((appartment) => {
-      const sumViews = sumViewsPerInterval('year', '2024', appartment.views);
+      const sumViews = sumViewsPerInterval('day', '2024-05-01 00:00', '2024-05-17 23:59', appartment.views);
       datasets.push({
         label: 'Views ' + appartment.title,
         data: sumViews.resData,
@@ -31,7 +36,7 @@
     })
 
     allMessages.forEach((appartment) => {
-      const sumViews = sumViewsPerInterval('year', '2024', appartment.messages);
+      const sumViews = sumViewsPerInterval('day', '2024-05-01 00:00', '2024-05-17 23:59', appartment.messages);
       datasets.push({
         label: 'Messaggi ' + appartment.title,
         data: sumViews.resData,
@@ -66,7 +71,7 @@
           },
           x: {
             stacked: true,
-            max: 'Maggio'
+            // max: 'Maggio'
           }
         }
       }
@@ -88,17 +93,6 @@
       // formatto le date in oggetti con proprietà data suddivise
       const views = [];
       dateTimes.forEach((date) => {
-        // const dateView = new Date(Date.parse(date));
-        // const obj = {};
-        // obj.hours = dateView.getHours();
-        // obj.minutes = dateView.getMinutes();
-        // obj.day = dateView.getDate();
-        // obj.month = dateView.getMonth() + 1;
-        // obj.year = dateView.getFullYear();
-        // obj.date = obj.year + '-' + (obj.month < 10 ? '0' + obj.month : obj.month) + '-' + (obj.day < 10 ? '0' + obj.day : obj.day);
-        // obj.dateMonth = (obj.month < 10 ? '0' + obj.month : obj.month) + '-' + obj.year;
-        // obj.dateTime = obj.date + ' ' + obj.hours + ':' + obj.minutes;
-
         views.push(parseDateObj(date));
       });
 
@@ -114,15 +108,20 @@
      *  resData: views per data/mese/anno
      *  totViews: views totali nell'intervallo
      */
-    function sumViewsPerInterval(interval, date, views_time) {
+    function sumViewsPerInterval(interval, date1, date2, views_time) {
       // recuperero le date views formattate
       const getViewsRes = getViews(views_time);
       const views = getViewsRes[1];
 
+      // recupero l'oggetto dell'intervallo
+      const maxDate = date1 >= date2 ? date1 : date2;
+      const minDate = date1 < date2 ? date1 : date2;
+      const period = getDateDiffObj(minDate, maxDate);
+
       // inizializzo le variabili
       const viewsData = [];
       let countView = 0;
-      const data = {};
+      const data = [];
       const resData = [];
       let iIndex;
       let viewParentKey;
@@ -130,32 +129,33 @@
 
       // inizializzo variabili per periodo
       if (interval === 'day') {
-        iIndex = 24;
-        viewParentKey = 'date';
-        viewChildKey = 'hours';
+        iIndex = period.days.length;
+        parentKey = 'days';
+        childKey = 'date';
       }
       if (interval === 'month') {
-        iIndex = 31;
-        viewParentKey = 'dateMonth';
-        viewChildKey = 'day';
+        iIndex = period.months.length;
+        parentKey = 'months';
+        childKey = 'dateMonth';
       }
       if (interval === 'year') {
-        iIndex = 12;
-        viewParentKey = 'year';
-        viewChildKey = 'month';
+        iIndex = period.years.length;
+        parentKey = 'years';
+        childKey = 'year';
       }
 
       // inizializzo dati per gli assi
-      for (let i = 1; i <= iIndex; i++) {
+      for (let i = 0; i < iIndex; i++) {
         data[i] = {};
-        data[i].x = setLabels(interval)[i - 1];
+        data[i].x = period[parentKey][i];
         data[i].y = 0;
       }
 
       // popolo i dati per l'asse y
       views.forEach((view) => {
-        if (view[viewParentKey] == date) {
-          data[view[viewChildKey]].y += 1;
+        if (view.date <= maxDate && view.date >= minDate) {
+          const periodIndex = period[parentKey].indexOf(view[childKey]);
+          data[periodIndex].y += 1;
           countView++;
         }
       });
@@ -178,52 +178,30 @@
      * 
      * return: Array delle labels
      */
-    function setLabels(interval) {
+    function setLabels(interval, date1, date2) {
       let labelArray = [];
+      const maxDate = date1 >= date2 ? date1 : date2;
+      const minDate = date1 < date2 ? date1 : date2;
+      const period = getDateDiffObj(minDate, maxDate);
+
       if (interval === 'day') {
-        for (let i = 1; i <= 24; i++) {
-          const h = i < 10 ? `0${i}:00` : `${i}:00`;
-          labelArray.push(h);
-        }
+        iIndex = period.days.length;
+        parentKey = 'days';
       }
       if (interval === 'month') {
-        for (let i = 1; i <= 31; i++) {
-          const d = i < 10 ? `0${i}` : `${i}`;
-          labelArray.push(d);
-        }
+        iIndex = period.months.length;
+        parentKey = 'months';
       }
       if (interval === 'year') {
-        labelArray = [
-          "Gennaio",
-          "Febbraio",
-          "Marzo",
-          "Aprile",
-          "Maggio",
-          "Giugno",
-          "Luglio",
-          "Agosto",
-          "Settembre",
-          "Ottobre",
-          "Novembre",
-          "Dicembre"
-        ]
+        iIndex = period.years.length;
+        parentKey = 'years';
+      }
+
+      for (let i = 0; i < iIndex; i++) {
+        labelArray.push(period[parentKey][i]);
       }
 
       return labelArray;
-    }
-
-    function getDateDiffObj(date1, date2) {
-      const maxDate = parseDateObj(date1 >= date2 ? date1 : date2);
-      const minDate = parseDateObj(date1 < date2 ? date1 : date2);
-
-      const years = [];
-      let year = minDate.year;
-      while (year <= maxDate.year) {
-        years.push(year);
-        year++;
-      }
-
-      return years;
     }
 
     function parseDateObj(date) {
@@ -235,7 +213,7 @@
       obj.month = dateView.getMonth() + 1;
       obj.year = dateView.getFullYear();
       obj.date = obj.year + '-' + (obj.month < 10 ? '0' + obj.month : obj.month) + '-' + (obj.day < 10 ? '0' + obj.day : obj.day);
-      obj.dateMonth = (obj.month < 10 ? '0' + obj.month : obj.month) + '-' + obj.year;
+      obj.dateMonth = obj.year + '-' + (obj.month < 10 ? '0' + obj.month : obj.month);
       obj.dateTime = obj.date + ' ' + (obj.hours < 10 ? '0' + obj.hours : obj.hours) + ':' + (obj.minutes < 10 ? '0' + obj.minutes : obj.minutes);
 
       return obj;
