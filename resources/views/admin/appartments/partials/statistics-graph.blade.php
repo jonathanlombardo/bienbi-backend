@@ -12,17 +12,31 @@
     let allViews = {{ Illuminate\Support\Js::from($appartments_views) }};
     allViews = JSON.parse(allViews);
 
+    let allMessages = {{ Illuminate\Support\Js::from($appartments_messages) }};
+    allMessages = JSON.parse(allMessages);
+
     let datasets = [];
-    let labels = setLabels('month');
+    let labels = setLabels('year');
 
     // console.log(allViews);
 
     allViews.forEach((appartment) => {
-      const sumViews = sumViewsPerInterval('month', '05-2024', appartment.views);
+      const sumViews = sumViewsPerInterval('year', '2024', appartment.views);
       datasets.push({
-        label: appartment.title,
+        label: 'Views ' + appartment.title,
         data: sumViews.resData,
         borderWidth: 1,
+        stack: appartment.id
+      })
+    })
+
+    allMessages.forEach((appartment) => {
+      const sumViews = sumViewsPerInterval('year', '2024', appartment.messages);
+      datasets.push({
+        label: 'Messaggi ' + appartment.title,
+        data: sumViews.resData,
+        borderWidth: 1,
+        stack: appartment.id
       })
     })
 
@@ -44,13 +58,15 @@
       options: {
         scales: {
           y: {
+            stacked: true,
             beginAtZero: true,
             ticks: {
               stepSize: 100
             }
           },
           x: {
-            // max: 'Maggio'
+            stacked: true,
+            max: 'Maggio'
           }
         }
       }
