@@ -78,7 +78,33 @@ class AppartmentController extends Controller
     if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
 
-    return view('admin.appartments.show', compact('appartment'));
+    $views = json_decode($appartment->jsonViews());
+    $title = $appartment->title;
+    $appartments_views = [
+      [
+        'views' => $views,
+        'title' => $title
+      ]
+    ];
+
+    $appartments_views = json_encode($appartments_views);
+
+    $messages = json_decode($appartment->jsonMessages());
+    $title = $appartment->title;
+    $appartments_messages = [
+      [
+        'messages' => $messages,
+        'title' => $title
+      ]
+    ];
+
+    $appartments_messages = json_encode($appartments_messages);
+
+    $now = now();
+    $dtEnd = $now->toDateTimeString();
+    $dtStart = $now->subMonths(6)->toDateTimeString();
+
+    return view('admin.appartments.show', compact('appartment', 'appartments_views', 'appartments_messages', 'dtEnd', 'dtStart'));
   }
 
   /**

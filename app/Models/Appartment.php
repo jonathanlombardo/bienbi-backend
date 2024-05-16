@@ -65,6 +65,16 @@ class Appartment extends Model
     }
   }
 
+  public function jsonViews()
+  {
+    return json_encode($this->views->pluck('date')->toArray());
+  }
+
+  public function jsonMessages()
+  {
+    return json_encode($this->messages->pluck('created_at')->toArray());
+  }
+
   public function addSponsor(Plan $newPlan)
   {
     // calcolo da quando deve partire la sponsorizzazione
