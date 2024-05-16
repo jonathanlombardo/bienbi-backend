@@ -1,5 +1,37 @@
 <div class="container p-5">
+  <h3 class="mb-5 text-center">Statistiche per appartamento</h3>
+  <div class="row">
+    <div class="col">
+      <label for="start-date" class="form-label">Data di partenza</label>
+      <input class="form-control mb-2" type="date" id="start-date">
+    </div>
+    <div class="col">
+      <label for="end-date" class="form-label">Data di fine</label>
+      <input class="form-control mb-2" type="date" id="end-date">
+    </div>
+    <div class="col">
+      <label for="period" class="form-label">Tipo di visualizzazione</label>
+      <select class="form-select mb-2" name="period" id="period">
+        <option value="day">Giorni</option>
+        <option value="month" selected>Mesi</option>
+        <option value="year">Anni</option>
+      </select>
+    </div>
+  </div>
+  @if (isset($appartments))
+    <label class="form-label mt-3">Seleziona gli appartamenti</label>
+    <div class="row row-cols-3 g-3 mb-4">
+      @foreach ($appartments as $appartment)
+        <div class="col">
+          <div data-border-app-id="{{ $appartment->id }}" class="p-2 border border-1">
+            <div data-app-id="{{ $appartment->id }}" class="text-center btn w-100 p-2 border border-1">{{ $appartment->title }}</div>
+          </div>
+        </div>
+      @endforeach
+    </div>
+  @endif
   <div>
+    <div id='legend-container'></div>
     <canvas id="myChart"></canvas>
   </div>
 </div>
@@ -7,46 +39,52 @@
 @push('scripts')
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
+    const route = {{ Illuminate\Support\Js::from(Route::current()->getName()) }}
+    const isShow = route === 'admin.appartments.show';
     const ctx = document.getElementById('myChart');
+    const dtEndInput = document.getElementById('end-date');
+    const dtStartInput = document.getElementById('start-date');
+    const periodSelect = document.getElementById('period');
+    const periodOpts = document.querySelectorAll('select#period > option');
+    const appartmentEls = document.querySelectorAll('[data-app-id]');
+    const appartmentBorderEls = document.querySelectorAll('[data-border-app-id]');
+
     let dtEnd = {{ Illuminate\Support\Js::from($dtEnd) }}
     let dtStart = {{ Illuminate\Support\Js::from($dtStart) }}
+
+    dtEndInput.value = dtEnd.substring(0, 10);
+    dtStartInput.value = dtStart.substring(0, 10);
 
     let allViews = {{ Illuminate\Support\Js::from($appartments_views) }};
     allViews = JSON.parse(allViews);
 
-    console.log(allViews);
-
     let allMessages = {{ Illuminate\Support\Js::from($appartments_messages) }};
     allMessages = JSON.parse(allMessages);
-
-    console.log(allMessages);
-
 
     let datasets = [];
     let labels = setLabels('month', dtStart, dtEnd);
 
-    console.log(dtEnd);
-    console.log(dtStart);
-
-    // console.log(allViews);
-
     allViews.forEach((appartment) => {
       const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.views);
+      console.log(appartment.id)
       datasets.push({
         label: 'Views ' + appartment.title,
         data: sumViews.resData,
         borderWidth: 1,
-        stack: appartment.id
+        stack: appartment.id,
+        hidden: !isShow,
       })
     })
 
     allMessages.forEach((appartment) => {
       const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.messages);
+      console.log(appartment.id)
       datasets.push({
         label: 'Messaggi ' + appartment.title,
         data: sumViews.resData,
         borderWidth: 1,
-        stack: appartment.id
+        stack: appartment.id,
+        hidden: !isShow,
       })
     })
 
@@ -66,12 +104,17 @@
         datasets: datasets
       },
       options: {
+        plugins: {
+          legend: {
+            display: isShow,
+          }
+        },
         scales: {
           y: {
             stacked: true,
             beginAtZero: true,
             ticks: {
-              stepSize: 100
+              stepSize: 1
             }
           },
           x: {
@@ -81,6 +124,66 @@
         }
       }
     });
+
+
+    dtEndInput.addEventListener('change', function() {
+      const dtStart = dtStartInput.value;
+      const dtEnd = dtEndInput.value;
+      let interval;
+      periodOpts.forEach((opt) => {
+        if (opt.selected) interval = opt.value;
+      })
+      updateData(chart, interval, dtStart, dtEnd);
+    })
+
+    dtStartInput.addEventListener('change', function() {
+      const dtStart = dtStartInput.value;
+      const dtEnd = dtEndInput.value;
+      let interval;
+      periodOpts.forEach((opt) => {
+        if (opt.selected) interval = opt.value;
+      })
+      updateData(chart, interval, dtStart, dtEnd);
+    })
+
+    periodSelect.addEventListener('change', function() {
+      const dtStart = dtStartInput.value;
+      const dtEnd = dtEndInput.value;
+      let interval;
+      periodOpts.forEach((opt) => {
+        if (opt.selected) interval = opt.value;
+      })
+      updateData(chart, interval, dtStart, dtEnd);
+    })
+
+    appartmentEls.forEach((appEl, index) => {
+      appEl.addEventListener('click', function() {
+        const id = appEl.getAttribute('data-app-id');
+        const viewsDataset = chart.data.datasets[index];
+        const messagesDataset = chart.data.datasets[index + appartmentEls.length];
+        let viewsColor = viewsDataset.backgroundColor.replace('rgba', 'rgb');
+        viewsColor = viewsDataset.backgroundColor.replace(', 0.5', '');
+        let messagesColor = messagesDataset.backgroundColor.replace('rgba', 'rgb');;
+        messagesColor = messagesDataset.backgroundColor.replace(', 0.5', '');
+
+
+        if (viewsDataset.hidden && messagesDataset.hidden) {
+          appEl.style.backgroundColor = viewsColor;
+          document.querySelector(`[data-border-app-id="${id}"]`).style.backgroundColor = messagesColor;
+        } else {
+          appEl.style.removeProperty('background-color');
+          document.querySelector(`[data-border-app-id="${id}"]`).style.removeProperty('background-color');
+        }
+
+        viewsDataset.hidden = !viewsDataset.hidden;
+        messagesDataset.hidden = !messagesDataset.hidden;
+
+
+        console.log(viewsDataset.backgroundColor);
+        chart.update();
+      })
+    })
+
 
 
     // FUNZIONI
@@ -286,5 +389,38 @@
         days,
       };
     }
+
+    function updateData(chart, interval, dtStart, dtEnd) {
+      chart.data.labels = setLabels(interval, dtStart, dtEnd)
+      const datasets = [];
+
+
+
+      allViews.forEach((appartment) => {
+        const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.views);
+        datasets.push({
+          label: 'Views ' + appartment.title,
+          data: sumViews.resData,
+          borderWidth: 1,
+          stack: appartment.id
+        })
+      })
+
+      allMessages.forEach((appartment) => {
+        const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.messages);
+        datasets.push({
+          label: 'Messaggi ' + appartment.title,
+          data: sumViews.resData,
+          borderWidth: 1,
+          stack: appartment.id
+        })
+      })
+
+      chart.data.datasets = datasets;
+
+      chart.update();
+    }
+
+    //---
   </script>
 @endpush

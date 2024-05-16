@@ -45,6 +45,6 @@ class AdminController extends Controller
     $dtStart = $now->subMonths(6)->toDateTimeString();
 
 
-    return view('admin.dashboard', compact('appartments_views', 'appartments_messages', 'dtEnd', 'dtStart'));
+    return view('admin.dashboard', compact('appartments_views', 'appartments_messages', 'dtEnd', 'dtStart', 'appartments'));
   }
 }
