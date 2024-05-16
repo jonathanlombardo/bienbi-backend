@@ -28,10 +28,10 @@
 
 @push('scripts')
   <script>
-    let views_time = {{ Illuminate\Support\Js::from($appartments_views) }};
-    views_time = JSON.parse(views_time);
+    let messages_time = {{ Illuminate\Support\Js::from($appartments_messages) }};
+    messages_time = JSON.parse(messages_time);
     console.log(
-      views_time
+      messages_time
     )
   </script>
 @endpush

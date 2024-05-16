@@ -11,7 +11,10 @@ class AdminController extends Controller
   public function dashboard()
   {
     $appartments = Appartment::whereBelongsTo(Auth::user())->get();
+
     $appartments_views = [];
+    $appartments_messages = [];
+
     foreach ($appartments as $appartment) {
       $views = json_decode($appartment->jsonViews());
       $title = $appartment->title;
@@ -20,8 +23,20 @@ class AdminController extends Controller
         'title' => $title
       ];
     }
-
     $appartments_views = json_encode($appartments_views);
-    return view('admin.dashboard', compact('appartments_views'));
+
+    foreach ($appartments as $appartment) {
+      $messages = json_decode($appartment->jsonMessages());
+      $title = $appartment->title;
+      $appartments_messages[] = [
+        'messages' => $messages,
+        'title' => $title
+      ];
+    }
+
+    $appartments_messages = json_encode($appartments_messages);
+
+
+    return view('admin.dashboard', compact('appartments_views', 'appartments_messages'));
   }
 }

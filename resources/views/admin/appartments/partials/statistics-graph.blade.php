@@ -13,12 +13,12 @@
     allViews = JSON.parse(allViews);
 
     let datasets = [];
-    let labels = setLabels('year');
+    let labels = setLabels('month');
 
-    console.log(allViews);
+    // console.log(allViews);
 
     allViews.forEach((appartment) => {
-      const sumViews = sumViewsPerInterval('year', '2024', appartment.views);
+      const sumViews = sumViewsPerInterval('month', '05-2024', appartment.views);
       datasets.push({
         label: appartment.title,
         data: sumViews.resData,
@@ -48,6 +48,9 @@
             ticks: {
               stepSize: 100
             }
+          },
+          x: {
+            // max: 'Maggio'
           }
         }
       }
@@ -160,13 +163,13 @@
     function setLabels(interval) {
       let labelArray = [];
       if (interval === 'day') {
-        for (let i = 1; i <= iIndex; i++) {
+        for (let i = 1; i <= 24; i++) {
           const h = i < 10 ? `0${i}:00` : `${i}:00`;
           labelArray.push(h);
         }
       }
       if (interval === 'month') {
-        for (let i = 1; i <= iIndex; i++) {
+        for (let i = 1; i <= 31; i++) {
           const d = i < 10 ? `0${i}` : `${i}`;
           labelArray.push(d);
         }

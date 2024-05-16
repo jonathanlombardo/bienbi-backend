@@ -89,7 +89,18 @@ class AppartmentController extends Controller
 
     $appartments_views = json_encode($appartments_views);
 
-    return view('admin.appartments.show', compact('appartment', 'appartments_views'));
+    $messages = json_decode($appartment->jsonMessages());
+    $title = $appartment->title;
+    $appartments_messages = [
+      [
+        'messages' => $messages,
+        'title' => $title
+      ]
+    ];
+
+    $appartments_messages = json_encode($appartments_messages);
+
+    return view('admin.appartments.show', compact('appartment', 'appartments_views', 'appartments_messages'));
   }
 
   /**
