@@ -47,6 +47,7 @@
           </div>
         </div>
       @empty
+        <p class="text-center">Non ci sono appartamenti</p>
       @endforelse
     </div>
   </div>
