@@ -46,6 +46,10 @@
       border-color: #f34e39 !important;
     }
 
+    .form-check-input:focus {
+      box-shadow:  0 0 0 0.25rem rgba(235, 76, 55, 0.377) !important;
+    }
+
     label.switch input:checked+.slider {
       background-color: #f34e39 !important;
     }

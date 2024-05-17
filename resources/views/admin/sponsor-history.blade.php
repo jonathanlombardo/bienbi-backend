@@ -46,8 +46,10 @@
     @endif
     <div class="text-center">
       @if ($appartment)
-        <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="my_btn">Torna ai dettagli</a>
-        <a href="{{ route('admin.plans.promotion', $appartment->slug) }}" class="my_btn">Sponsorizza appartamento</a>
+      <div class="row gap-5">
+        <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="my_btn col">Torna ai dettagli</a>
+        <a href="{{ route('admin.plans.promotion', $appartment->slug) }}" class="my_btn col">Sponsorizza appartamento</a>
+      </div>
       @else
         <a href="{{ route('admin.appartments.index') }}" class="my_btn">Torna agli appartamenti</a>
       @endif
