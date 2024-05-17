@@ -63,6 +63,7 @@ class AppartmentSeeder extends Seeder
               $appartment->lat = $appartment_data[8];
               $appartment->long = $appartment_data[9];
               $appartment->user_id = $appartment_data[10];
+              $appartment->image = '/appartments/uploads/' . $appartment_data[1] . '.jpg';
 
               $appartment->save();
 
