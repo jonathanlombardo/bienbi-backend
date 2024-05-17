@@ -2,6 +2,1209 @@ messaggio,mail,nome,cognome,appartment_id,created_at
 "Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2023-12-01 08:30:00
 "Buongiorno, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2023-12-01 10:45:00
 "Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",paola.cortellesi@example.com,Paola,Cortellesi,3,2023-12-01 13:00:00
+"Buonasera, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",luca.baroni@example.com,Luca,Baroni
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",massimo.ceccherini@example.com,Massimo,Ceccherini,5,2023-12-01 17:30:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",christian.de.sica@example.com,Christian,De Sica,6,2023-12-01 19:45:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",massimo.ghini@example.com,Massimo,Ghini,7,2023-12-01 22:00:00
+"Buongiorno, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2023-12-02 08:30:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2023-12-02 10:45:00
+"Buonasera, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,10,2023-12-02 13:00:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2023-12-02 15:15:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2023-12-02 17:30:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il riscaldamento dell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2023-12-02 19:45:00
+"Buonasera, potreste fornirmi informazioni sulla politica di cancellazione dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,14,2023-12-02 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2023-12-03 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2023-12-03 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2023-12-03 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,3,2023-12-03 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2023-12-03 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2023-12-03 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2023-12-03 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,7,2023-12-04 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2023-12-04 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2023-12-04 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2023-12-04 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,11,2023-12-04 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2023-12-04 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2023-12-04 22:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2023-12-05 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,15,2023-12-05 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2023-12-05 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2023-12-05 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2023-12-05 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2023-12-05 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2023-12-05 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2023-12-06 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2023-12-06 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2023-12-06 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2023-12-06 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2023-12-06 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2023-12-06 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2023-12-06 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2023-12-07 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2023-12-07 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2023-12-07 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2023-12-07 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2023-12-07 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2023-12-07 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2023-12-07 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2023-12-08 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2023-12-08 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2023-12-08 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2023-12-08 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2023-12-08 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2023-12-08 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2023-12-08 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2023-12-09 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2023-12-09 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2023-12-09 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2023-12-09 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2023-12-09 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2023-12-09 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2023-12-09 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2023-12-10 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2023-12-10 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2023-12-10 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2023-12-10 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2023-12-10 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2023-12-10 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2023-12-10 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2023-12-11 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2023-12-11 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2023-12-11 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2023-12-11 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2023-12-11 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2023-12-11 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2023-12-11 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2023-12-12 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2023-12-12 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2023-12-12 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2023-12-12 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2023-12-12 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2023-12-12 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2023-12-12 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2023-12-13 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2023-12-13 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2023-12-13 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2023-12-13 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2023-12-13 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2023-12-13 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2023-12-13 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2023-12-14 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2023-12-14 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2023-12-14 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2023-12-14 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2023-12-14 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2023-12-14 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2023-12-14 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2023-12-15 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2023-12-15 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2023-12-15 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2023-12-15 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2023-12-15 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2023-12-15 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2023-12-15 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2023-12-16 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2023-12-16 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2023-12-16 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2023-12-16 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2023-12-16 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2023-12-16 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2023-12-16 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2023-12-17 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2023-12-17 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2023-12-17 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2023-12-17 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2023-12-17 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2023-12-17 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2023-12-17 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2023-12-18 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2023-12-18 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2023-12-18 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2023-12-18 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2023-12-18 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2023-12-18 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2023-12-18 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2023-12-19 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2023-12-19 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2023-12-19 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2023-12-19 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2023-12-19 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2023-12-19 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2023-12-19 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2023-12-20 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2023-12-20 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2023-12-20 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2023-12-20 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2023-12-20 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2023-12-20 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2023-12-20 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2023-12-21 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2023-12-21 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2023-12-21 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2023-12-21 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2023-12-21 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2023-12-21 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2023-12-21 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2023-12-22 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2023-12-22 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2023-12-22 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2023-12-22 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2023-12-22 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2023-12-22 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2023-12-22 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2023-12-23 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2023-12-23 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2023-12-23 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2023-12-23 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2023-12-23 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2023-12-23 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2023-12-23 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2023-12-24 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2023-12-24 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2023-12-24 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2023-12-24 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2023-12-24 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2023-12-24 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2023-12-24 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2023-12-25 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2023-12-25 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2023-12-25 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2023-12-25 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2023-12-25 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2023-12-25 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2023-12-25 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2023-12-26 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2023-12-26 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2023-12-26 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2023-12-26 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2023-12-26 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2023-12-26 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2023-12-26 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2023-12-27 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2023-12-27 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2023-12-27 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2023-12-27 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2023-12-27 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2023-12-27 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2023-12-27 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2023-12-28 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2023-12-28 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2023-12-28 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2023-12-28 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2023-12-28 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2023-12-28 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2023-12-28 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2023-12-29 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2023-12-29 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2023-12-29 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2023-12-29 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2023-12-29 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2023-12-29 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2023-12-29 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2023-12-30 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2023-12-30 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2023-12-30 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2023-12-30 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2023-12-30 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2023-12-31 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2023-12-31 10:45:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2023-12-31 13:00:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2023-12-31 15:15:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2023-12-31 17:30:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2023-12-31 19:45:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2023-12-31 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-01-01 08:30:00
+"Buongiorno, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-01-01 10:45:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-01-01 13:00:00
+"Buonasera, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",luca.baroni@example.com,Luca,Baroni,4,2024-01-01 15:15:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",massimo.ceccherini@example.com,Massimo,Ceccherini,5,2024-01-01 17:30:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",christian.de.sica@example.com,Christian,De Sica,6,2024-01-01 19:45:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",massimo.ghini@example.com,Massimo,Ghini,7,2024-01-01 22:00:00
+"Buongiorno, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-01-02 08:30:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-01-02 10:45:00
+"Buonasera, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,10,2024-01-02 13:00:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-01-02 15:15:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-01-02 17:30:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il riscaldamento dell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-01-02 19:45:00
+"Buonasera, potreste fornirmi informazioni sulla politica di cancellazione dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,14,2024-01-02 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-01-03 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-01-03 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-01-03 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,3,2024-01-03 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-01-03 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-01-03 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-01-03 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,7,2024-01-04 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-01-04 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-01-04 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-01-04 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,11,2024-01-04 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-01-04 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-01-04 22:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-01-05 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,15,2024-01-05 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-01-05 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-01-05 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-01-05 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-01-05 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-01-05 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-01-06 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-01-06 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-01-06 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-01-06 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-01-06 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-01-06 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-01-06 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-01-07 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-01-07 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-01-07 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-01-07 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-01-07 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-01-07 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-01-07 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-01-08 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-01-08 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-01-08 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-01-08 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-01-08 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-01-08 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-01-08 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-01-09 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-01-09 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-01-09 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-01-09 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-01-09 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-01-09 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-01-09 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-01-10 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-01-10 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-01-10 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-01-10 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-01-10 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-01-10 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-01-10 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-01-11 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-01-11 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-01-11 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-01-11 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-01-11 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-01-11 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-01-11 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-01-12 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-01-12 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-01-12 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-01-12 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-01-12 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-01-12 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-01-12 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-01-13 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-01-13 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-01-13 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-01-13 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-01-13 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-01-13 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-01-13 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-01-14 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-01-14 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-01-14 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-01-14 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-01-14 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-01-14 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-01-14 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-01-15 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-01-15 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-01-15 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-01-15 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-01-15 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-01-15 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-01-15 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-01-16 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-01-16 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-01-16 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-01-16 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-01-16 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-01-16 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-01-16 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-01-17 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2024-01-17 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-01-17 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-01-17 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-01-17 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-01-17 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-01-17 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-01-18 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-01-18 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-01-18 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-01-18 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-01-18 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-01-18 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-01-18 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-01-19 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-01-19 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-01-19 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-01-19 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-01-19 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-01-19 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-01-19 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-01-20 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-01-20 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-01-20 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-01-20 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-01-20 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-01-20 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-01-20 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-01-21 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-01-21 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-01-21 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-01-21 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-01-21 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-01-21 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-01-21 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-01-22 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-01-22 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-01-22 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-01-22 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-01-22 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-01-22 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-01-22 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-01-23 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-01-23 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-01-23 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-01-23 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-01-23 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-01-23 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-01-23 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-01-24 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-01-24 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-01-24 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-01-24 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-01-24 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-01-24 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-01-24 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-01-25 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-01-25 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-01-25 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-01-25 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-01-25 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-01-25 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-01-25 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-01-26 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-01-26 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-01-26 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-01-26 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-01-26 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-01-26 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-01-26 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-01-27 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-01-27 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-01-27 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-01-27 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-01-27 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-01-27 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-01-27 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-01-28 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-01-28 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-01-28 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-01-28 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-01-28 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-01-28 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-01-28 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-01-29 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-01-29 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-01-29 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-01-29 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-01-29 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-01-29 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-01-29 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2024-01-30 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,01,2024-01-30 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-01-30 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-01-30 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-01-30 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-01-31 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-01-31 10:45:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-01-31 13:00:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-01-31 15:15:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-01-31 17:30:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-01-31 19:45:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-01-31 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-02-01 08:30:00
+"Buongiorno, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-02-01 10:45:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-02-01 13:00:00
+"Buonasera, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",luca.baroni@example.com,Luca,Baroni,4,2024-02-01 15:15:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",massimo.ceccherini@example.com,Massimo,Ceccherini,5,2024-02-01 17:30:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",christian.de.sica@example.com,Christian,De Sica,6,2024-02-01 19:45:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",massimo.ghini@example.com,Massimo,Ghini,7,2024-02-01 22:00:00
+"Buongiorno, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-02-02 08:30:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-02-02 10:45:00
+"Buonasera, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,10,2024-02-02 13:00:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-02-02 15:15:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-02-02 17:30:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il riscaldamento dell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-02-02 19:45:00
+"Buonasera, potreste fornirmi informazioni sulla politica di cancellazione dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,14,2024-02-02 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-02-03 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-02-03 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-02-03 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,3,2024-02-03 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-02-03 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-02-03 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-02-03 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,7,2024-02-04 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-02-04 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-02-04 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-02-04 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,11,2024-02-04 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-02-04 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-02-04 22:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-02-05 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,15,2024-02-05 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-02-05 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-02-05 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-02-05 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-02-05 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-02-05 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-02-06 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-02-06 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-02-06 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-02-06 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-02-06 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-02-06 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-02-06 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-02-07 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-02-07 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-02-07 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-02-07 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-02-07 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-02-07 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-02-07 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-02-08 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-02-08 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-02-08 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-02-08 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-02-08 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-02-08 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-02-08 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-02-09 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-02-09 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-02-09 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-02-09 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-02-09 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-02-09 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-02-09 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-02-10 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-02-10 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-02-10 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-02-10 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-02-10 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-02-10 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-02-10 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-02-11 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-02-11 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-02-11 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-02-11 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-02-11 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-02-11 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-02-11 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-02-12 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-02-12 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-02-12 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-02-12 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-02-12 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-02-12 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-02-12 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-02-13 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-02-13 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-02-13 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-02-13 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-02-13 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-02-13 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-02-13 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-02-14 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-02-14 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-02-14 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-02-14 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-02-14 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-02-14 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-02-14 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-02-15 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-02-15 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-02-15 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-02-15 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-02-15 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-02-15 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-02-15 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-02-16 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-02-16 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-02-16 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-02-16 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-02-16 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-02-16 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-02-16 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-02-17 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2024-02-17 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-02-17 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-02-17 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-02-17 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-02-17 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-02-17 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-02-18 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-02-18 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-02-18 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-02-18 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-02-18 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-02-18 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-02-18 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-02-19 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-02-19 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-02-19 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-02-19 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-02-19 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-02-19 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-02-19 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-02-20 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-02-20 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-02-20 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-02-20 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-02-20 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-02-20 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-02-20 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-02-21 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-02-21 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-02-21 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-02-21 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-02-21 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-02-21 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-02-21 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-02-22 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-02-22 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-02-22 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-02-22 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-02-22 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-02-22 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-02-22 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-02-23 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-02-23 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-02-23 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-02-23 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-02-23 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-02-23 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-02-23 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-02-24 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-02-24 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-02-24 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-02-24 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-02-24 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-02-24 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-02-24 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-02-25 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-02-25 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-02-25 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-02-25 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-02-25 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-02-25 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-02-25 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-02-26 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-02-26 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-02-26 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-02-26 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-02-26 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-02-26 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-02-26 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-02-27 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-02-27 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-02-27 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-02-27 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-02-27 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-02-27 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-02-27 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-02-28 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-02-28 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-02-28 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-02-28 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-02-28 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-02-28 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-02-28 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-02-29 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-02-29 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-02-29 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-02-29 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-02-29 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-02-29 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-02-29 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-03-01 08:30:00
+"Buongiorno, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-03-01 10:45:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-03-01 13:00:00
+"Buonasera, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",luca.baroni@example.com,Luca,Baroni,4,2024-03-01 15:15:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",massimo.ceccherini@example.com,Massimo,Ceccherini,5,2024-03-01 17:30:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",christian.de.sica@example.com,Christian,De Sica,6,2024-03-01 19:45:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",massimo.ghini@example.com,Massimo,Ghini,7,2024-03-01 22:00:00
+"Buongiorno, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-03-02 08:30:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-03-02 10:45:00
+"Buonasera, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,10,2024-03-02 13:00:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-03-02 15:15:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-03-02 17:30:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il riscaldamento dell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-03-02 19:45:00
+"Buonasera, potreste fornirmi informazioni sulla politica di cancellazione dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,14,2024-03-02 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-03-03 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-03-03 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-03-03 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,3,2024-03-03 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-03-03 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-03-03 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-03-03 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,7,2024-03-04 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-03-04 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-03-04 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-03-04 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,11,2024-03-04 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-03-04 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-03-04 22:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-03-05 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,15,2024-03-05 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-03-05 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-03-05 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-03-05 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-03-05 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-03-05 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-03-06 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-03-06 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-03-06 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-03-06 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-03-06 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-03-06 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-03-06 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-03-07 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-03-07 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-03-07 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-03-07 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-03-07 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-03-07 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-03-07 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-03-08 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-03-08 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-03-08 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-03-08 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-03-08 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-03-08 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-03-08 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-03-09 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-03-09 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-03-09 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-03-09 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-03-09 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-03-09 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-03-09 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-03-10 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-03-10 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-03-10 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-03-10 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-03-10 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-03-10 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-03-10 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-03-11 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-03-11 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-03-11 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-03-11 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-03-11 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-03-11 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-03-11 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-03-12 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-03-12 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-03-12 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-03-12 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-03-12 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-03-12 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-03-12 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-03-13 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-03-13 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-03-13 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-03-13 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-03-13 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-03-13 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-03-13 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-03-14 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-03-14 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-03-14 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-03-14 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-03-14 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-03-14 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-03-14 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-03-15 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-03-15 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-03-15 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-03-15 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-03-15 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-03-15 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-03-15 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-03-16 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-03-16 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-03-16 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-03-16 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-03-16 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-03-16 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-03-16 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-03-17 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2024-03-17 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-03-17 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-03-17 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-03-17 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-03-17 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-03-17 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-03-18 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-03-18 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-03-18 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-03-18 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-03-18 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-03-18 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-03-18 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-03-19 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-03-19 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-03-19 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-03-19 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-03-19 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-03-19 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-03-19 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-03-20 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-03-20 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-03-20 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-03-20 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-03-20 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-03-20 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-03-20 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-03-21 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-03-21 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-03-21 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-03-21 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-03-21 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-03-21 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-03-21 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-03-22 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-03-22 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-03-22 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-03-22 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-03-22 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-03-22 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-03-22 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-03-23 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-03-23 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-03-23 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-03-23 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-03-23 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-03-23 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-03-23 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-03-24 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-03-24 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-03-24 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-03-24 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-03-24 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-03-24 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-03-24 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-03-25 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-03-25 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-03-25 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-03-25 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-03-25 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-03-25 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-03-25 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-03-26 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-03-26 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-03-26 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-03-26 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-03-26 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-03-26 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-03-26 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-03-27 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-03-27 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-03-27 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-03-27 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-03-27 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-03-27 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-03-27 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-03-28 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-03-28 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-03-28 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-03-28 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-03-28 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-03-28 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-03-28 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-03-29 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-03-29 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-03-29 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-03-29 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-03-29 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-03-29 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-03-29 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2024-03-30 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,01,2024-03-30 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-03-30 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-03-30 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-03-30 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-03-31 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-03-31 10:45:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-03-31 13:00:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-03-31 15:15:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-03-31 17:30:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-03-31 19:45:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-03-31 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-04-01 08:30:00
+"Buongiorno, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-04-01 10:45:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-04-01 13:00:00
+"Buonasera, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",luca.baroni@example.com,Luca,Baroni,4,2024-04-01 15:15:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",massimo.ceccherini@example.com,Massimo,Ceccherini,5,2024-04-01 17:30:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",christian.de.sica@example.com,Christian,De Sica,6,2024-04-01 19:45:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",massimo.ghini@example.com,Massimo,Ghini,7,2024-04-01 22:00:00
+"Buongiorno, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-04-02 08:30:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-04-02 10:45:00
+"Buonasera, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,10,2024-04-02 13:00:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-04-02 15:15:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-04-02 17:30:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il riscaldamento dell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-04-02 19:45:00
+"Buonasera, potreste fornirmi informazioni sulla politica di cancellazione dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,14,2024-04-02 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-04-03 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-04-03 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-04-03 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,3,2024-04-03 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-04-03 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-04-03 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-04-03 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,7,2024-04-04 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-04-04 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-04-04 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-04-04 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,11,2024-04-04 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-04-04 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-04-04 22:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-04-05 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,15,2024-04-05 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-04-05 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-04-05 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-04-05 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-04-05 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-04-05 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-04-06 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-04-06 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-04-06 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-04-06 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-04-06 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-04-06 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-04-06 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-04-07 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-04-07 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-04-07 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-04-07 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-04-07 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-04-07 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-04-07 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-04-08 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-04-08 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-04-08 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-04-08 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-04-08 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-04-08 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-04-08 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-04-09 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-04-09 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-04-09 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-04-09 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-04-09 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-04-09 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-04-09 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-04-10 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-04-10 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-04-10 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-04-10 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-04-10 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-04-10 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-04-10 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-04-11 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-04-11 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-04-11 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-04-11 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-04-11 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-04-11 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-04-11 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-04-12 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-04-12 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-04-12 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-04-12 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-04-12 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-04-12 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-04-12 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-04-13 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-04-13 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-04-13 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-04-13 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-04-13 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-04-13 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-04-13 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-04-14 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-04-14 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-04-14 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-04-14 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-04-14 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-04-14 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-04-14 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-04-15 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-04-15 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-04-15 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-04-15 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-04-15 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-04-15 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-04-15 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-04-16 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-04-16 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-04-16 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-04-16 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-04-16 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-04-16 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-04-16 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-04-17 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2024-04-17 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-04-17 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-04-17 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-04-17 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-04-17 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-04-17 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-04-18 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-04-18 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-04-18 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-04-18 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-04-18 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-04-18 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-04-18 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-04-19 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-04-19 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-04-19 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-04-19 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-04-19 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-04-19 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-04-19 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-04-20 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-04-20 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-04-20 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-04-20 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-04-20 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-04-20 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-04-20 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-04-21 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-04-21 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-04-21 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-04-21 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-04-21 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-04-21 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-04-21 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-04-22 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-04-22 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-04-22 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-04-22 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-04-22 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-04-22 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-04-22 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-04-23 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-04-23 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-04-23 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-04-23 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-04-23 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-04-23 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-04-23 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-04-24 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-04-24 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-04-24 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-04-24 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-04-24 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-04-24 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-04-24 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-04-25 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-04-25 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-04-25 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-04-25 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-04-25 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-04-25 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-04-25 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-04-26 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-04-26 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-04-26 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-04-26 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-04-26 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-04-26 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-04-26 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-04-27 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-04-27 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-04-27 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-04-27 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-04-27 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-04-27 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-04-27 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-04-28 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-04-28 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-04-28 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-04-28 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-04-28 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-04-28 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-04-28 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-04-29 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-04-29 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-04-29 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-04-29 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-04-29 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-04-29 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-04-29 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2024-04-30 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,01,2024-04-30 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-04-30 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-04-30 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-04-30 17:30:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-05-01 08:30:00
+"Buongiorno, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-05-01 10:45:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-05-01 13:00:00
+"Buonasera, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",luca.baroni@example.com,Luca,Baroni,4,2024-05-01 15:15:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",massimo.ceccherini@example.com,Massimo,Ceccherini,5,2024-05-01 17:30:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",christian.de.sica@example.com,Christian,De Sica,6,2024-05-01 19:45:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",massimo.ghini@example.com,Massimo,Ghini,7,2024-05-01 22:00:00
+"Buongiorno, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-05-02 08:30:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-05-02 10:45:00
+"Buonasera, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,10,2024-05-02 13:00:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-05-02 15:15:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-05-02 17:30:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il riscaldamento dell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-05-02 19:45:00
+"Buonasera, potreste fornirmi informazioni sulla politica di cancellazione dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,14,2024-05-02 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-05-03 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-05-03 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-05-03 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,3,2024-05-03 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-05-03 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-05-03 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-05-03 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,7,2024-05-04 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-05-04 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-05-04 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-05-04 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,11,2024-05-04 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-05-04 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-05-04 22:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-05-05 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ceccherini@example.com,Massimo,Ceccherini,15,2024-05-05 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-05-05 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-05-05 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-05-05 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-05-05 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-05-05 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-05-06 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-05-06 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-05-06 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-05-06 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-05-06 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-05-06 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-05-06 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-05-07 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-05-07 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-05-07 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-05-07 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-05-07 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-05-07 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-05-07 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-05-08 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-05-08 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-05-08 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-05-08 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-05-08 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-05-08 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-05-08 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-05-09 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-05-09 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-05-09 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-05-09 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-05-09 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-05-09 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-05-09 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-05-10 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-05-10 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-05-10 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-05-10 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-05-10 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-05-10 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-05-10 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-05-11 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-05-11 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-05-11 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-05-11 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-05-11 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-05-11 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-05-11 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-05-12 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-05-12 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-05-12 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-05-12 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-05-12 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-05-12 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-05-12 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-05-13 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-05-13 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-05-13 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,15,2024-05-13 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,1,2024-05-13 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2024-05-13 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,3,2024-05-13 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,4,2024-05-14 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,5,2024-05-14 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,6,2024-05-14 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,7,2024-05-14 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,8,2024-05-14 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,9,2024-05-14 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,10,2024-05-14 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,11,2024-05-15 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,12,2024-05-15 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,13,2024-05-15 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,14,2024-05-15 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,15,2024-05-15 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,1,2024-05-15 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,2,2024-05-15 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,3,2024-05-16 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,4,2024-05-16 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,5,2024-05-16 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,6,2024-05-16 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,7,2024-05-16 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,8,2024-05-16 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,9,2024-05-16 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,10,2024-05-17 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,11,2024-05-17 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,12,2024-05-17 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,13,2024-05-17 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,14,2024-05-17 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,15,2024-05-17 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2024-05-17 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,2,2024-05-18 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",luca.baroni@example.com,Luca,Baroni,3,2024-05-18 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,4,2024-05-18 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,5,2024-05-18 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,6,2024-05-18 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",luca.baroni@example.com,Luca,Baroni,7,2024-05-18 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,8,2024-05-18 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,9,2024-05-19 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,10,2024-05-19 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",luca.baroni@example.com,Luca,Baroni,11,2024-05-19 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,12,2024-05-19 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,13,2024-05-19 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,14,2024-05-19 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",luca.baroni@example.com,Luca,Baroni,15,2024-05-19 22:00:00
+"Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,1,2024-05-20 08:30:00
+"Salve, vorrei sapere se è possibile portare animali domestici nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,2,2024-05-20 10:45:00
+"Buonasera, potreste fornirmi informazioni sulle regole di comportamento nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,3,2024-05-20 13:00:00
+"Salve, vorrei sapere se è possibile ospitare feste nell'appartamento.",luca.baroni@example.com,Luca,Baroni,4,2024-05-20 15:15:00
+"Buongiorno, potreste indicarmi la politica sui rumori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,5,2024-05-20 17:30:00
+"Salve, vorrei sapere se è prevista una tassa di soggiorno per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,6,2024-05-20 19:45:00
+"Buongiorno, potreste fornirmi informazioni sul Wi-Fi disponibile nell'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,7,2024-05-20 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",luca.baroni@example.com,Luca,Baroni,8,2024-05-21 08:30:00
+"Buongiorno, potreste fornirmi informazioni sul vicinato dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,9,2024-05-21 10:45:00
+"Salve, vorrei sapere se è possibile avere un servizio di colazione nell'appartamento.",christian.de.sica@example.com,Christian,De Sica,10,2024-05-21 13:00:00
+"Buonasera, potreste indicarmi la politica sui fumatori per l'appartamento?",paola.cortellesi@example.com,Paola,Cortellesi,11,2024-05-21 15:15:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",luca.baroni@example.com,Luca,Baroni,12,2024-05-21 17:30:00
+"Buongiorno, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",massimo.ghini@example.com,Massimo,Ghini,13,2024-05-21 19:45:00
+"Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,14,2024-05-21 22:00:00
+"Salve, vorrei sapere se è possibile avere un parcheggio riservato per l'appartamento.",christian.de.sica@example.com,Christian,De Sica,1,2023-12-01 08:30:00
+"Buongiorno, potreste indicarmi la politica sui fumatori per l'appartamento?",massimo.ghini@example.com,Massimo,Ghini,2,2023-12-01 10:45:00
+"Salve, vorrei sapere se è previsto un costo aggiuntivo per il consumo di energia elettrica nell'appartamento.",paola.cortellesi@example.com,Paola,Cortellesi,3,2023-12-01 13:00:00
 "Buonasera, potreste fornirmi informazioni sul servizio di pulizia dell'appartamento?",luca.baroni@example.com,Luca,Baroni,4,2023-12-01 15:15:00
 "Salve, vorrei sapere se è prevista una cauzione per l'appartamento.",massimo.ceccherini@example.com,Massimo,Ceccherini,5,2023-12-01 17:30:00
 "Buongiorno, potreste indicarmi la politica sui bambini per l'appartamento?",christian.de.sica@example.com,Christian,De Sica,6,2023-12-01 19:45:00
