@@ -23,9 +23,7 @@
     <div class="row row-cols-3 g-3 mb-4">
       @foreach ($appartments as $appartment)
         <div class="col">
-          <div data-border-app-id="{{ $appartment->id }}" class="p-2 border border-1">
-            <div data-app-id="{{ $appartment->id }}" data-app-is-active="false" class="text-center btn w-100 p-2 border border-1">{{ $appartment->title }}</div>
-          </div>
+          <div data-app-id="{{ $appartment->id }}" data-app-is-active="false" class="text-center btn w-100 p-2 border border-1">{{ $appartment->title }}</div>
         </div>
       @endforeach
     </div>
@@ -43,6 +41,48 @@
     const isShow = route === 'admin.appartments.show';
 
     const ctx = document.getElementById('myChart');
+    const viewsColors = [
+      "#FF450080",
+      "#0047AB80",
+      "#32CD3280",
+      "#FFD70080",
+      "#80008080",
+      "#00FFFF80",
+      "#FF00FF80",
+      "#FFA50080",
+      "#4169E180",
+      "#50C87880",
+      "#FFF44F80",
+      "#DC143C80",
+      "#40E0D080",
+      "#E6E6FA80",
+      "#C0C0C080"
+    ];
+
+    const messagesColors = [
+      "#FF250080",
+      "#0027AB80",
+      "#32AD3280",
+      "#FFB70080",
+      "#80208080",
+      "#00DFFF80",
+      "#FF20FF80",
+      "#FFC50080",
+      "#4149E180",
+      "#50A87880",
+      "#FFD44F80",
+      "#DC343C80",
+      "#40C0D080",
+      "#E6C6FA80",
+      "#C0A0C080"
+    ];
+
+    function removeHexOpacity(color) {
+      color = color.substring(0, 7);
+      color += 'FF'
+      return color
+    }
+
 
     const dtEndInput = document.getElementById('end-date');
     const dtStartInput = document.getElementById('start-date');
@@ -66,19 +106,12 @@
     let datasets = [];
     let labels = setLabels('month', dtStart, dtEnd);
 
-    allViews.forEach((appartment) => {
-      const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.views);
-      console.log(appartment.id)
-      datasets.push({
-        label: 'Views ' + appartment.title,
-        data: sumViews.resData,
-        borderWidth: 1,
-        hidden: !isShow,
-      })
-    })
-
-    allMessages.forEach((appartment) => {
+    allMessages.forEach((appartment, index) => {
       const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.messages);
+      let i = index
+      while (viewsColors[i] === undefined) {
+        i = i - viewsColors.length;
+      }
       console.log(appartment.id)
       datasets.push({
         type: 'line',
@@ -86,6 +119,27 @@
         data: sumViews.resData,
         borderWidth: 1,
         hidden: !isShow,
+        borderColor: removeHexOpacity(messagesColors[i]),
+        backgroundColor: removeHexOpacity(messagesColors[i]),
+        borderWidth: 4,
+      })
+    })
+
+    allViews.forEach((appartment, index) => {
+      const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.views);
+      let i = index
+      while (viewsColors[i] === undefined) {
+        i = i - viewsColors.length;
+      }
+
+      // console.log(appartment.id)
+      datasets.push({
+        label: 'Views ' + appartment.title,
+        data: sumViews.resData,
+        borderWidth: 1,
+        hidden: !isShow,
+        borderColor: viewsColors[i],
+        backgroundColor: viewsColors[i],
       })
     })
 
@@ -151,21 +205,20 @@
     appartmentEls.forEach((appEl, index) => {
       appEl.addEventListener('click', function() {
         const id = appEl.getAttribute('data-app-id');
-        const viewsDataset = chart.data.datasets[index];
-        const messagesDataset = chart.data.datasets[index + appartmentEls.length];
-        let viewsColor = viewsDataset.backgroundColor.replace('rgba', 'rgb');
-        viewsColor = viewsDataset.backgroundColor.replace(', 0.5', '');
-        let messagesColor = messagesDataset.backgroundColor.replace('rgba', 'rgb');;
-        messagesColor = messagesDataset.backgroundColor.replace(', 0.5', '');
+        const messagesDataset = chart.data.datasets[index];
+        const viewsDataset = chart.data.datasets[index + appartmentEls.length];
+        let viewsColor = viewsDataset.backgroundColor
+        let messagesColor = viewsColor
 
         if (viewsDataset.hidden && messagesDataset.hidden) {
           appEl.setAttribute('data-app-is-active', 'true');
           appEl.style.backgroundColor = viewsColor;
-          document.querySelector(`[data-border-app-id="${id}"]`).style.backgroundColor = messagesColor;
+          appEl.style.fontWeight = 'bold';
         } else {
           appEl.setAttribute('data-app-is-active', 'false');
           appEl.style.removeProperty('background-color');
-          document.querySelector(`[data-border-app-id="${id}"]`).style.removeProperty('background-color');
+          appEl.style.removeProperty('font-weight');
+
         }
 
         viewsDataset.hidden = !viewsDataset.hidden;
@@ -386,30 +439,45 @@
       chart.data.labels = setLabels(interval, dtStart, dtEnd)
       const datasets = [];
 
-      allViews.forEach((appartment) => {
-        const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.views);
-        const appEl = document.querySelector(`[data-app-id="${appartment.id}"]`);
-        const active = (appEl ? appEl.getAttribute('data-app-is-active') : 'true') === 'true';
-        datasets.push({
-          label: 'Views ' + appartment.title,
-          data: sumViews.resData,
-          borderWidth: 1,
-          hidden: !active,
-        })
-      })
-
-      allMessages.forEach((appartment) => {
+      allMessages.forEach((appartment, index) => {
         const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.messages);
         const appEl = document.querySelector(`[data-app-id="${appartment.id}"]`);
         const active = (appEl ? appEl.getAttribute('data-app-is-active') : 'true') === 'true';
+        let i = index
+        while (viewsColors[i] === undefined) {
+          i = i - viewsColors.length;
+        }
         datasets.push({
           type: 'line',
           label: 'Messaggi ' + appartment.title,
           data: sumViews.resData,
           borderWidth: 1,
           hidden: !active,
+          borderColor: removeHexOpacity(messagesColors[i]),
+          backgroundColor: removeHexOpacity(messagesColors[i]),
+          borderWidth: 4,
         })
       })
+
+      allViews.forEach((appartment, index) => {
+        const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.views);
+        const appEl = document.querySelector(`[data-app-id="${appartment.id}"]`);
+        const active = (appEl ? appEl.getAttribute('data-app-is-active') : 'true') === 'true';
+        let i = index
+        while (viewsColors[i] === undefined) {
+          i = i - viewsColors.length;
+        }
+        datasets.push({
+          label: 'Views ' + appartment.title,
+          data: sumViews.resData,
+          borderWidth: 1,
+          hidden: !active,
+          borderColor: viewsColors[i],
+          backgroundColor: viewsColors[i],
+        })
+      })
+
+
 
       chart.data.datasets = datasets;
 
