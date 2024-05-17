@@ -125,13 +125,14 @@ class PlanController extends Controller
       $plan->issueDate = "$day/$month/$dt->year";
       $plan->issueHour = "$hour:$dt->minute";
 
-
-      $dt = Carbon::createFromFormat('Y-m-d H:i:s', $plan->pivot->created_at)->tz('Europe/Rome');
-      $day = $dt->day < 10 ? "0$dt->day" : $dt->day;
-      $month = $dt->month < 10 ? "0$dt->month" : $dt->month;
-      $hour = $dt->hour < 10 ? "0$dt->hour" : $dt->hour;
-      $plan->createdDate = "$day/$month/$dt->year";
-      $plan->createdHour = "$hour:$dt->minute";
+      if ($plan->pivot->created_at) {
+        $dt = Carbon::createFromFormat('Y-m-d H:i:s', $plan->pivot->created_at)->tz('Europe/Rome');
+        $day = $dt->day < 10 ? "0$dt->day" : $dt->day;
+        $month = $dt->month < 10 ? "0$dt->month" : $dt->month;
+        $hour = $dt->hour < 10 ? "0$dt->hour" : $dt->hour;
+        $plan->createdDate = "$day/$month/$dt->year";
+        $plan->createdHour = "$hour:$dt->minute";
+      }
     }
 
     return view('admin.sponsor-history', compact('appartment', 'sortedPlans'));
