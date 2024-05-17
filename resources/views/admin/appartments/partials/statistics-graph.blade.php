@@ -126,7 +126,7 @@
     })
 
     allViews.forEach((appartment, index) => {
-      const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.views);
+      const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.views, 10);
       let i = index
       while (viewsColors[i] === undefined) {
         i = i - viewsColors.length;
@@ -261,7 +261,7 @@
      *  resData: views per data/mese/anno
      *  totViews: views totali nell'intervallo
      */
-    function sumViewsPerInterval(interval, date1, date2, views_time) {
+    function sumViewsPerInterval(interval, date1, date2, views_time, modifier = 1) {
       // recuperero le date views formattate
       const getViewsRes = getViews(views_time);
       const views = getViewsRes[1];
@@ -308,7 +308,7 @@
       views.forEach((view) => {
         if (view.date <= maxDate && view.date >= minDate) {
           const periodIndex = period[parentKey].indexOf(view[childKey]);
-          data[periodIndex].y += 1;
+          data[periodIndex].y += modifier;
           countView++;
         }
       });
@@ -460,7 +460,7 @@
       })
 
       allViews.forEach((appartment, index) => {
-        const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.views);
+        const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.views, 10);
         const appEl = document.querySelector(`[data-app-id="${appartment.id}"]`);
         const active = (appEl ? appEl.getAttribute('data-app-is-active') : 'true') === 'true';
         let i = index

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Appartment;
+use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Message;
@@ -11,51 +12,55 @@ use Faker\Generator as Faker;
 
 class MessageSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    // public function run()
-    // {
-    //   $appartments = Appartment::all()->pluck('id')->toArray();
-    //   foreach ($appartments as $appartment) {
-    //     for ($i = 0; $i < 4; $i++) {
-    //       Message::create([
-    //         'body' => 'Contenuto per appartamento ' . $appartment,
-    //         'mail' => 'cicciopasticcio@example.com',
-    //         'first_name' => 'Nome',
-    //         'last_name' => 'Cognome',
-    //         'appartment_id' => $appartment
-    //       ]);
-    //     }
-    //   }
-    // }  
-    public function run(Faker $faker)
-    {
+  /**
+   * Run the database seeds.
+   *
+   * @return void
+   */
+  public function run()
+  {
+    // recupero la dir del file
+    $dir = __DIR__ . "/../csv/message.csv";
 
-        $startDateTime = '2023-12-01 00:00:00'; //inizio lasso di tempo x faker
-        $endDateTime = '2024-05-21 23:59:59'; // fine lasso di tempo x faker
 
-        $file = fopen(__DIR__ . "/../csv/message.csv", "r"); //apro il csv
-        $first_line = true; //ignoro la prima riga
-        while (!feof($file)) {
-            $message_data = fgetcsv($file);
-            if ($message_data) {
+    // apro il file e ignoro la prima riga
+    $file = fopen($dir, "r");
+    $first_line = fgetcsv($file);
 
-                if (!$first_line) {
-                    $message = new Message;
-                    $message->body = $message_data[0];
-                    $message->mail = $message_data[1];
-                    $message->first_name = $message_data[2];
-                    $message->last_name = $message_data[3];
-                    $message->appartment_id = $faker->numberBetween(1, 15);
-                    $message->created_at = $faker->dateTimeBetween($startDateTime, $endDateTime)->format('Y-m-d H:i:s'); // genero ogni messaggio del csv in una data casuale
+    // recupero tutti gli appartamenti
+    $appartments = Appartment::all()->pluck('id')->toArray();
+    foreach ($appartments as $appartment) {
 
-                    $message->save();
-                }
-                $first_line = false;
-            }
+      for ($i = 0; $i < 180; $i++) {
+        $dt = Carbon::now()->addDay()->subDays($i);
+        $n = rand(1, 10);
+
+        for ($x = 0; $x < $n; $x++) {
+          // se il file è finito, ricomincio da capo
+          if (feof($file)) {
+            fclose($file);
+            $file = fopen($dir, "r");
+            $first_line = fgetcsv($file);
+          }
+
+          // recupero i dati dal file
+          $message_data = fgetcsv($file);
+
+
+          if ($message_data) {
+            $message = new Message;
+            $message->body = $message_data[0];
+            $message->mail = $message_data[1];
+            $message->first_name = $message_data[2];
+            $message->last_name = $message_data[3];
+
+            $message->appartment_id = $appartment;
+            $message->created_at = $dt;
+
+            $message->save();
+          }
         }
+      }
     }
+  }
 }
