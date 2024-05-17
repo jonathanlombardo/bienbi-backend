@@ -99,10 +99,6 @@ Messaggio per {{ $message->appartment->title }}
       border: none;
     }
 
-    ul {
-      background-color: rgb(193, 193, 193);
-    }
-
     .created {
       font-size: 0.7rem;
     }

@@ -10,25 +10,36 @@
       <p class="plans-fb mb-1 text-danger d-none">Seleziona un piano:</p>
       <div class="row flex-column g-3" id="accordion-row">
         @foreach ($plans as $plan)
-          <div class="col card">
+          <div class="col card card-{{ $plan->name }}">
             <div>
               <div class="card-body p-0">
                 <div class="accordion accordion-flush" id="accordionPlan{{ $plan->id }}">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="p-0 accordion-button custom-acc-btn py-1 d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlan{{ $plan->id }}" aria-expanded="false" aria-controls="collapsePlan{{ $plan->id }}">
+                      <button class="card-{{ $plan->name }} p-0 accordion-button custom-acc-btn py-1 d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlan{{ $plan->id }}" aria-expanded="false" aria-controls="collapsePlan{{ $plan->id }}">
                         <h3 class="mb-0 input-wrapper d-flex align-items-center gap-3">
                           <input class="form-check-input fs-6" type="radio" id="plans{{ $plan->id }}" name="plans" class="btn btn-primary" value="{{ $plan->id }}">
-                          <div class="form-check-label">Pacchetto {{ $plan->name }}</div>
+                          <div class="form-check-label d-flex align-items-center">Pacchetto {{ $plan->name }}
+                          @if ($plan->name == 'Base')
+                            <i class="fa-solid fa-star fs-5 ms-3"></i>
+                          @elseif ($plan->name == 'Medium')  
+                            <i class="fa-solid fa-star fs-5 ms-3"></i>
+                            <i class="fa-solid fa-star fs-5"></i>
+                          @elseif ($plan->name == 'Premium')
+                            <i class="fa-solid fa-star fs-5 ms-3"></i>
+                            <i class="fa-solid fa-star fs-5"></i>
+                            <i class="fa-solid fa-star fs-5"></i>
+                            @endif
+                          </div>
                         </h3>
                         <div class="details-wrapper d-flex align-items-center gap-3 ms-auto me-3">
-                          <p class="mb-0"><i class="fa-regular fa-clock"></i> {{ $plan->getTime() }}</p>
-                          <p class="mb-0">€ {{ $plan->price }}</p>
+                          <p class="mb-0"><i class="fa-regular fa-clock me-2"></i><strong>{{ $plan->getTime() }}</strong></p>
+                          <p class="mb-0"><strong>€ {{ $plan->price }}</strong></p>
                         </div>
                       </button>
                     </h2>
                     <div id="collapsePlan{{ $plan->id }}" class="accordion-collapse collapse" data-bs-parent="#accordion-row">
-                      <div class="accordion-body">
+                      <div class="accordion-body card-{{ $plan->name }}-body mb-2">
                         {{ config('plans')[$plan->id - 1]['description'] }}
                       </div>
                     </div>
@@ -128,6 +139,34 @@
     .button--green:hover {
       background-color: #8bdda8;
       color: white;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #212529 !important;
+    }
+
+    .card-Base {
+      background-color: #f3ddab !important;
+    }
+
+    .card-Base-body {
+      background-color: #f2e8d1 !important;
+    }
+
+    .card-Medium {
+      background-color: #ffb30e !important;
+    }
+
+    .card-Medium-body {
+      background-color: #f6d99a !important;
+    }
+
+    .card-Premium {
+      background-color: #f34e39 !important;
+    }
+
+    .card-Premium-body {
+      background-color: #f7a398 !important;
     }
   </style>
 @endpush

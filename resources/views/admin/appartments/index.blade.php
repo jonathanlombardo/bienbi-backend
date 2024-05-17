@@ -10,10 +10,10 @@
     </div>
     <div class="row g-3">
       @forelse($appartments as $appartment)
-        <div class="col-4 mb-5 my-col">
+        <div class="col-4 my-col">
           {{-- link per la show degli appartamenti --}}
 
-          <div class="my-card h-100  w-100">
+          <div class="my-card card w-100">
             <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="my-card-link d-block h-100 w-100">
               <div class="my-card-header p-3 w-100">
                 <div class="image-container w-100">
@@ -23,7 +23,7 @@
                   @endif
                 </div>
               </div>
-              <div class="my-card-body p-3">
+              <div class="my-card-body p-3 pt-0 ms-2">
                 <div class="title">{{ $appartment->title }}</div>
                 <div class="address mt-1">{{ $appartment->address }}</div>
                 <div class="published pt-3"><strong>Visibile: </strong><i @class([
@@ -35,7 +35,7 @@
 
             {{-- link per vedere i messaggi relazionati all'appartamento --}}
 
-            <div class="card-footer py-3">
+            <div class="card-footer py-3 d-flex justify-content-center">
               <div class="messages">
                 <a class="my_btn" href="{{ route('admin.messages.appartment.index', ['appartment_slug' => $appartment->slug]) }}">Vedi messaggi</a>
               </div>
@@ -55,8 +55,13 @@
 
 @push('assets')
   <style lang="scss">
+
+    .card-footer {
+      background-color: transparent !important;
+    }
+
     .my-col {
-      padding: 20px;
+      padding: 10px;
       border-radius: 10px;
 
     }
