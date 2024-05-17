@@ -9,8 +9,8 @@ nome appartamento,slug,numero di stanze,numero di letti,numero di bagni,metratur
 "Stanza nel Cuore di Milano","stanza-nel-cuore-di-milano",1,1,1,40,1,"P.le Medaglie D'Oro, 2, Milano",45.45191830924882,9.201616875087204,2
 "Appartamento con Terrazza","appartamento-con-terrazza",2,2,1,70,1,"Via Baranzate, 87, Novate Milanese",45.52904621266747,9.12508220057858,1
 "Casa Vacanze sul Mare","casa-vacanze-sul-mare",4,6,2,200,0,"Via Carlo Poma, 7, Milano",45.46623148080196,9.216246199831197,1
-"Bilocale Rinnovato","bilocale-rinnovato",2,3,1,75,1,"Via Goffredo Mameli, 40, Milano",45.46397944258556,9.213331079457195,2
-"Attico Luminoso","attico-luminoso",3,4,2,160,1,"Via Salasco, 13, Milano",45.45026376023727,9.193510278321037,2
-"Monolocale Economico","monolocale-economico",1,1,1,35,1,"Via Torino, 18, Milano",45.46318206839967,9.187272326316357,1
-"Appartamento Design","appartamento-design",2,2,1,90,1,"Via XX Settembre, 8, Milano",45.46997549409912,9.169456855152921,2
-"Casa Vacanze Rustica","casa-vacanze-rustica",3,3,2,120,1,"Via Garofalo, 22, Milano",45.48022485509868,9.219484424463268,1
+"Bilocale Rinnovato","bilocale-rinnovato",2,3,1,75,1,"Viale Piacenza, 45, Lodi",45.2979678999963, 9.516257879362636,2
+"Attico Luminoso","attico-luminoso",3,4,2,160,1,"Via del Chiosino, 8, Lodi",45.307767715332886,9.483459125129562,2
+"Monolocale Economico","monolocale-economico",1,1,1,35,1,"Via Polenghi Lombardo, Lodi",45.310854061238096,9.495999947955998,1
+"Appartamento Design","appartamento-design",2,2,1,90,1,"Via Torquato Tasso, 67/71, Pavia",45.192688491074264,9.165980494728993,2
+"Casa Vacanze Rustica","casa-vacanze-rustica",3,3,2,120,1,"Via Giuseppe Verdi, 19, Pavia",45.18529386538183,9.14040568229159,1
