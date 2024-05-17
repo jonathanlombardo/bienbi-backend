@@ -191,7 +191,7 @@ class AppartmentController extends Controller
 
 
     // pagino i risultati
-    $nPerPages = 15;
+    $nPerPages = 8;
     $paginatedAppartments = [];
 
     for ($i = $nPerPages * ($page - 1); $i < $nPerPages * $page && $i < count($appartments); $i++) {
