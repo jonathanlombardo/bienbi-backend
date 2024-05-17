@@ -41,7 +41,9 @@
   <script>
     const route = {{ Illuminate\Support\Js::from(Route::current()->getName()) }}
     const isShow = route === 'admin.appartments.show';
+
     const ctx = document.getElementById('myChart');
+
     const dtEndInput = document.getElementById('end-date');
     const dtStartInput = document.getElementById('start-date');
     const periodSelect = document.getElementById('period');
@@ -71,7 +73,6 @@
         label: 'Views ' + appartment.title,
         data: sumViews.resData,
         borderWidth: 1,
-        stack: appartment.id,
         hidden: !isShow,
       })
     })
@@ -80,10 +81,10 @@
       const sumViews = sumViewsPerInterval('month', dtStart, dtEnd, appartment.messages);
       console.log(appartment.id)
       datasets.push({
+        type: 'line',
         label: 'Messaggi ' + appartment.title,
         data: sumViews.resData,
         borderWidth: 1,
-        stack: appartment.id,
         hidden: !isShow,
       })
     })
@@ -103,14 +104,14 @@
         },
         scales: {
           y: {
-            stacked: true,
+
             beginAtZero: true,
             ticks: {
               stepSize: 1
             }
           },
           x: {
-            stacked: true,
+
             // max: 'Maggio'
           }
         }
@@ -385,8 +386,6 @@
       chart.data.labels = setLabels(interval, dtStart, dtEnd)
       const datasets = [];
 
-
-
       allViews.forEach((appartment) => {
         const sumViews = sumViewsPerInterval(interval, dtStart, dtEnd, appartment.views);
         const appEl = document.querySelector(`[data-app-id="${appartment.id}"]`);
@@ -395,7 +394,6 @@
           label: 'Views ' + appartment.title,
           data: sumViews.resData,
           borderWidth: 1,
-          stack: appartment.id,
           hidden: !active,
         })
       })
@@ -405,10 +403,10 @@
         const appEl = document.querySelector(`[data-app-id="${appartment.id}"]`);
         const active = (appEl ? appEl.getAttribute('data-app-is-active') : 'true') === 'true';
         datasets.push({
+          type: 'line',
           label: 'Messaggi ' + appartment.title,
           data: sumViews.resData,
           borderWidth: 1,
-          stack: appartment.id,
           hidden: !active,
         })
       })

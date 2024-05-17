@@ -15,7 +15,6 @@
         "@popperjs/core": "^2.11.6",
         "bootstrap": "^5.2.2",
         "braintree-web-drop-in": "^1.42.0",
-        "chart.js": "^4.4.2",
         "chartjs-adapter-date-fns": "^3.0.0",
         "date-fns": "^3.6.0"
     }
