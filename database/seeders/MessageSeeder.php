@@ -31,7 +31,7 @@ class MessageSeeder extends Seeder
   // }  
   public function run()
   {
-    $file = fopen(__DIR__ . "/../csv/messages.csv","r"); //apro il csv
+    $file = fopen(__DIR__ . "/../csv/message.csv","r"); //apro il csv
     $first_line = true; //ignoro la prima riga
     while (!feof($file)) {
         $message_data = fgetcsv($file);
@@ -44,6 +44,7 @@ class MessageSeeder extends Seeder
             $message->first_name = $message_data[2];
             $message->last_name = $message_data[3];
             $message->appartment_id = $message_data[4];
+            $message->created_at = $message_data[5];
 
             $message->save();
 
