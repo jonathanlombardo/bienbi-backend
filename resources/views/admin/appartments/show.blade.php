@@ -57,7 +57,7 @@
           <li>
             <strong>{{ $appartment->published ? 'Gli utenti possono vedere questo appartamento' : 'Gli utenti non possono vedere questo appartamento' }}</strong>
           </li>
-          <li class="row appartment-services">
+          <li class="row appartment-services mb-3">
             <strong>Servizi offerti</strong>
             @foreach ($appartment->services as $service)
               <div class="col-6 d-flex align-items-center">
@@ -66,7 +66,7 @@
               </div>
             @endforeach
           </li>
-          <li class="mt-3 row">
+          <li class="mt-auto row">
             <div class="col-6">
               <a class="my_btn" href="{{ route('admin.appartments.index') }}">Torna agli appartamenti</a>
             </div>
@@ -99,6 +99,7 @@
   <style lang="scss">
     .image-container {
       position: relative;
+      max-height: 480px;
     }
 
     .sponsor-label {
