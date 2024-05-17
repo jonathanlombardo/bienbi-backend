@@ -168,6 +168,15 @@
     .card-Premium-body {
       background-color: #f7a398 !important;
     }
+
+    .form-check-input:checked {
+      background-color: #000000 !important;
+      border-color: #000000 !important;
+    }
+
+    .form-check-input:focus {
+      box-shadow:  0 0 0 0.25rem rgba(67, 67, 67, 0.319) !important;
+    }
   </style>
 @endpush
 

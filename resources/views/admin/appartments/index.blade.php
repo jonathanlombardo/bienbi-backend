@@ -13,7 +13,7 @@
         <div class="col-4 my-col">
           {{-- link per la show degli appartamenti --}}
 
-          <div class="my-card card w-100">
+          <div class="my-card w-100">
             <a href="{{ route('admin.appartments.show', $appartment->slug) }}" class="my-card-link d-block h-100 w-100">
               <div class="my-card-header p-3 w-100">
                 <div class="image-container w-100">
