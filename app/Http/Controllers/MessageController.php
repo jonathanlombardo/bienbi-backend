@@ -26,7 +26,7 @@ class MessageController extends Controller
     foreach ($appartments as $appartment) {
       $messages->orWhereBelongsTo($appartment);
     }
-    $messages = $messages->orderBy('created_at', 'desc')->get();
+    $messages = $appartments->count() ? $messages->orderBy('created_at', 'desc')->get() : [];
 
 
     // Passa i dati alla vista
