@@ -20,19 +20,15 @@
         @else
           <div>
             <div class="row justify-content-center align-items-center">
-              <div class="col d-flex justify-content-center align-items-center">
+              <div class="col d-flex justify-content-center align-items-center gap-3 me-1">
 
                 {{-- link per vedere tutti gli appartamenti relazionati all'user --}}
 
-                <button class="btn">
-                  <a class="nav-link nav_link" href="{{ route('admin.appartments.index') }}">I tuoi appartamenti</a>
-                </button>
+                <a class="btn nav-link nav_link" href="{{ route('admin.appartments.index') }}">I tuoi appartamenti</a>
 
                 {{-- link per vedere tutti i messaggi relazionati all'user --}}
 
-                <button class="btn">
-                  <a class="nav-link nav_link" href="{{ route('admin.messages.index') }}">Messaggi</a>
-                </button>
+                <a class="btn nav-link nav_link" href="{{ route('admin.messages.index') }}">Messaggi</a>
 
               </div>
             </div>
