@@ -76,9 +76,11 @@
         <p class="text-center">Non ci sono messaggi</p>
       @endforelse
 
-      <div class="my-5">
-        {{ $messages->links() }}
-      </div>
+      @if ($messages)
+        <div class="my-5">
+          {{ $messages->links() }}
+        </div>
+      @endif
 
     </div>
   </div>
