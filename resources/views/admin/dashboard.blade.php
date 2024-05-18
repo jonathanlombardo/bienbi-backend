@@ -22,7 +22,14 @@
         </div>
       </div>
     </div> --}}
-    @include('admin.appartments.partials.statistics-graph')
+    @if ($appartments->count())
+      @include('admin.appartments.partials.statistics-graph')
+    @else
+      <div class="wrapper text-center">
+        <p>Inserisci un appartamento per vedere le statistiche</p>
+        <a href="{{ route('admin.appartments.create') }}" class="my_btn">Crea Appartamento</a>
+      </div>
+    @endif
   </div>
 @endsection
 
