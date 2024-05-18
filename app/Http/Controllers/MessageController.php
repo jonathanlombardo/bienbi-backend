@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Appartment;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Models\Message;
 use Illuminate\Support\Facades\Auth;
@@ -28,6 +29,12 @@ class MessageController extends Controller
     }
     $messages = $appartments->count() ? $messages->orderBy('created_at', 'desc')->paginate() : [];
 
+    foreach ($messages as $message) {
+      $dt = Carbon::createFromFormat('Y-m-d H:i:s', $message->created_at);
+      $message->created_at = $dt->tz('Europe/Rome');
+    }
+
+
 
     // Passa i dati alla vista
     return view('admin.messages.index', compact('messages'));
@@ -52,6 +59,11 @@ class MessageController extends Controller
     }
     // Filtra i messaggi solo per gli appartamenti dell'utente autenticato
     $messages = Message::where('appartment_id', $appartment->id)->orderBy('created_at', 'desc')->paginate();
+
+    foreach ($messages as $message) {
+      $dt = Carbon::createFromFormat('Y-m-d H:i:s', $message->created_at);
+      $message->created_at = $dt->tz('Europe/Rome');
+    }
 
     // Passa i dati alla vista
     return view('admin.messages.index', compact('messages'));
