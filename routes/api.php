@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AppartmentController;
+use App\Http\Controllers\Api\ChartController;
 use App\Http\Controllers\API\MessageController;
 use App\Http\Controllers\Api\ServiceController;
 use App\Http\Controllers\Api\ViewsController;
@@ -29,6 +30,7 @@ Route::apiResource('/appartments', AppartmentController::class)->only('index', '
 Route::apiResource('/services', ServiceController::class)->only('index');
 Route::apiResource('/messages', MessageController::class)->only('store');
 Route::post('/views', [ViewsController::class, 'setView'])->name('api.views.setView');
+Route::get('/charts', [ChartController::class, 'datasets'])->name('api.charts.datasets');
 
 // Route::get('/test', function () {
 //   $appartment = Appartment::find(9);

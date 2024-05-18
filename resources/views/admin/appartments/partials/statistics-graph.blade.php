@@ -1,3 +1,8 @@
+@push('assets')
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  @vite('resources/js/chartjs.js')
+@endpush
+
 <div class="container p-5">
   <h3 class="mb-5 text-center">Statistiche per appartamento</h3>
   <div class="row">
@@ -35,7 +40,6 @@
 </div>
 
 @push('scripts')
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     const route = {{ Illuminate\Support\Js::from(Route::current()->getName()) }}
     const isShow = route === 'admin.appartments.show';
@@ -112,7 +116,7 @@
       while (viewsColors[i] === undefined) {
         i = i - viewsColors.length;
       }
-      console.log(appartment.id)
+      // console.log(appartment.id)
       datasets.push({
         type: 'line',
         label: 'Messaggi ' + appartment.title,
@@ -224,7 +228,7 @@
         viewsDataset.hidden = !viewsDataset.hidden;
         messagesDataset.hidden = !messagesDataset.hidden;
 
-        console.log(viewsDataset.backgroundColor);
+        // console.log(viewsDataset.backgroundColor);
         chart.update();
       })
     })
