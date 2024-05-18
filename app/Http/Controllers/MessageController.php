@@ -26,7 +26,7 @@ class MessageController extends Controller
     foreach ($appartments as $appartment) {
       $messages->orWhereBelongsTo($appartment);
     }
-    $messages = $appartments->count() ? $messages->orderBy('created_at', 'desc')->get() : [];
+    $messages = $appartments->count() ? $messages->orderBy('created_at', 'desc')->paginate() : [];
 
 
     // Passa i dati alla vista
@@ -51,7 +51,7 @@ class MessageController extends Controller
       return abort(403);
     }
     // Filtra i messaggi solo per gli appartamenti dell'utente autenticato
-    $messages = Message::where('appartment_id', $appartment->id)->orderBy('created_at', 'desc')->get();
+    $messages = Message::where('appartment_id', $appartment->id)->orderBy('created_at', 'desc')->paginate();
 
     // Passa i dati alla vista
     return view('admin.messages.index', compact('messages'));
@@ -88,9 +88,14 @@ class MessageController extends Controller
   {
     $message = Message::find($id);
 
-    if (!$message) {
-      return response()->json(['error' => 'Messaggio non trovato'], 404);
-    }
+    if (!$message)
+      abort(404);
+
+
+    $appartment = Appartment::find($message->appartment_id);
+
+    if ($appartment->user != Auth::user())
+      abort(404);
 
     return view('admin.messages.show', compact('message'));
   }
