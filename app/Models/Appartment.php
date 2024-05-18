@@ -8,10 +8,11 @@ use Carbon\CarbonTimeZone;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Appartment extends Model
 {
-  use HasFactory;
+  use HasFactory, SoftDeletes;
 
   protected $fillable = ['address', 'long', 'lat', 'title', 'rooms', 'beds', 'bathrooms', 'square_meters'];
 

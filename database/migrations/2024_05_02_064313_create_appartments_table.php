@@ -27,6 +27,7 @@ return new class extends Migration {
       $table->decimal('long', 9, 6);
       $table->foreignId('user_id')->constrained();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
 

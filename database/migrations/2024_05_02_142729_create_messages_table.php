@@ -20,6 +20,7 @@ return new class extends Migration {
       $table->string('last_name', 40);
       $table->foreignId('appartment_id')->constrained()->onDelete('cascade');
       $table->timestamps();
+      $table->softDeletes();
     });
   }
 

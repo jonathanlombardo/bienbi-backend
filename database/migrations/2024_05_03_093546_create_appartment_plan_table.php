@@ -19,6 +19,7 @@ return new class extends Migration {
       $table->dateTime('expired_at')->nullable();
       $table->dateTime('date_of_issue')->nullable();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
 

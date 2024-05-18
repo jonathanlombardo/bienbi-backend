@@ -18,6 +18,7 @@ return new class extends Migration {
       $table->ipAddress('ip_address')->nullable();
       $table->foreignId('appartment_id')->constrained()->onDelete('cascade');
       $table->timestamps();
+      $table->softDeletes();
     });
   }
 

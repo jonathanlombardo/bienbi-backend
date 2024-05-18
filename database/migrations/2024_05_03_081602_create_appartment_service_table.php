@@ -5,28 +5,29 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('appartment_service', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('appartment_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('service_id')->constrained()->cascadeOnDelete();
-            $table->timestamps();
-        });
-    }
+  /**
+   * Run the migrations.
+   *
+   * @return void
+   */
+  public function up()
+  {
+    Schema::create('appartment_service', function (Blueprint $table) {
+      $table->id();
+      $table->foreignId('appartment_id')->constrained()->cascadeOnDelete();
+      $table->foreignId('service_id')->constrained()->cascadeOnDelete();
+      $table->timestamps();
+      $table->softDeletes();
+    });
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('appartment_service');
-    }
+  /**
+   * Reverse the migrations.
+   *
+   * @return void
+   */
+  public function down()
+  {
+    Schema::dropIfExists('appartment_service');
+  }
 };

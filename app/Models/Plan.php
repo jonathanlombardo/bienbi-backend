@@ -5,10 +5,11 @@ namespace App\Models;
 use Carbon\CarbonInterval;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Plan extends Model
 {
-  use HasFactory;
+  use HasFactory, SoftDeletes;
 
   // Aggiunta proprietà fillable con i parametri necessari al fill
 

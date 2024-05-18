@@ -167,10 +167,12 @@ class AppartmentController extends Controller
   {
     if (!$appartment || $appartment->user_id != Auth::id())
       abort(404);
-    if ($appartment->image)
-      Storage::delete($appartment->image);
-    $appartment->image = null;
-    $appartment->save();
+
+    // // elimino l'immagine dallo storage
+    // if ($appartment->image)
+    //   Storage::delete($appartment->image); // solo se hard delete!
+    // $appartment->image = null;
+    // $appartment->save();
 
     //-- to do soft delete
     $appartment->delete();
