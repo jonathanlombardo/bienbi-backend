@@ -8,8 +8,16 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
-  public function dashboard()
+  public function dashboard(Request $request)
   {
+    // Recupero o genero il token per l'utente autenticato
+    $tokenEl = Auth::user()->tokens()->where('name', '=', 'auth_token')->first();
+    if ($tokenEl) {
+      $authToken = $tokenEl->token;
+    } else {
+      $authToken = $request->user()->createToken('auth_token')->plainTextToken;
+    }
+
     $appartments = Appartment::whereBelongsTo(Auth::user())->get();
 
     $appartments_views = [];
@@ -45,6 +53,6 @@ class AdminController extends Controller
     $dtStart = $now->subMonths(6)->toDateTimeString();
 
 
-    return view('admin.dashboard', compact('appartments_views', 'appartments_messages', 'dtEnd', 'dtStart', 'appartments'));
+    return view('admin.dashboard', compact('authToken', 'appartments_views', 'appartments_messages', 'dtEnd', 'dtStart', 'appartments'));
   }
 }

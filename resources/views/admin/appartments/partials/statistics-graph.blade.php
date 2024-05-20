@@ -41,6 +41,8 @@
 
 @push('scripts')
   <script>
+    // recupero il token
+    const authToken = {{ Illuminate\Support\Js::from($authToken) }}
     const route = {{ Illuminate\Support\Js::from(Route::current()->getName()) }}
     const isShow = route === 'admin.appartments.show';
 

@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\ViewsController;
 use App\Models\Appartment;
 use App\Models\Plan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,12 +26,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
   return $request->user();
 });
 
+Route::middleware('auth:sanctum')->group(function () {
+  Route::get('/charts', [ChartController::class, 'datasets'])->name('api.charts.datasets');
+});
+
 Route::get('/appartments/filtered', [AppartmentController::class, 'filtered'])->name('api.appartments.filtered');
 Route::apiResource('/appartments', AppartmentController::class)->only('index', 'show');
 Route::apiResource('/services', ServiceController::class)->only('index');
 Route::apiResource('/messages', MessageController::class)->only('store');
 Route::post('/views', [ViewsController::class, 'setView'])->name('api.views.setView');
-Route::get('/charts', [ChartController::class, 'datasets'])->name('api.charts.datasets');
 
 // Route::get('/test', function () {
 //   $appartment = Appartment::find(9);
