@@ -10,6 +10,10 @@ The app provide a quick and easy way to connect host and guest of short-term let
 
 The app is developed with <b>[Laravel and Blade](https://laravel.com/)</b> and it provides several API in order to connect a third part frontend.
 
+-   Style
+
+    The app is styled via [SASS SCSS](https://sass-lang.com/) thanks to [Vite](https://vitejs.dev/) preprocessor. [Boostrap](https://getbootstrap.com/) styles and scripts are also integrated.
+
 -   Geolocation
 
     The geolocation was implemented through [TomTom APIs and SDKs](https://developer.tomtom.com/) in order to provide a reliable position.
